@@ -1,0 +1,43 @@
+{
+  "status": "published-and-verified",
+  "scope": "latest-only",
+  "currentVersion": "5.0.0",
+  "repository": "https://github.com/Royal44-k/A-Magical-Stroke",
+  "date": "2026-10-18T05:48:29.487Z",
+  "contentCommit": "31c9a3ec5c9ca407c0b14abdb72f2dffd15bd26f",
+  "contentTree": "3eff0ecfc9c138ec2903131384064519e897c4df",
+  "manifestFiles": 435,
+  "manifestBytes": 209785706,
+  "repositoryFileCount": 438,
+  "releaseCount": 1,
+  "archiveDigestsVerified": 1,
+  "checksumDigestsVerified": 1,
+  "tagTargetsVerified": 1,
+  "latest": "v5.0",
+  "releases": [
+    {
+      "tag": "v5.0",
+      "releaseId": 416244385,
+      "originalName": "神笔马良-奇幻一笔-课堂交付版-v5.0.zip",
+      "name": "maliang-qihuan-v5.0.zip",
+      "bytes": 208719266,
+      "sha256": "0e28d1cc30e9bcaa95f44ec1524201a583aba51adcfbfc4b029c36c6b11b4488",
+      "serverDigest": "sha256:0e28d1cc30e9bcaa95f44ec1524201a583aba51adcfbfc4b029c36c6b11b4488",
+      "assetId": 652537644,
+      "url": "https://github.com/Royal44-k/A-Magical-Stroke/releases/tag/v5.0",
+      "downloadUrl": "https://github.com/Royal44-k/A-Magical-Stroke/releases/download/v5.0/maliang-qihuan-v5.0.zip",
+      "draft": false,
+      "prerelease": false,
+      "tagCommit": "31c9a3ec5c9ca407c0b14abdb72f2dffd15bd26f",
+      "publishedAt": "2026-10-18T05:48:24Z",
+      "checksum": {
+        "assetId": 652540134,
+        "name": "maliang-qihuan-v5.0.zip.sha256",
+        "bytes": 90,
+        "sha256": "555b70f811a51057a425f890171ef6f20a69ad52da2826b97a8f95bf5e7818db",
+        "serverDigest": "sha256:555b70f811a51057a425f890171ef6f20a69ad52da2826b97a8f95bf5e7818db",
+        "downloadUrl": "https://github.com/Royal44-k/A-Magical-Stroke/releases/download/v5.0/maliang-qihuan-v5.0.zip.sha256"
+      }
+    }
+  ]
+}
