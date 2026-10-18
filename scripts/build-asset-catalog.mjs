@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const generated=new Set(['catalog/asset-manifest.json','catalog/asset-manifest.csv','catalog/SHA256SUMS','catalog/publication.json']);
+const paths=[...new Set(execFileSync('git',['ls-files','-z','--cached','--others','--exclude-standard'],{cwd:root,encoding:'utf8',maxBuffer:10000000}).split('\0').filter(p=>p&&!generated.has(p)))].sort();
+const classify=p=>p.startsWith('archive/')?'historical':p.startsWith('public/assets/')||p.startsWith('art-direction/')?'artwork-and-prompts':p.startsWith('public/video/')||p.startsWith('film-v2/')||p.startsWith('renders/')?'video-and-audio':p.startsWith('docs/')?'teaching-and-production':p.startsWith('artifacts/')?'verification-evidence':p.startsWith('src/')?'source-code':p.startsWith('dist/')?'runnable-build':'project-and-tools';
+const files=paths.map(p=>{const b=fs.readFileSync(path.join(root,p));return{path:p,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex'),category:classify(p)}});
+const unique=new Map(files.map(f=>[f.sha256,f.bytes])),categories={};for(const f of files)categories[f.category]=(categories[f.category]||0)+1;
+const summary={files:files.length,bytes:files.reduce((n,f)=>n+f.bytes,0),uniqueContents:unique.size,uniqueBytes:[...unique.values()].reduce((a,b)=>a+b,0),categories};
+fs.mkdirSync(path.join(root,'catalog'),{recursive:true});fs.writeFileSync(path.join(root,'catalog/asset-manifest.json'),JSON.stringify({project:'神笔马良：奇幻一笔',date:'2026-10-18',currentVersion:'5.0.0',selfExcluded:[...generated],summary,files},null,2)+'\n');
+const quote=s=>'"'+String(s).replaceAll('"','""')+'"';fs.writeFileSync(path.join(root,'catalog/asset-manifest.csv'),'\ufeff'+['path,category,bytes,sha256',...files.map(f=>[f.path,f.category,f.bytes,f.sha256].map(quote).join(','))].join('\r\n')+'\r\n');
+fs.writeFileSync(path.join(root,'catalog/SHA256SUMS'),files.map(f=>f.sha256+'  '+f.path).join('\n')+'\n');console.log(JSON.stringify(summary,null,2));

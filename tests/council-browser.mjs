@@ -1,0 +1,25 @@
+import {chromium} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs';import {fresh,KEY,sign,visit} from '../src/model.mjs';
+const browser=await chromium.launch({channel:'msedge',headless:true}),checks=[],errors=[];fs.mkdirSync('artifacts/v1.3',{recursive:true});
+const click=(p,name)=>p.getByRole('button',{name,exact:true}).click(),read=p=>p.evaluate(k=>JSON.parse(localStorage.getItem(k)),KEY);
+async function pageFor(width=1487,s=sign(visit(fresh(),'court'),'accept')){s.strategy='speak';s.evidence=['fact','needs','plan'];const p=await browser.newPage({viewport:{width,height:width<601?844:1058}});p.on('pageerror',e=>errors.push(e.message));await p.goto('http://127.0.0.1:4185/');await p.evaluate(({KEY,s})=>localStorage.setItem(KEY,JSON.stringify(s)),{KEY,s});await p.reload();await click(p,'接着画下去');return p;}
+async function begin(p){await click(p,'请鲁伯和大家一起谈');await click(p,'明天也能来吗？');await click(p,'人多时怎样排？');}
+async function trial(p){await click(p,'照着草案，试一回');for(let i=0;i<3;i++)await click(p,'请下一位试取水');await click(p,'翻到明天');}
+try{
+ const p=await pageFor();await begin(p);assert.equal((await read(p)).exclusive,true);checks.push('开场材料与倾听不会代替共同确认');
+ await click(p,'今天先帮没签的人取一次');await trial(p);assert.equal((await read(p)).council.run.tomorrowAllowed.length,1);assert.match(await p.locator('.council-result').innerText(),/明天/);assert.equal(await p.getByRole('button',{name:'请大家确认新约定',exact:true}).isDisabled(),true);checks.push('临时帮一次的后果在明天出现，不能直接撤限');
+ await p.locator('.council').screenshot({path:'artifacts/v1.3/council-tomorrow-desktop.png'});
+ await click(p,'大家以后都能按次序取水');assert.equal((await read(p)).council.run,null);
+ await click(p,'问过大家，再让急需的人先取');assert.equal(await p.getByRole('button',{name:'照着草案，试一回',exact:true}).isDisabled(),true);await click(p,'问问前面的两位');
+ await p.locator('[data-guest="xiaohe"]').dragTo(p.locator('[data-guest="zhou"]'));assert.deepEqual((await read(p)).council.queue,['xiaohe','zhou','chen']);await trial(p);
+ assert.equal((await read(p)).exclusive,true);await click(p,'请大家确认新约定');assert.equal((await read(p)).exclusive,false);assert.equal((await read(p)).council.ratified.policy,'urgent');checks.push('真实拖曳、明确让位答复、逐人试用后才能共同确认');
+ await p.reload();await click(p,'接着画下去');assert.equal(await p.locator('.council-agreed').count(),1);assert.equal(await p.getByRole('button',{name:'大家以后都能按次序取水',exact:true}).count(),0);checks.push('谈成后的约定可恢复，不能被再次改稿覆盖');
+ const q=await pageFor(390);await begin(q);await click(q,'大家以后都能按次序取水');await q.getByRole('button',{name:'陈叔往前移',exact:true}).focus();await q.keyboard.press('Enter');await trial(q);assert.match(await q.locator('.council-result').innerText(),/次序/);await click(q,'陈叔往后移');await trial(q);await click(q,'请大家确认新约定');assert.equal((await read(q)).council.ratified.policy,'arrival');checks.push('键盘排序得到同样结果，排错有具体反馈，可改后重试');
+ const r=await pageFor(320);await begin(r);await click(r,'大家以后都能按次序取水');await click(r,'照着草案，试一回');await click(r,'请下一位试取水');await r.reload();await click(r,'接着画下去');assert.equal((await read(r)).council.run.index,1);await click(r,'请下一位试取水');assert.equal((await read(r)).council.run.index,2);assert.equal(await r.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);checks.push('窄屏无溢出，试到一半刷新可接着操作');
+ await click(r,'到灯下，再看一眼');assert.equal((await read(r)).exclusive,true);checks.push('中途离开仍保留原条件');
+ const legacy=sign(visit(fresh(),'court'),'refuse');legacy.negotiated=true;delete legacy.council;const old=await pageFor(768,legacy);assert.match(await old.locator('.council-agreed').innerText(),/先前/);checks.push('旧版已谈成的约定照常保留');
+ await click(p,'我的画册');assert.equal(await p.getByRole('heading',{name:'在纸上试过的约定',exact:true}).count(),1);
+ const txtWait=p.waitForEvent('download');await click(p,'导出画册');await (await txtWait).saveAs('artifacts/v1.3/council-notebook.txt');assert.match(fs.readFileSync('artifacts/v1.3/council-notebook.txt','utf8'),/明天：陈叔能取水/);
+ await click(p,'做一份三格故事');await click(p,'放入第1次纸上约定');await click(p,'放入第2次纸上约定');await click(p,'放入把用水的话谈清楚');const file=p.waitForEvent('download');await click(p,'保存我的三格故事');await (await file).saveAs('artifacts/v1.3/council-story.html');const html=fs.readFileSync('artifacts/v1.3/council-story.html','utf8');assert.match(html,/明天：陈叔能取水/);assert.match(html,/明天：周婶、小禾|明天：周婶、陈叔、小禾/);assert.match(html,/共同确认/);
+ const offline=await browser.newContext({offline:true}),op=await offline.newPage();await op.goto('file:///'+process.cwd().replaceAll('\\','/')+'/artifacts/v1.3/council-story.html');assert.equal(await op.locator('article').count(),3);assert.equal(await op.locator('article img').evaluateAll(xs=>xs.every(x=>x.complete&&x.naturalWidth>0)),true);await op.screenshot({path:'artifacts/v1.3/council-story-offline.png'});await offline.close();checks.push('旧新试用与正式确认分别入册，TXT和三格离线故事保留真实后果');
+ await p.close();await q.close();await r.close();await old.close();assert.deepEqual(errors,[]);fs.writeFileSync('artifacts/v1.3/council-browser-results.json',JSON.stringify({checks,errors},null,2));console.log(checks);
+}finally{await browser.close();}

@@ -1,0 +1,16 @@
+{
+  "version": "5.0.0",
+  "date": "2026-10-18",
+  "includes": "Latest source, runtime build, artwork, prompts, video and captions, teaching and production guides, current verification evidence",
+  "excludes": [
+    "Historical release packages and frozen snapshots",
+    "Retired assets and preproduction archive",
+    "Reference recording, reference captures and third-party source PDFs",
+    "Private configuration and rebuildable dependency folders"
+  ],
+  "adaptations": [
+    "README and ASSETS provide latest-only navigation",
+    "docs/46 corrects the existing river video URL",
+    "Archive integrity helpers and catalogs added"
+  ]
+}

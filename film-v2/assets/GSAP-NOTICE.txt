@@ -1,0 +1,4 @@
+GSAP 3.15.0
+Copyright GreenSock / Webflow.
+License as supplied in package.json: Standard no-charge license, https://gsap.com/standard-license/
+The unmodified distribution retains its copyright header. Full package metadata is included in GSAP-package.json.

@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "clips": {
+    "night": {
+      "src": "/video/v2-night.mp4",
+      "captions": "/video/v2-night.vtt",
+      "seconds": 8,
+      "kind": "local-animated-scene"
+    },
+    "river": {
+      "src": "/video/v2-river.mp4",
+      "captions": "/video/v2-river.vtt",
+      "seconds": 8,
+      "kind": "local-animated-scene"
+    }
+  }
+}

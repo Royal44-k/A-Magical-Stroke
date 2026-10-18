@@ -1,0 +1,10 @@
+import fs from 'node:fs';import test from 'node:test';import assert from 'node:assert/strict';import {fresh,riverResult,canopyResult,restore,testDrawing,draw} from '../src/v2/engine.mjs';
+const pen=p=>({color:'#215d69',width:9,points:p}),safe=pen([[80,340],[180,340],[180,120],[720,120]]),branch=pen([[180,120],[400,260]]);const river=strokes=>({...fresh().river,support:true,power:'wheel',strokes});
+test('已经通田也要检查所有连上的支路',()=>{const r=riverResult(river([safe,branch]));assert.equal(r.arrived,true);assert.equal(r.blocked,true);assert.equal(r.ok,false);assert.ok(r.flow.length>0);assert.ok(r.doorHit)});
+test('先画支路还是先画主路，不改变阻路结果',()=>{for(const strokes of [[safe,branch],[branch,safe]])assert.equal(riverResult(river(strokes)).blocked,true)});
+test('没接上水源的独立笔画不能凭空出水或阻路',()=>{const r=riverResult(river([safe,pen([[350,250],[450,300]])]));assert.equal(r.ok,true);assert.ok(r.flow.every(s=>s.a[1]<=120||s.a[0]<330))});
+test('回环线只流一回，不死循环；两支路都留下水迹',()=>{const r=riverResult(river([safe,pen([[180,120],[400,60],[620,120]])]));assert.equal(r.ok,true);assert.ok(r.flow.some(s=>s.a[1]<80));assert.ok(r.flow.some(s=>s.a[1]===120&&s.a[0]>300));assert.ok(r.flow.length<1000)});
+test('已接通的挡路支线，未到田也明确报告',()=>{const r=riverResult(river([pen([[80,340],[400,260]])]));assert.equal(r.arrived,false);assert.equal(r.blocked,true);assert.match(r.message,/门前/)});
+test('笔画上下方向不应改变最先接住雨的高度',()=>{const a=canopyResult([pen([[400,300],[400,100]])]),b=canopyResult([pen([[400,100],[400,300]])]);assert.equal(a.drops[3].y,b.drops[3].y);assert.equal(a.drops[3].y,100)});
+
+test('旧版误判通过的分流图需要重试，历史记录不改写',()=>{const old=JSON.parse(fs.readFileSync('artifacts/v2.1/branch-before.json','utf8').replace(/^\uFEFF/,''));const s=fresh();s.chapter='river';s.visited=['brush','river'];s.river=river([safe,branch]);s.river.result=old;s.river.tests=[{strokes:structuredClone(s.river.strokes),result:structuredClone(old)}];const restored=restore(JSON.stringify(s));assert.equal(restored.river.result,null);assert.equal(restored.river.needsRetest,true);assert.deepEqual(restored.river.tests,s.river.tests);assert.equal(testDrawing(restored,'river').river.needsRetest,false)});

@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "clips": {
+    "M-V01": {
+      "src": "/video/M-V01-v001.mp4",
+      "captions": "/video/M-V01-zh.vtt"
+    },
+    "M-V02": {
+      "src": "/video/M-V02-v001.mp4",
+      "captions": "/video/M-V02-zh.vtt"
+    },
+    "M-V03": {
+      "src": "/video/M-V03-v001.mp4",
+      "captions": "/video/M-V03-zh.vtt"
+    },
+    "M-V04": {
+      "src": "/video/M-V04-v001.mp4",
+      "captions": "/video/M-V04-zh.vtt"
+    },
+    "M-V05": {
+      "src": "/video/M-V05-v001.mp4",
+      "captions": "/video/M-V05-zh.vtt"
+    },
+    "M-V06": {
+      "src": "/video/M-V06-v001.mp4",
+      "captions": "/video/M-V06-zh.vtt"
+    },
+    "M-V07": {
+      "src": "/video/M-V07-v001.mp4",
+      "captions": "/video/M-V07-zh.vtt"
+    },
+    "M-V08": {
+      "src": "/video/M-V08-v001.mp4",
+      "captions": "/video/M-V08-zh.vtt"
+    },
+    "M-V09P": {
+      "src": "/video/M-V09P-v001.mp4",
+      "captions": "/video/M-V09P-zh.vtt"
+    },
+    "M-V09B": {
+      "src": "/video/M-V09B-v001.mp4",
+      "captions": "/video/M-V09B-zh.vtt"
+    },
+    "M-V10": {
+      "src": "/video/M-V10-v001.mp4",
+      "captions": "/video/M-V10-zh.vtt"
+    },
+    "M-V11": {
+      "src": "/video/M-V11-v001.mp4",
+      "captions": "/video/M-V11-zh.vtt"
+    },
+    "M-VE1": {
+      "src": "/video/M-VE1-v001.mp4",
+      "captions": "/video/M-VE1-zh.vtt"
+    },
+    "M-VE2": {
+      "src": "/video/M-VE2-v001.mp4",
+      "captions": "/video/M-VE2-zh.vtt"
+    },
+    "M-VE3": {
+      "src": "/video/M-VE3-v001.mp4",
+      "captions": "/video/M-VE3-zh.vtt"
+    },
+    "M-VE4": {
+      "src": "/video/M-VE4-v001.mp4",
+      "captions": "/video/M-VE4-zh.vtt"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+import {chromium} from 'playwright';import fs from 'node:fs';
+fs.mkdirSync('artifacts',{recursive:true});
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const page=await browser.newPage({viewport:{width:1487,height:1058},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
+await page.goto('http://127.0.0.1:4185');await page.locator('.hero-art').evaluate(img=>img.decode());await page.screenshot({path:'artifacts/home-before.png'});
+await page.getByRole('button',{name:'展开画卷',exact:true}).click();await page.screenshot({path:'artifacts/rain-before.png',fullPage:true});
+console.log(JSON.stringify({title:await page.title(),heading:await page.locator('h1').innerText(),errors,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)}));
+await page.setViewportSize({width:390,height:844});await page.screenshot({path:'artifacts/rain-mobile-before.png',fullPage:true});
+await page.getByRole('button',{name:'回到首页',exact:true}).click();await page.screenshot({path:'artifacts/home-mobile-before.png',fullPage:true});
+await browser.close();

@@ -1,0 +1,102 @@
+{
+  "version": "2.0",
+  "generatedOn": "2026-10-14",
+  "items": [
+    {
+      "path": "public/assets/hero-scroll-v1.png",
+      "bytes": 2547903,
+      "sha256": "349d38e7a92919e064589267f177e01a9a7338da2e94c96e9e3dcf595771ae8f",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/assets/night-brush-v2.png",
+      "bytes": 2385227,
+      "sha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/assets/river-survey-v1.png",
+      "bytes": 3733318,
+      "sha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/assets/grain-contract-v1.png",
+      "bytes": 3310474,
+      "sha256": "78b42c2de58e442760f82b40c501cacded8acee838758a5a5a96814bc85d2346",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/assets/shared-board-v1.png",
+      "bytes": 3220391,
+      "sha256": "08d3e8849438144bfe5d4bb7ee3c727313415a0933d8b18511e178d9dea3fdad",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/assets/ending-conditions-v1.png",
+      "bytes": 3437279,
+      "sha256": "0244385e63898012cf26e71e65c0f68e87afe92917612963a7ffb18ecc6aa20b",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/assets/evening-review-v1.png",
+      "bytes": 2714015,
+      "sha256": "cf6a01ed74dee4752976a8b98e326cd34a9b0ef58f81ff1f905b37ed9d686f87",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/assets/xiaohe-guide-v1.png",
+      "bytes": 1233594,
+      "sha256": "fb44303575c71823c9457a9cf57cb0d8d01eed228e8d47f9c67caff730aca810",
+      "role": "主线场景或角色"
+    },
+    {
+      "path": "public/video/v2-night.mp4",
+      "bytes": 2412270,
+      "sha256": "205e726c609e29606add4fc402cbc44b6ef28eec78c6adac8214e90371d191e1",
+      "role": "已嵌入本地配音动画"
+    },
+    {
+      "path": "public/video/v2-river.mp4",
+      "bytes": 6173473,
+      "sha256": "c1fa5a9b76c96df7282e7e482e72a80b52cac391dc440afceaecb5bd43160e8e",
+      "role": "已嵌入本地配音动画"
+    },
+    {
+      "path": "public/video/v2-night.vtt",
+      "bytes": 107,
+      "sha256": "2ee9e099af1f61bda4c58a2a187f6ad526a7e80cf98eab318bfbccd39cbfd2c5",
+      "role": "中文字幕"
+    },
+    {
+      "path": "public/video/v2-river.vtt",
+      "bytes": 119,
+      "sha256": "bb94716e62fcfab95a16f561e80d0ce3937d5a93a168ff5e3802abdded0be176",
+      "role": "中文字幕"
+    },
+    {
+      "path": "film-v2/index.html",
+      "bytes": 5260,
+      "sha256": "ad6327e0d5ab7db626c2ba7f8d755b5514c0693846f7c9b2b9288815de1db82c",
+      "role": "动画制作源"
+    },
+    {
+      "path": "film-v2/DESIGN.md",
+      "bytes": 726,
+      "sha256": "44dc0970f4c27e9d6200238cd517276b88a1c8970d21eb0c3bb0a4f754c6c817",
+      "role": "动画制作源"
+    },
+    {
+      "path": "film-v2/assets/night-voice.wav",
+      "bytes": 241284,
+      "sha256": "6b00e7ae0f5342bd60b2dbe9c52e324c48c03b43eac8d5edf690114a780cc6e4",
+      "role": "本地合成旁白"
+    },
+    {
+      "path": "film-v2/assets/river-voice.wav",
+      "bytes": 317352,
+      "sha256": "5409d2cdac34170825c5dd619811df1f6ed698ee2234383ff1c47ef9b5f9375f",
+      "role": "本地合成旁白"
+    }
+  ]
+}

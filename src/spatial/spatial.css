@@ -1,0 +1,911 @@
+.sp-app {
+  --paper: #edf0df;
+  --ink: #173f43;
+  --green: #255e57;
+  padding-bottom: 0;
+  background: #edf0df;
+}
+.sp-app .w3-header {
+  height: 74px;
+  min-height: 74px;
+  padding: 10px 28px;
+  background: #f9f6e9f5;
+  position: relative;
+  z-index: 10;
+  gap: 25px;
+}
+.sp-app .w3-header nav {
+  gap: 3px;
+}
+.sp-full svg {
+  width: 20px;
+  height: 20px;
+}
+.sp-app .w3-header nav button {
+  font-size: 14px;
+  padding: 8px 10px;
+}
+.sp-app .w3-brand {
+  font-size: 30px;
+}
+.sp-village {
+  height: calc(100dvh - 74px);
+  min-height: 670px;
+  position: relative;
+  isolation: isolate;
+  background: radial-gradient(
+    ellipse at 60% 20%,
+    #e7e5cb,
+    #abc7ba 65%,
+    #426b60
+  );
+  overflow: hidden;
+}
+.sp-village > .sp-stage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+}
+.sp-village .sp-world {
+  inset: 0 0 170px 170px;
+}
+.sp-village-title {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  z-index: 3;
+  max-width: 450px;
+  pointer-events: none;
+  text-shadow: 0 1px 14px #e8eddb;
+}
+.sp-village-title > span {
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+.sp-village-title h1 {
+  font-family: ScrollBrush, KaiTi, serif;
+  font-size: clamp(38px, 4.7vw, 70px);
+  font-weight: 400;
+  margin: 14px 0 20px;
+  line-height: 1.25;
+}
+.sp-village-title p {
+  font-size: 16px;
+  line-height: 1.85;
+}
+.sp-village .sp-stage-tools {
+  top: 20px;
+  right: 25px;
+  left: auto;
+}
+.sp-village .sp-stage-caption {
+  bottom: 220px;
+  left: auto;
+  right: 35px;
+  max-width: 420px;
+  background: #254b42e8;
+  color: #fff9e7;
+}
+.sp-chapters {
+  position: absolute;
+  z-index: 5;
+  bottom: 20px;
+  left: 3%;
+  right: 3%;
+}
+.sp-chapters-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #fcf6df;
+}
+.sp-chapters-heading > span {
+  font-family: KaiTi, serif;
+  font-size: 24px;
+}
+.sp-chapters .w3-story-books {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.sp-chapters .w3-story-book {
+  display: flex;
+  padding: 0;
+  border: 1px solid #ebdfb3aa;
+  border-radius: 12px;
+  background: #fffbedf5;
+  box-shadow: 0 12px 30px #173d3825;
+  min-width: 0;
+  text-align: left;
+  align-items: stretch;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.sp-chapters .w3-story-book:hover {
+  transform: translateY(-5px);
+  background: #fffdf5;
+}
+.sp-chapters .w3-story-book > img {
+  width: 31%;
+  height: 155px;
+  object-fit: cover;
+}
+.sp-chapters .w3-story-book > div {
+  padding: 15px 12px 10px;
+  flex: 1;
+  min-width: 0;
+}
+.sp-chapters .w3-story-book small {
+  font-size: 12px;
+  color: #71836c;
+  display: flex;
+  justify-content: space-between;
+}
+.sp-chapters .w3-story-book h2 {
+  font-size: 23px;
+  margin: 8px 0 5px;
+}
+.sp-chapters .w3-story-book span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #687562;
+}
+.sp-chapters .w3-story-book b {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 12px;
+  color: #9d562f;
+}
+.sp-village-fallback {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sp-stage {
+  position: relative;
+  height: 560px;
+  min-height: 310px;
+  overflow: hidden;
+  border: 1px solid #b4c6ad;
+  border-radius: 15px;
+  background: radial-gradient(ellipse at 50% 10%, #e5e5ca, #9fbbaa);
+  isolation: isolate;
+}
+.sp-world {
+  position: absolute;
+  inset: 0;
+}
+.sp-world canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline-offset: -5px;
+}
+.sp-stage-tools {
+  position: absolute;
+  z-index: 4;
+  left: 16px;
+  right: 16px;
+  top: 14px;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.sp-stage-tools button {
+  font:
+    600 13px/1.4 "Microsoft YaHei",
+    sans-serif !important;
+  min-height: 40px !important;
+  padding: 8px 12px !important;
+  box-shadow: 0 3px 12px #25493a16;
+  background: #fffcefec !important;
+  border: 1px solid #a5b9a3 !important;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #1c514d;
+}
+.sp-stage-tools button[aria-pressed="true"] {
+  background: #255d53 !important;
+  color: #fff9e4 !important;
+}
+.sp-stage-tools svg {
+  width: 18px;
+  height: 18px;
+}
+.sp-stage-caption {
+  position: absolute;
+  bottom: 15px;
+  left: 18px;
+  right: 18px;
+  z-index: 3;
+  background: #fffcedee;
+  border: 1px solid #e0d4a6;
+  border-radius: 9px;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  pointer-events: none;
+  color: #28554d;
+}
+.sp-loading {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #28554d;
+  background: #fffcedc9;
+  padding: 15px;
+}
+.sp-flat {
+  height: 100%;
+  overflow: auto;
+  padding: 65px 15px 15px;
+}
+.sp-flat > svg {
+  height: calc(100% - 15px);
+  width: 100%;
+  min-height: 320px;
+}
+.sp-flat > .w3-mill-ring {
+  height: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+.sp-flat > .w3-mill-ring svg {
+  max-height: 100%;
+  width: 100%;
+}
+.sp-app .w3-branch {
+  max-width: none;
+  padding: 20px 30px 30px;
+  margin: 0 auto;
+}
+.sp-app .w3-branch-heading {
+  margin-bottom: 18px;
+  gap: 5px;
+}
+.sp-app .w3-branch-heading h1 {
+  font-size: 32px;
+}
+.sp-app .w3-branch-heading > .w3-eyebrow {
+  width: auto;
+  margin: 0 15px 0 0;
+  font-size: 13px;
+}
+.sp-app .w3-game-layout {
+  grid-template-columns: minmax(0, 1fr) 365px;
+  gap: 22px;
+  align-items: start;
+}
+.sp-app .w3-console {
+  padding: 23px;
+  background: #fffbee;
+  border: 1px solid #d6d4b8;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px #31584d0c;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.sp-app .w3-console h2 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+.sp-app .w3-console p {
+  margin: 10px 0;
+}
+.sp-app .w3-console h3 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+.sp-app .w3-console fieldset {
+  margin: 12px 0;
+}
+.sp-app .w3-console button {
+  font-size: 14px;
+  padding: 9px 12px;
+  min-height: 44px;
+}
+.sp-app .w3-console > .w3-main-button {
+  width: 100%;
+}
+.sp-app .w3-command-strip {
+  max-height: 98px;
+  overflow: auto;
+  min-height: 44px;
+}
+.sp-app .w3-direction-pad {
+  gap: 5px;
+}
+.sp-app .w3-actions {
+  margin: 12px 0;
+  gap: 7px;
+}
+.sp-app .w3-game-layout > .w3-mill-stage {
+  min-width: 0;
+}
+.sp-app .w3-mill-stage > .w3-main-button {
+  margin-top: 12px;
+}
+.sp-app .w3-mill-stage > p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+.sp-app .w3-grain-pool {
+  padding: 10px;
+  margin: 12px 0;
+  gap: 12px;
+}
+.sp-app .w3-grain-pool > svg {
+  width: 90px;
+  height: 60px;
+}
+.sp-app .w3-families {
+  gap: 12px;
+}
+.sp-app .w3-families section {
+  padding: 10px;
+}
+.sp-app .w3-basket {
+  min-height: 64px;
+}
+.sp-app .w3-persons {
+  margin: 5px 0;
+}
+.sp-app .w3-feedback {
+  margin: 16px 0 0;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sp-app .w3-feedback > p {
+  flex: 1;
+  margin: 0;
+  min-width: 230px;
+}
+.sp-app .w3-feedback > button {
+  margin: 0;
+}
+.sp-app .w3-game-layout > div > details {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.sp-app .w3-playback {
+  padding: 10px 0;
+}
+.sp-app .w3-companion {
+  bottom: 12px;
+  right: 12px;
+}
+.sp-app .w3-companion > button img {
+  max-height: 100px;
+  width: auto;
+}
+.sp-app .w3-companion > button {
+  background: transparent !important;
+  box-shadow: none;
+  border: 0;
+}
+.sp-app .w3-companion > button:hover {
+  transform: scale(1.04);
+}
+@media (min-width: 1000px) and (min-height: 740px) {
+  .sp-phase-play {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sp-phase-play > .w3-header {
+    flex-shrink: 0;
+  }
+  .sp-phase-play > .w3-branch {
+    min-height: 0;
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 70px;
+  }
+  .sp-phase-play .sp-stage {
+    height: calc(100dvh - 250px);
+    min-height: 420px;
+    max-height: 780px;
+  }
+  .sp-phase-play .w3-console {
+    max-height: calc(100dvh - 230px);
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+  .sp-phase-play .w3-game-layout {
+    gap: 22px;
+  }
+  .sp-phase-play .w3-families {
+    display: block;
+  }
+  .sp-phase-play .w3-families section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .sp-phase-play .w3-families h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .sp-phase-play .w3-persons {
+    display: none;
+  }
+  .sp-phase-play .w3-basket {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+  .sp-phase-play .w3-families section > button:last-child {
+    min-height: 32px;
+    padding: 4px;
+    font-size: 12px;
+  }
+}
+.sp-app .w3-story-intro {
+  position: relative;
+  min-height: calc(100dvh - 225px);
+  background: #143e35;
+  border: 0;
+  border-radius: 16px;
+  display: flex;
+  align-items: end;
+  isolation: isolate;
+}
+.sp-app .w3-story-intro > img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+}
+.sp-app .w3-story-intro:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(0deg, #102e27ef, transparent 95%),
+    linear-gradient(90deg, #12332d99, transparent 75%);
+}
+.sp-app .w3-story-intro > div {
+  max-width: 700px;
+  color: #fff7de;
+  padding: 36px 45px;
+}
+.sp-app .w3-story-intro .w3-eyebrow,
+.sp-app .w3-story-intro blockquote,
+.sp-app .w3-story-intro blockquote strong {
+  color: #f6dc9d;
+}
+.sp-app .w3-story-intro blockquote {
+  margin: 15px 0;
+  border-color: #deb66b;
+}
+.sp-app .w3-story-intro .w3-main-button {
+  background: #f2d18b;
+  border-color: #f2d18b;
+  color: #25483d;
+  box-shadow: 0 3px 0 #c4964c;
+}
+.sp-app .w3-drawing-chapter {
+  max-width: 1100px;
+  margin: auto;
+}
+.sp-app .w3-ending {
+  max-width: 1120px;
+  margin: auto;
+}
+.sp-app .w3-report {
+  padding-top: 35px;
+}
+.sp-river-entry {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+.sp-river-entry > span {
+  font-size: 14px;
+  color: #506d5e;
+}
+.sp-river-dialog {
+  border: 0;
+  border-radius: 15px;
+  width: min(1240px, 96vw);
+  max-width: 96vw;
+  padding: 22px;
+  background: #f7f4e5;
+  color: #224b43;
+  max-height: 94dvh;
+  overflow: auto;
+}
+.sp-river-dialog::backdrop {
+  background: #123932c9;
+}
+.sp-river-dialog header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sp-river-dialog h2 {
+  margin: 5px 0 15px;
+}
+.sp-river-dialog .sp-stage {
+  height: min(65dvh, 650px);
+}
+.sp-river-dialog > p {
+  font-size: 15px;
+}
+.sp-river-dialog header button {
+  padding: 10px 16px;
+  background: #255c50;
+  color: #fff7df;
+  border: 0;
+  border-radius: 8px;
+  min-height: 44px;
+}
+@media (max-width: 1100px) {
+  .sp-village .sp-world {
+    inset: 60px 0 235px 0;
+  }
+  .sp-village-title h1 {
+    font-size: 45px;
+  }
+  .sp-village-title p {
+    font-size: 14px;
+  }
+  .sp-chapters .w3-story-book > img {
+    display: none;
+  }
+  .sp-chapters .w3-story-book h2 {
+    font-size: 22px;
+  }
+  .sp-village .sp-stage-caption {
+    bottom: 195px;
+  }
+  .sp-app .w3-game-layout {
+    grid-template-columns: minmax(0, 1fr) 310px;
+  }
+  .sp-app .w3-header-line {
+    display: none;
+  }
+  .sp-app .w3-header {
+    gap: 15px;
+    padding: 10px 18px;
+  }
+  .sp-app .w3-branch {
+    padding: 15px 18px 85px;
+  }
+  .sp-app .w3-branch-heading nav {
+    margin-left: 0;
+  }
+  .sp-app .w3-branch-heading {
+    gap: 10px;
+  }
+  .sp-app .w3-branch-heading h1 {
+    font-size: 28px;
+  }
+  .sp-stage {
+    height: 520px;
+  }
+}
+@media (max-width: 760px) {
+  .sp-app .w3-header {
+    height: auto;
+    min-height: 76px;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .sp-app .w3-header nav {
+    gap: 0;
+  }
+  .sp-app .w3-header nav button {
+    padding: 8px;
+    min-height: 40px;
+  }
+  .sp-app .w3-header nav button span {
+    display: none;
+  }
+  .sp-app .w3-header .w3-brand {
+    font-size: 26px;
+  }
+  .sp-village {
+    height: auto;
+    min-height: 1100px;
+    overflow: visible;
+    padding-top: 520px;
+    padding-bottom: 20px;
+  }
+  .sp-village > .sp-stage {
+    height: 530px;
+  }
+  .sp-village .sp-world {
+    inset: 105px 0 30px;
+  }
+  .sp-village-title {
+    top: 22px;
+    left: 20px;
+    max-width: calc(100% - 40px);
+  }
+  .sp-village-title > span {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  .sp-village-title h1 {
+    font-size: 36px;
+    margin: 8px 0;
+  }
+  .sp-village-title h1 br {
+    display: none;
+  }
+  .sp-village-title p {
+    font-size: 13px;
+    max-width: 310px;
+    margin: 5px 0;
+  }
+  .sp-village .sp-stage-tools {
+    top: 170px;
+    left: 15px;
+    right: auto;
+  }
+  .sp-village .sp-stage-caption {
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    font-size: 12px;
+  }
+  .sp-chapters {
+    position: relative;
+    inset: auto;
+    margin: 20px 15px;
+  }
+  .sp-chapters-heading {
+    display: block;
+    color: #244f43;
+  }
+  .sp-chapters-heading small {
+    display: block;
+    font-size: 12px;
+  }
+  .sp-chapters .w3-story-books {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .sp-chapters .w3-story-book > img {
+    display: block;
+    width: 30%;
+    height: 130px;
+  }
+  .sp-chapters .w3-story-book > div {
+    padding: 10px 15px;
+  }
+  .sp-chapters .w3-story-book h2 {
+    font-size: 23px;
+    margin: 5px 0;
+  }
+  .sp-chapters .w3-story-book b {
+    margin-top: 6px;
+  }
+  .sp-app .w3-game-layout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .sp-app .w3-branch {
+    padding: 16px 12px 25px;
+  }
+  .sp-app .w3-branch-heading > .w3-eyebrow {
+    display: none;
+  }
+  .sp-app .w3-branch-heading h1 {
+    font-size: 27px;
+  }
+  .sp-app .w3-branch-heading nav {
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .sp-app .w3-branch-heading nav button {
+    font-size: 12px;
+    padding: 6px 2px;
+    gap: 4px;
+  }
+  .sp-app .w3-branch-heading nav button span {
+    width: 19px;
+    height: 19px;
+    font-size: 11px;
+  }
+  .sp-stage {
+    height: 410px;
+    min-height: 360px;
+    border-radius: 11px;
+  }
+  .sp-stage-tools {
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    gap: 4px;
+  }
+  .sp-stage-tools button {
+    font-size: 12px !important;
+    padding: 7px !important;
+    min-height: 38px !important;
+  }
+  .sp-stage-caption {
+    font-size: 12px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 8px;
+  }
+  .sp-app .w3-console {
+    padding: 20px;
+  }
+  .sp-app .w3-companion {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    height: 66px;
+    flex: 0 0 66px;
+    border-top: 1px solid #c8d3bc;
+    background: #f4f3e3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 15px;
+  }
+  .sp-app .w3-companion > button img {
+    height: 68px;
+    max-height: 68px;
+    width: 60px;
+    object-fit: contain;
+    object-position: bottom;
+  }
+  .sp-app .w3-companion > button {
+    display: flex;
+    flex-direction: row;
+  }
+  .sp-app .w3-companion > button span {
+    font-size: 12px;
+  }
+  .sp-app .w3-story-intro {
+    min-height: 610px;
+    align-items: end;
+  }
+  .sp-app .w3-story-intro > div {
+    padding: 22px;
+    font-size: 15px;
+  }
+  .sp-app .w3-story-intro > img {
+    object-position: 58% center;
+  }
+  .sp-app .w3-story-intro:after {
+    background: linear-gradient(
+      0deg,
+      #102e27f9 15%,
+      #102e2777 75%,
+      transparent
+    );
+  }
+  .sp-app .w3-feedback {
+    display: block;
+    padding: 20px;
+  }
+  .sp-app .w3-feedback > p {
+    min-width: 0;
+    margin: 12px 0;
+  }
+  .sp-river-dialog {
+    padding: 12px;
+  }
+  .sp-river-dialog header {
+    gap: 8px;
+  }
+  .sp-river-dialog header h2 {
+    font-size: 22px;
+  }
+  .sp-river-dialog header button {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .sp-river-dialog .sp-stage {
+    height: 55dvh;
+    min-height: 350px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sp-app *,
+  .sp-app *:before,
+  .sp-app *:after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+.w3-quiet *,
+.w3-quiet *:before,
+.w3-quiet *:after {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Keep the drawing world stretched inside the viewport flex layout. */
+.sp-app > .w3-branch {
+  width: 100%;
+}
+.sp-chapters .w3-story-book {
+  flex-direction: row;
+}
+.sp-chapters-heading {
+  color: #244d42;
+}
+.sp-village .sp-world {
+  inset: 0 0 170px 0;
+}
+.sp-village-title {
+  background: linear-gradient(90deg, #d6e1cfb8, transparent);
+  padding: 15px 20px 25px 0;
+}
+.sp-village .sp-stage-caption {
+  bottom: 200px;
+}
+@media (max-width: 1100px) {
+  .sp-village .sp-world {
+    inset: 60px 0 235px 0;
+  }
+}
+@media (max-width: 760px) {
+  .sp-village .sp-world {
+    inset: 105px 0 30px;
+  }
+  .sp-village .sp-stage-caption {
+    bottom: 0;
+  }
+  .sp-village-title {
+    padding: 0;
+    background: none;
+  }
+}
+
+.sp-village-title {
+  background: none;
+}
+.sp-village-title h1 {
+  font-size: clamp(38px, 4.1vw, 60px);
+}
+@media (max-width: 760px) {
+  .sp-village-title h1 {
+    font-size: 34px;
+  }
+  .sp-village-title h1 br {
+    display: block;
+  }
+}
+@media (min-width:1000px) and (min-height:740px){
+ .sp-phase-play>.w3-companion{position:relative;bottom:auto;right:auto;flex:0 0 70px;min-height:70px;display:flex;align-items:center;justify-content:flex-end;padding-right:20px;background:#f5f3e5;border-top:1px solid #ced7c0}
+ .sp-phase-play>.w3-companion>button{flex-direction:row;gap:10px;padding:0}
+ .sp-phase-play>.w3-companion>button img{height:68px;max-height:68px;width:58px;object-fit:contain}
+ .sp-phase-play>.w3-companion>button span{background:none;border:0}
+ .sp-phase-play .sp-stage{height:calc(100dvh - 310px);min-height:400px}
+ .sp-phase-play>.w3-branch{padding-bottom:25px}
+ .sp-phase-play .w3-console{max-height:calc(100dvh - 250px)}
+}
+@media(max-width:760px){.sp-stage-tools button{min-height:44px!important}}
+
+@media(max-width:760px){.sp-village .sp-stage-tools{top:220px}.sp-village .sp-world{inset:205px 0 30px}}

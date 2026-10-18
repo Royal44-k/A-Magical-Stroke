@@ -1,0 +1,114 @@
+[
+  {
+    "exclusive": true,
+    "water": true,
+    "handoff": true,
+    "repair": true,
+    "ending": "E3"
+  },
+  {
+    "exclusive": true,
+    "water": true,
+    "handoff": true,
+    "repair": false,
+    "ending": "E3"
+  },
+  {
+    "exclusive": true,
+    "water": true,
+    "handoff": false,
+    "repair": true,
+    "ending": "E3"
+  },
+  {
+    "exclusive": true,
+    "water": true,
+    "handoff": false,
+    "repair": false,
+    "ending": "E3"
+  },
+  {
+    "exclusive": true,
+    "water": false,
+    "handoff": true,
+    "repair": true,
+    "ending": "E3"
+  },
+  {
+    "exclusive": true,
+    "water": false,
+    "handoff": true,
+    "repair": false,
+    "ending": "E3"
+  },
+  {
+    "exclusive": true,
+    "water": false,
+    "handoff": false,
+    "repair": true,
+    "ending": "E3"
+  },
+  {
+    "exclusive": true,
+    "water": false,
+    "handoff": false,
+    "repair": false,
+    "ending": "E3"
+  },
+  {
+    "exclusive": false,
+    "water": true,
+    "handoff": true,
+    "repair": true,
+    "ending": "E2"
+  },
+  {
+    "exclusive": false,
+    "water": true,
+    "handoff": true,
+    "repair": false,
+    "ending": "E1"
+  },
+  {
+    "exclusive": false,
+    "water": true,
+    "handoff": false,
+    "repair": true,
+    "ending": "E4"
+  },
+  {
+    "exclusive": false,
+    "water": true,
+    "handoff": false,
+    "repair": false,
+    "ending": "E4"
+  },
+  {
+    "exclusive": false,
+    "water": false,
+    "handoff": true,
+    "repair": true,
+    "ending": "E4"
+  },
+  {
+    "exclusive": false,
+    "water": false,
+    "handoff": true,
+    "repair": false,
+    "ending": "E4"
+  },
+  {
+    "exclusive": false,
+    "water": false,
+    "handoff": false,
+    "repair": true,
+    "ending": "E4"
+  },
+  {
+    "exclusive": false,
+    "water": false,
+    "handoff": false,
+    "repair": false,
+    "ending": "E4"
+  }
+]

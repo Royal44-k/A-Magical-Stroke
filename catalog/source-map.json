@@ -1,0 +1,2568 @@
+{
+  "version": "5.0.0",
+  "scope": "Latest working project only. No historical release snapshots.",
+  "sourceFiles": [
+    {
+      "path": ".env.example",
+      "sourceBytes": 187,
+      "sourceSha256": "8508b06073b6c03871389591154268fa550a2f8f0a801b97c761ae6da5944b53",
+      "repositorySha256": "8508b06073b6c03871389591154268fa550a2f8f0a801b97c761ae6da5944b53"
+    },
+    {
+      "path": ".gitignore",
+      "sourceBytes": 46,
+      "sourceSha256": "55599b1bc9a896a1c2ca96c208a854b038c73baa1dff4a24917e2d38bd653d07",
+      "repositorySha256": "a3d3f08760d10b90bb3fb445b5852e16c07dacaf77609fc2b592cf0e9e1229a9"
+    },
+    {
+      "path": ".npmrc",
+      "sourceBytes": 23,
+      "sourceSha256": "f7dbda001b627b3a792fb6929303b517f047f03916f2c55227e81216d38a2008",
+      "repositorySha256": "f7dbda001b627b3a792fb6929303b517f047f03916f2c55227e81216d38a2008"
+    },
+    {
+      "path": "AGENTS.md",
+      "sourceBytes": 5465,
+      "sourceSha256": "abc9413aaf441b3fb1566f1bc23c4bb5647e94ad9d7c903aaf00efdae2af8cea",
+      "repositorySha256": "abc9413aaf441b3fb1566f1bc23c4bb5647e94ad9d7c903aaf00efdae2af8cea"
+    },
+    {
+      "path": "design-qa.md",
+      "sourceBytes": 5077,
+      "sourceSha256": "2aa6a9f83028f39695f360e3c4526ef4c31e16e5c46f30449f6003c6818ee781",
+      "repositorySha256": "2aa6a9f83028f39695f360e3c4526ef4c31e16e5c46f30449f6003c6818ee781"
+    },
+    {
+      "path": "index.html",
+      "sourceBytes": 348,
+      "sourceSha256": "f7d05c5da57838201848ef474210afd9d5416dda6688951e0bad024c7f4dbfd4",
+      "repositorySha256": "f7d05c5da57838201848ef474210afd9d5416dda6688951e0bad024c7f4dbfd4"
+    },
+    {
+      "path": "launch.mjs",
+      "sourceBytes": 952,
+      "sourceSha256": "0270915ad1e0a9069a82039142cf4c4ce9c3bb29c0406c2ec88c9819a8f41bb6",
+      "repositorySha256": "0270915ad1e0a9069a82039142cf4c4ce9c3bb29c0406c2ec88c9819a8f41bb6"
+    },
+    {
+      "path": "package-lock.json",
+      "sourceBytes": 59440,
+      "sourceSha256": "8bb5e8e029b2c36c05e2918a9f34471e553822451da0764da9ef85f5f51d0b40",
+      "repositorySha256": "8bb5e8e029b2c36c05e2918a9f34471e553822451da0764da9ef85f5f51d0b40"
+    },
+    {
+      "path": "package.json",
+      "sourceBytes": 3401,
+      "sourceSha256": "2f7e74ab81498a7fdfa6b1f0a461c7e6eb1f8de912e73fc8e3329a87d7398aff",
+      "repositorySha256": "2f7e74ab81498a7fdfa6b1f0a461c7e6eb1f8de912e73fc8e3329a87d7398aff"
+    },
+    {
+      "path": "README.md",
+      "sourceBytes": 4034,
+      "sourceSha256": "08211d013f52f860f36d85cf79f4c71839ca75ff9672151ad3ec04c7a90f5794",
+      "repositorySha256": "d75a6d38d9f4dc6aecb645bd30b8bb6ce5ab78e8fa62d967b29447069b4e529f"
+    },
+    {
+      "path": "server.mjs",
+      "sourceBytes": 4676,
+      "sourceSha256": "78a57c0754c94e92be268edec752717c8518e54a5c403f63fafae104885a912d",
+      "repositorySha256": "78a57c0754c94e92be268edec752717c8518e54a5c403f63fafae104885a912d"
+    },
+    {
+      "path": "vite.config.mjs",
+      "sourceBytes": 477,
+      "sourceSha256": "e4fad005ed0104245c378d59d4d518d2dfcbff60a6666e3c39a32528720d7472",
+      "repositorySha256": "e4fad005ed0104245c378d59d4d518d2dfcbff60a6666e3c39a32528720d7472"
+    },
+    {
+      "path": "启动奇幻一笔.cmd",
+      "sourceBytes": 355,
+      "sourceSha256": "2c32ba6749aef63a292cee9b7d7a0f4f80678fe89ad21cb7ce5072c9ca7dc9fc",
+      "repositorySha256": "2c32ba6749aef63a292cee9b7d7a0f4f80678fe89ad21cb7ce5072c9ca7dc9fc"
+    },
+    {
+      "path": ".openai/hosting.json",
+      "sourceBytes": 31,
+      "sourceSha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947",
+      "repositorySha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "art-direction/bridge-prompt.txt",
+      "sourceBytes": 2492,
+      "sourceSha256": "b3873970d57f7e9ede3901156dd95911762c804c12ae595477eb5468e2234d8a",
+      "repositorySha256": "b3873970d57f7e9ede3901156dd95911762c804c12ae595477eb5468e2234d8a"
+    },
+    {
+      "path": "art-direction/classroom-library-prompt.txt",
+      "sourceBytes": 1579,
+      "sourceSha256": "04ca58147d05038e2eef50fc0fe5d2ab0949829a6ef283d352a92a8869e025be",
+      "repositorySha256": "04ca58147d05038e2eef50fc0fe5d2ab0949829a6ef283d352a92a8869e025be"
+    },
+    {
+      "path": "art-direction/companion-prompt.txt",
+      "sourceBytes": 1605,
+      "sourceSha256": "d4bd867e9d372189351d84167223225fa55d1e12a81e503c1d45897c27b72724",
+      "repositorySha256": "d4bd867e9d372189351d84167223225fa55d1e12a81e503c1d45897c27b72724"
+    },
+    {
+      "path": "art-direction/contract-prompt.txt",
+      "sourceBytes": 2699,
+      "sourceSha256": "ab3a071939ea8421b6f352c137133d6eb33bac8751add653889f15a0a258744e",
+      "repositorySha256": "ab3a071939ea8421b6f352c137133d6eb33bac8751add653889f15a0a258744e"
+    },
+    {
+      "path": "art-direction/court-prompt.txt",
+      "sourceBytes": 2715,
+      "sourceSha256": "ec5f14cc042bcdfcc7e943a534a95caf7efa40f7069d5c574d999aeedac86146",
+      "repositorySha256": "ec5f14cc042bcdfcc7e943a534a95caf7efa40f7069d5c574d999aeedac86146"
+    },
+    {
+      "path": "art-direction/ending-conditions-prompt.txt",
+      "sourceBytes": 2667,
+      "sourceSha256": "a24cad8ab6fb677bcad30d961cdb8d2f47dae12fc35a03cd1f993f1a07fc4af5",
+      "repositorySha256": "a24cad8ab6fb677bcad30d961cdb8d2f47dae12fc35a03cd1f993f1a07fc4af5"
+    },
+    {
+      "path": "art-direction/evening-prompt.txt",
+      "sourceBytes": 2466,
+      "sourceSha256": "16e2b8da8619b4b49204b3c0c39b16f18d58db48b895e1b6c3afd5c39d95b8d8",
+      "repositorySha256": "16e2b8da8619b4b49204b3c0c39b16f18d58db48b895e1b6c3afd5c39d95b8d8"
+    },
+    {
+      "path": "art-direction/hero-prompt.txt",
+      "sourceBytes": 2149,
+      "sourceSha256": "f9c3128ed463c5580404ef12087cbafc64dd0148f5da13f9590bbc4d65d95d33",
+      "repositorySha256": "f9c3128ed463c5580404ef12087cbafc64dd0148f5da13f9590bbc4d65d95d33"
+    },
+    {
+      "path": "art-direction/mobile-prompt.txt",
+      "sourceBytes": 3182,
+      "sourceSha256": "232122ff0a12e1ca50d53088ddbb8197f50da1d2f2bb90e8ef53f41fe3ec4b9a",
+      "repositorySha256": "232122ff0a12e1ca50d53088ddbb8197f50da1d2f2bb90e8ef53f41fe3ec4b9a"
+    },
+    {
+      "path": "art-direction/night-prompt-v2.txt",
+      "sourceBytes": 1081,
+      "sourceSha256": "ffa7e19134d9f4a9492e63b832d6c6cfe32eb92b4a9a689bd0cf07d8f5fe140f",
+      "repositorySha256": "ffa7e19134d9f4a9492e63b832d6c6cfe32eb92b4a9a689bd0cf07d8f5fe140f"
+    },
+    {
+      "path": "art-direction/night-prompt.txt",
+      "sourceBytes": 1916,
+      "sourceSha256": "bb0b29bcb4ff75b9ccafca7d5feaac87387f61b7eab3c441dfe429b913b85208",
+      "repositorySha256": "bb0b29bcb4ff75b9ccafca7d5feaac87387f61b7eab3c441dfe429b913b85208"
+    },
+    {
+      "path": "art-direction/opening-prompt.txt",
+      "sourceBytes": 4208,
+      "sourceSha256": "acd9a730868778ad1c2e7532826db69ed65c8003425f6ef325612fb9a73bc06c",
+      "repositorySha256": "acd9a730868778ad1c2e7532826db69ed65c8003425f6ef325612fb9a73bc06c"
+    },
+    {
+      "path": "art-direction/rain-tools-prompt.txt",
+      "sourceBytes": 1784,
+      "sourceSha256": "764033e4747e9d4fc73d17f41664cdefa220a00c5791aa07cc616079eb40e16a",
+      "repositorySha256": "764033e4747e9d4fc73d17f41664cdefa220a00c5791aa07cc616079eb40e16a"
+    },
+    {
+      "path": "art-direction/river-prompt.txt",
+      "sourceBytes": 3150,
+      "sourceSha256": "3f9ac69044584231a086648c6859f6b5b0561dd0579539987e0c14c18a266434",
+      "repositorySha256": "3f9ac69044584231a086648c6859f6b5b0561dd0579539987e0c14c18a266434"
+    },
+    {
+      "path": "art-direction/selected-scroll-v2.png",
+      "sourceBytes": 2675208,
+      "sourceSha256": "7e8233f90480aaca75e40bacca2e2682d4684ed188c52387b3e7e2a7dddfa783",
+      "repositorySha256": "7e8233f90480aaca75e40bacca2e2682d4684ed188c52387b3e7e2a7dddfa783"
+    },
+    {
+      "path": "art-direction/shared-board-prompt.txt",
+      "sourceBytes": 2888,
+      "sourceSha256": "ec9218b6ff118bc16e5f6a0117cbb34ff661f8c753ce2bc9fe5cf72573d5fe1b",
+      "repositorySha256": "ec9218b6ff118bc16e5f6a0117cbb34ff661f8c753ce2bc9fe5cf72573d5fe1b"
+    },
+    {
+      "path": "art-direction/v3-cow-prompt.txt",
+      "sourceBytes": 1604,
+      "sourceSha256": "502499312553c4d69820108ad1b7d65f1a854d58514f83a7c46d153ba9148505",
+      "repositorySha256": "502499312553c4d69820108ad1b7d65f1a854d58514f83a7c46d153ba9148505"
+    },
+    {
+      "path": "art-direction/v3-mill-prompt.txt",
+      "sourceBytes": 1746,
+      "sourceSha256": "653df84a37b11b5db21be3436804761c55aace0c1f2331b328cca1537dfd29ad",
+      "repositorySha256": "653df84a37b11b5db21be3436804761c55aace0c1f2331b328cca1537dfd29ad"
+    },
+    {
+      "path": "art-direction/workshop-prompt.txt",
+      "sourceBytes": 3751,
+      "sourceSha256": "276c9ff977c946cdf6e0c2e53974a61924dd51f23f510936047c98c3e2b94cdd",
+      "repositorySha256": "276c9ff977c946cdf6e0c2e53974a61924dd51f23f510936047c98c3e2b94cdd"
+    },
+    {
+      "path": "art-direction/worktable-prompt.txt",
+      "sourceBytes": 3400,
+      "sourceSha256": "238905990dedbf2cf43380c7dcc43ff40738a8a99b4a1778cba15e76b3fe9247",
+      "repositorySha256": "238905990dedbf2cf43380c7dcc43ff40738a8a99b4a1778cba15e76b3fe9247"
+    },
+    {
+      "path": "artifacts/v2.1/branch-before.json",
+      "sourceBytes": 1247,
+      "sourceSha256": "c8a5d217cd8a616d98826ccb38f7856296cd48304890c11adfbe3149a0c1cefb",
+      "repositorySha256": "c8a5d217cd8a616d98826ccb38f7856296cd48304890c11adfbe3149a0c1cefb"
+    },
+    {
+      "path": "artifacts/v5.0/archive-validation.json",
+      "sourceBytes": 328,
+      "sourceSha256": "3ed5e1f57de092209c6097aeb357b39094f641d6e996f1cdf407f84e591dd541",
+      "repositorySha256": "3ed5e1f57de092209c6097aeb357b39094f641d6e996f1cdf407f84e591dd541"
+    },
+    {
+      "path": "artifacts/v5.0/browser-validation.json",
+      "sourceBytes": 755,
+      "sourceSha256": "612499917c69984b40778596e0f943f332e5013d43af07063dfb4919fb8d314f",
+      "repositorySha256": "612499917c69984b40778596e0f943f332e5013d43af07063dfb4919fb8d314f"
+    },
+    {
+      "path": "artifacts/v5.0/detail-validation.json",
+      "sourceBytes": 621,
+      "sourceSha256": "f4651a4847609c357bc64e413d25f20327cd2a048426ff3fa05318d5b04ac020",
+      "repositorySha256": "f4651a4847609c357bc64e413d25f20327cd2a048426ff3fa05318d5b04ac020"
+    },
+    {
+      "path": "artifacts/v5.0/layout-validation.json",
+      "sourceBytes": 175,
+      "sourceSha256": "5983e26f98fca348ef300681db12be71e5d24ff4aefec23f781c8183245c50f2",
+      "repositorySha256": "5983e26f98fca348ef300681db12be71e5d24ff4aefec23f781c8183245c50f2"
+    },
+    {
+      "path": "artifacts/v5.0/maliang-asset.json",
+      "sourceBytes": 3522,
+      "sourceSha256": "73c89340656ee17457e495d2afafb8651f93c4c0e4bfbc5d057500f89326853d",
+      "repositorySha256": "73c89340656ee17457e495d2afafb8651f93c4c0e4bfbc5d057500f89326853d"
+    },
+    {
+      "path": "artifacts/v5.0/mill-asset.json",
+      "sourceBytes": 3195,
+      "sourceSha256": "48319b4a133d22a769f4c5734b9b85da599656f9e029ac18fb9a255c7f65eecc",
+      "repositorySha256": "48319b4a133d22a769f4c5734b9b85da599656f9e029ac18fb9a255c7f65eecc"
+    },
+    {
+      "path": "artifacts/v5.0/ox-asset.json",
+      "sourceBytes": 3710,
+      "sourceSha256": "2c22aa38678d8f7d421b282858f078d34c3e912eb21812b9adf3591ffb740521",
+      "repositorySha256": "2c22aa38678d8f7d421b282858f078d34c3e912eb21812b9adf3591ffb740521"
+    },
+    {
+      "path": "artifacts/v5.0/portable-validation.json",
+      "sourceBytes": 409,
+      "sourceSha256": "21499fa088bc44e8f638556820097816189b84b11955cec18428f36e63454e50",
+      "repositorySha256": "21499fa088bc44e8f638556820097816189b84b11955cec18428f36e63454e50"
+    },
+    {
+      "path": "artifacts/v5.0/qa-gears-final.jpg",
+      "sourceBytes": 98806,
+      "sourceSha256": "fb87dff9fa28b39f12844e61a154ed2c6d135b59647c2f6a192851d7813ecf26",
+      "repositorySha256": "fb87dff9fa28b39f12844e61a154ed2c6d135b59647c2f6a192851d7813ecf26"
+    },
+    {
+      "path": "artifacts/v5.0/qa-home-final.jpg",
+      "sourceBytes": 137874,
+      "sourceSha256": "223371083daf331f7e24cca1412018a0ea43b150d2a4a1f44cec91375b1dfa4c",
+      "repositorySha256": "223371083daf331f7e24cca1412018a0ea43b150d2a4a1f44cec91375b1dfa4c"
+    },
+    {
+      "path": "artifacts/v5.0/qa-intro-final.jpg",
+      "sourceBytes": 136304,
+      "sourceSha256": "18d5f3e35fc11c798e55749ca736ef7aee0720c8c616e690c9e97c4e76c1e22d",
+      "repositorySha256": "18d5f3e35fc11c798e55749ca736ef7aee0720c8c616e690c9e97c4e76c1e22d"
+    },
+    {
+      "path": "artifacts/v5.0/qa-mill-mobile-final-review.jpg",
+      "sourceBytes": 141786,
+      "sourceSha256": "7ab294034f50e888affc23b1087dcac1c5ff67f20bb9985f78cb538af74f54a3",
+      "repositorySha256": "7ab294034f50e888affc23b1087dcac1c5ff67f20bb9985f78cb538af74f54a3"
+    },
+    {
+      "path": "artifacts/v5.0/qa-sea-mobile-final-review.jpg",
+      "sourceBytes": 131258,
+      "sourceSha256": "666e13798e127ccb205e502ebba7ec7599984e18134fceac54130ca7cb42caf4",
+      "repositorySha256": "666e13798e127ccb205e502ebba7ec7599984e18134fceac54130ca7cb42caf4"
+    },
+    {
+      "path": "artifacts/v5.0/report.jpg",
+      "sourceBytes": 89008,
+      "sourceSha256": "8f0217da2fd03a27fb14946ee72532c3f1ad52e215be140f00b30b93fe131223",
+      "repositorySha256": "8f0217da2fd03a27fb14946ee72532c3f1ad52e215be140f00b30b93fe131223"
+    },
+    {
+      "path": "artifacts/v5.0/sail-asset.json",
+      "sourceBytes": 3830,
+      "sourceSha256": "1ee4903ba6400a0b6e251fc7ff0c394bfad736c15d2c9b7977738fdf53219cdb",
+      "repositorySha256": "1ee4903ba6400a0b6e251fc7ff0c394bfad736c15d2c9b7977738fdf53219cdb"
+    },
+    {
+      "path": "artifacts/v5.0/stage-asset.json",
+      "sourceBytes": 3251,
+      "sourceSha256": "b076444ec65efb5ed1d14616100c4c2e48e07ab56b571e75cc9a86c61343ced8",
+      "repositorySha256": "b076444ec65efb5ed1d14616100c4c2e48e07ab56b571e75cc9a86c61343ced8"
+    },
+    {
+      "path": "artifacts/v5.0/student-report.html",
+      "sourceBytes": 60085,
+      "sourceSha256": "4563173d9901332bd42e12130b10648f328cf824903fea3defc3c0ba75f9e15a",
+      "repositorySha256": "4563173d9901332bd42e12130b10648f328cf824903fea3defc3c0ba75f9e15a"
+    },
+    {
+      "path": "artifacts/v5.0/unit-tests.txt",
+      "sourceBytes": 8777,
+      "sourceSha256": "a7cbcf71e224c20921a85190c272351926db9e7f17050a0020506ec8936ea65f",
+      "repositorySha256": "a7cbcf71e224c20921a85190c272351926db9e7f17050a0020506ec8936ea65f"
+    },
+    {
+      "path": "artifacts/v5.0/v5-unit-tests.txt",
+      "sourceBytes": 2354,
+      "sourceSha256": "b2796963758fcea4946edc921c599d25693243e94e31d02d389c914076ba67d3",
+      "repositorySha256": "b2796963758fcea4946edc921c599d25693243e94e31d02d389c914076ba67d3"
+    },
+    {
+      "path": "artifacts/v5.0/water-asset.json",
+      "sourceBytes": 4491,
+      "sourceSha256": "9a07a6449d7fb23291e692662093aa8e31b4c00fd334bd6ae1a8c1f00502dc73",
+      "repositorySha256": "9a07a6449d7fb23291e692662093aa8e31b4c00fd334bd6ae1a8c1f00502dc73"
+    },
+    {
+      "path": "dist/.openai/hosting.json",
+      "sourceBytes": 31,
+      "sourceSha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947",
+      "repositorySha256": "d532abb65cf9ae20634b464d954cb4a08a0de9f3cd3cdf7f9c3ec8948826d947"
+    },
+    {
+      "path": "dist/client/challenge-player.css",
+      "sourceBytes": 5536,
+      "sourceSha256": "53a19538e7b9f7c2da1dd932a19bdafc2cbc7452ed8fb36f8b552d58f34291fb",
+      "repositorySha256": "53a19538e7b9f7c2da1dd932a19bdafc2cbc7452ed8fb36f8b552d58f34291fb"
+    },
+    {
+      "path": "dist/client/challenge-player.js",
+      "sourceBytes": 10088,
+      "sourceSha256": "f0ccdd0d354e32cc79a7ea9679604328344def7acfa962c1382a2fda7dcc66bb",
+      "repositorySha256": "f0ccdd0d354e32cc79a7ea9679604328344def7acfa962c1382a2fda7dcc66bb"
+    },
+    {
+      "path": "dist/client/index.html",
+      "sourceBytes": 524,
+      "sourceSha256": "061625829842203b64b6ef1a2eab5f6b60ef18b65be830ebf4f5138e4e89536b",
+      "repositorySha256": "061625829842203b64b6ef1a2eab5f6b60ef18b65be830ebf4f5138e4e89536b"
+    },
+    {
+      "path": "dist/client/teacher-guide-v2.html",
+      "sourceBytes": 5216,
+      "sourceSha256": "5e0803235224e04a84c9488e4981cb869034e09886f33b0546760a4f5c4e984e",
+      "repositorySha256": "5e0803235224e04a84c9488e4981cb869034e09886f33b0546760a4f5c4e984e"
+    },
+    {
+      "path": "dist/client/teacher-guide-v3.html",
+      "sourceBytes": 10753,
+      "sourceSha256": "2ee451ad54f7f415df89b54ad591a32f63852a6605ddb9ca43d52c77a8918244",
+      "repositorySha256": "2ee451ad54f7f415df89b54ad591a32f63852a6605ddb9ca43d52c77a8918244"
+    },
+    {
+      "path": "dist/client/teacher-guide-v31.html",
+      "sourceBytes": 11462,
+      "sourceSha256": "e2c0579c9f203637ec59a9352e237b3d189071876424adba8847e0b9382a9bf1",
+      "repositorySha256": "e2c0579c9f203637ec59a9352e237b3d189071876424adba8847e0b9382a9bf1"
+    },
+    {
+      "path": "dist/client/teacher-guide-v4.html",
+      "sourceBytes": 10961,
+      "sourceSha256": "b31c2a2f5f8caf2c27f669ee5bdeacc07a462cb4c4607590683ccef32bdc8f68",
+      "repositorySha256": "b31c2a2f5f8caf2c27f669ee5bdeacc07a462cb4c4607590683ccef32bdc8f68"
+    },
+    {
+      "path": "dist/client/teacher-guide-v5.html",
+      "sourceBytes": 13191,
+      "sourceSha256": "c19492ac6db6f58005dca2a92778d3e3d05298c29cd9f315abb63da399e161e0",
+      "repositorySha256": "301dd68460c4552a8516ddc2aedd23960dd7fd64f6455a8f133070ee2909b925"
+    },
+    {
+      "path": "dist/client/version.json",
+      "sourceBytes": 68,
+      "sourceSha256": "ba46c0b809c412bf0abd77907071b85c40671f24f2c7a5ea7d17aa47ff4616f3",
+      "repositorySha256": "ba46c0b809c412bf0abd77907071b85c40671f24f2c7a5ea7d17aa47ff4616f3"
+    },
+    {
+      "path": "dist/client/assets/AppV3-N1AJDS_7.js",
+      "sourceBytes": 42033,
+      "sourceSha256": "2679f57f7f7f2de96b099ed40616b6c06443da6644f37e8cbe16a30bbfb4ffb7",
+      "repositorySha256": "2679f57f7f7f2de96b099ed40616b6c06443da6644f37e8cbe16a30bbfb4ffb7"
+    },
+    {
+      "path": "dist/client/assets/AppV4-BPajnhOC.js",
+      "sourceBytes": 19891,
+      "sourceSha256": "89c0c87eb90568ad3d54f4b1d0da2510fa9f5f21f741b07286cd3eb5c810b896",
+      "repositorySha256": "89c0c87eb90568ad3d54f4b1d0da2510fa9f5f21f741b07286cd3eb5c810b896"
+    },
+    {
+      "path": "dist/client/assets/ArrowsHorizontal.es-BBOAbHf1.js",
+      "sourceBytes": 2000,
+      "sourceSha256": "16216f9fe61762e3ba95f585b6eb73b23485e1f827c3d2bc67af2ea02831711c",
+      "repositorySha256": "16216f9fe61762e3ba95f585b6eb73b23485e1f827c3d2bc67af2ea02831711c"
+    },
+    {
+      "path": "dist/client/assets/CareStudio-DBQwQFYk.css",
+      "sourceBytes": 6059,
+      "sourceSha256": "2009f4919bc99edec41c53b4ef4e689756d18dbae1b952b33bfc8ce1a36b34a1",
+      "repositorySha256": "2009f4919bc99edec41c53b4ef4e689756d18dbae1b952b33bfc8ce1a36b34a1"
+    },
+    {
+      "path": "dist/client/assets/CareStudio-lYT4Y3ew.js",
+      "sourceBytes": 27855,
+      "sourceSha256": "f54fabce115379f1657c892ccba79a614826a8bcd355a7852b778cd76d689e7d",
+      "repositorySha256": "f54fabce115379f1657c892ccba79a614826a8bcd355a7852b778cd76d689e7d"
+    },
+    {
+      "path": "dist/client/assets/ChallengeStudio-B490QC85.css",
+      "sourceBytes": 5519,
+      "sourceSha256": "55c109ee8c337016adab657e19929e64ef62f0dbf580cfdee8b816fe617c154d",
+      "repositorySha256": "55c109ee8c337016adab657e19929e64ef62f0dbf580cfdee8b816fe617c154d"
+    },
+    {
+      "path": "dist/client/assets/ChallengeStudio-DZCXwlAS.js",
+      "sourceBytes": 10880,
+      "sourceSha256": "55c1886b29530f1457ccfe9ecbc3037b347f53e6c2eb5f153418138494465d0f",
+      "repositorySha256": "55c1886b29530f1457ccfe9ecbc3037b347f53e6c2eb5f153418138494465d0f"
+    },
+    {
+      "path": "dist/client/assets/classroom-library-v1.png",
+      "sourceBytes": 2523349,
+      "sourceSha256": "73159107ea0e0665be5d286a3e8001edf53e147c55881f2f165a7853141b1d97",
+      "repositorySha256": "73159107ea0e0665be5d286a3e8001edf53e147c55881f2f165a7853141b1d97"
+    },
+    {
+      "path": "dist/client/assets/ComparisonStudio-B_mXsy9p.js",
+      "sourceBytes": 13519,
+      "sourceSha256": "942fb797511d6a0c7362e8fc93e6bbb945ccbfac6b0bba80f021491dd4731508",
+      "repositorySha256": "942fb797511d6a0c7362e8fc93e6bbb945ccbfac6b0bba80f021491dd4731508"
+    },
+    {
+      "path": "dist/client/assets/ComparisonStudio-DvhAmFfE.css",
+      "sourceBytes": 6305,
+      "sourceSha256": "b9029c0144a7a327664930d3144e29e90d15c654644e34171b47a6bb714cef1f",
+      "repositorySha256": "b9029c0144a7a327664930d3144e29e90d15c654644e34171b47a6bb714cef1f"
+    },
+    {
+      "path": "dist/client/assets/court-sea-v1.png",
+      "sourceBytes": 2778848,
+      "sourceSha256": "f9748408f95a992c30871b8e9cd975a1d0cedb149dd8f7e8f8bbe7ac831d1874",
+      "repositorySha256": "f9748408f95a992c30871b8e9cd975a1d0cedb149dd8f7e8f8bbe7ac831d1874"
+    },
+    {
+      "path": "dist/client/assets/cow-field-v3.png",
+      "sourceBytes": 3212239,
+      "sourceSha256": "88116fcdab2e4d1bce9a4d4f17f28f562e78b55dd177a4cdecf8abae319c1545",
+      "repositorySha256": "88116fcdab2e4d1bce9a4d4f17f28f562e78b55dd177a4cdecf8abae319c1545"
+    },
+    {
+      "path": "dist/client/assets/DialogueEditor-DCiISV6z.js",
+      "sourceBytes": 8751,
+      "sourceSha256": "480226023e85187cb9917ee9d9ac8fcb221b37d2ec65a6b410a627e938e28d2d",
+      "repositorySha256": "480226023e85187cb9917ee9d9ac8fcb221b37d2ec65a6b410a627e938e28d2d"
+    },
+    {
+      "path": "dist/client/assets/DialogueView-BhBAlpp_.js",
+      "sourceBytes": 7302,
+      "sourceSha256": "946c5e730c948e131ec991deac2af7c9414e220a7efb3eaeb6f92517e19c9dea",
+      "repositorySha256": "946c5e730c948e131ec991deac2af7c9414e220a7efb3eaeb6f92517e19c9dea"
+    },
+    {
+      "path": "dist/client/assets/DialogueView-DcDtny4J.css",
+      "sourceBytes": 7438,
+      "sourceSha256": "10c235a283be213a0b4e0d8f55324c94135546272387a4649b41b7cccd269694",
+      "repositorySha256": "10c235a283be213a0b4e0d8f55324c94135546272387a4649b41b7cccd269694"
+    },
+    {
+      "path": "dist/client/assets/ending-conditions-v1.png",
+      "sourceBytes": 3437279,
+      "sourceSha256": "0244385e63898012cf26e71e65c0f68e87afe92917612963a7ffb18ecc6aa20b",
+      "repositorySha256": "0244385e63898012cf26e71e65c0f68e87afe92917612963a7ffb18ecc6aa20b"
+    },
+    {
+      "path": "dist/client/assets/evening-review-v1.png",
+      "sourceBytes": 2714015,
+      "sourceSha256": "cf6a01ed74dee4752976a8b98e326cd34a9b0ef58f81ff1f905b37ed9d686f87",
+      "repositorySha256": "cf6a01ed74dee4752976a8b98e326cd34a9b0ef58f81ff1f905b37ed9d686f87"
+    },
+    {
+      "path": "dist/client/assets/grain-contract-v1.png",
+      "sourceBytes": 3310474,
+      "sourceSha256": "78b42c2de58e442760f82b40c501cacded8acee838758a5a5a96814bc85d2346",
+      "repositorySha256": "78b42c2de58e442760f82b40c501cacded8acee838758a5a5a96814bc85d2346"
+    },
+    {
+      "path": "dist/client/assets/hero-mobile-v1.png",
+      "sourceBytes": 2825886,
+      "sourceSha256": "95de7a2c714065162f2005490e7db08c3878b699d95a6c45ed4770d059794bd1",
+      "repositorySha256": "95de7a2c714065162f2005490e7db08c3878b699d95a6c45ed4770d059794bd1"
+    },
+    {
+      "path": "dist/client/assets/hero-scroll-v1.png",
+      "sourceBytes": 2547903,
+      "sourceSha256": "349d38e7a92919e064589267f177e01a9a7338da2e94c96e9e3dcf595771ae8f",
+      "repositorySha256": "349d38e7a92919e064589267f177e01a9a7338da2e94c96e9e3dcf595771ae8f"
+    },
+    {
+      "path": "dist/client/assets/index-j9jDF9dk.css",
+      "sourceBytes": 67047,
+      "sourceSha256": "5bcce6e5936ab7c7305a70f00058c2d5d3c8ffa83622c6f15da98a3e7d84d6c1",
+      "repositorySha256": "5bcce6e5936ab7c7305a70f00058c2d5d3c8ffa83622c6f15da98a3e7d84d6c1"
+    },
+    {
+      "path": "dist/client/assets/index-SEA66Y3C.js",
+      "sourceBytes": 193624,
+      "sourceSha256": "dcfcf7717b32c4c5da2e151490fb5f9b09da91fcd0957dd1e602c99aecab4e7a",
+      "repositorySha256": "dcfcf7717b32c4c5da2e151490fb5f9b09da91fcd0957dd1e602c99aecab4e7a"
+    },
+    {
+      "path": "dist/client/assets/ink-workshop-v1.png",
+      "sourceBytes": 2867628,
+      "sourceSha256": "6c938bb1ff0906db3e030a93882c5d7d94bf121990e4e25b12e25c698dd6f4cb",
+      "repositorySha256": "6c938bb1ff0906db3e030a93882c5d7d94bf121990e4e25b12e25c698dd6f4cb"
+    },
+    {
+      "path": "dist/client/assets/Leaf.es-BZ_17hcj.js",
+      "sourceBytes": 3493,
+      "sourceSha256": "256aca88f1eea0594279e9e5c337b2123c7bc730ac9a7c5b50301a7be6ba19b7",
+      "repositorySha256": "256aca88f1eea0594279e9e5c337b2123c7bc730ac9a7c5b50301a7be6ba19b7"
+    },
+    {
+      "path": "dist/client/assets/legacy-entry-BnyN8Ewf.css",
+      "sourceBytes": 122126,
+      "sourceSha256": "b7a671e46d7d1999df875de5073f16d9d6794157e372d29d91858772cc7f78b4",
+      "repositorySha256": "b7a671e46d7d1999df875de5073f16d9d6794157e372d29d91858772cc7f78b4"
+    },
+    {
+      "path": "dist/client/assets/legacy-entry-CoEbYDg-.js",
+      "sourceBytes": 384550,
+      "sourceSha256": "2eb951069d4993a83e53b0355db7dc4ef5be88f41256158267d8fcb45afcb99b",
+      "repositorySha256": "2eb951069d4993a83e53b0355db7dc4ef5be88f41256158267d8fcb45afcb99b"
+    },
+    {
+      "path": "dist/client/assets/LinkSimple.es-BOW3j_nr.js",
+      "sourceBytes": 9025,
+      "sourceSha256": "f96170539ed3fc1dbb77d0d9a594cc9b6b6bf66ab4ea47dc5479bd47e130d4c8",
+      "repositorySha256": "f96170539ed3fc1dbb77d0d9a594cc9b6b6bf66ab4ea47dc5479bd47e130d4c8"
+    },
+    {
+      "path": "dist/client/assets/mill-courtyard-v3.png",
+      "sourceBytes": 2980862,
+      "sourceSha256": "951b71ed0c86c9cc2d1393bb4e15d44eedd1cd788344af62a297c70aa231101c",
+      "repositorySha256": "951b71ed0c86c9cc2d1393bb4e15d44eedd1cd788344af62a297c70aa231101c"
+    },
+    {
+      "path": "dist/client/assets/night-brush-v1.png",
+      "sourceBytes": 2628683,
+      "sourceSha256": "78e686e1f6c60988bb45ea6fc5c267d1d8844dd52325e1596e6c3b4ec3931799",
+      "repositorySha256": "78e686e1f6c60988bb45ea6fc5c267d1d8844dd52325e1596e6c3b4ec3931799"
+    },
+    {
+      "path": "dist/client/assets/night-brush-v2.png",
+      "sourceBytes": 2385227,
+      "sourceSha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613",
+      "repositorySha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613"
+    },
+    {
+      "path": "dist/client/assets/opening-field-v1.png",
+      "sourceBytes": 3067364,
+      "sourceSha256": "0a3ef32da84dbd80fb9edb0dd240b0ee33e9e98e08a21a7bb9cb7c6c444b8bac",
+      "repositorySha256": "0a3ef32da84dbd80fb9edb0dd240b0ee33e9e98e08a21a7bb9cb7c6c444b8bac"
+    },
+    {
+      "path": "dist/client/assets/paper-bridge-v1.png",
+      "sourceBytes": 3213350,
+      "sourceSha256": "ccf36eccc557f3fb15114a27324d7047c2762cf43eaa4e7d8736a98fad799048",
+      "repositorySha256": "ccf36eccc557f3fb15114a27324d7047c2762cf43eaa4e7d8736a98fad799048"
+    },
+    {
+      "path": "dist/client/assets/rain-tools-v1.png",
+      "sourceBytes": 2450698,
+      "sourceSha256": "e79dec65a3d7726b62d551302771443201d67f5c9c076c02991559055ea5632f",
+      "repositorySha256": "e79dec65a3d7726b62d551302771443201d67f5c9c076c02991559055ea5632f"
+    },
+    {
+      "path": "dist/client/assets/react-runtime-CXZBankB.js",
+      "sourceBytes": 193010,
+      "sourceSha256": "aa689ce1721ac933695a6fc77c2275648d3e1b585a0e0c85d1f6d873d45d80bf",
+      "repositorySha256": "aa689ce1721ac933695a6fc77c2275648d3e1b585a0e0c85d1f6d873d45d80bf"
+    },
+    {
+      "path": "dist/client/assets/river-survey-v1.png",
+      "sourceBytes": 3733318,
+      "sourceSha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf",
+      "repositorySha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf"
+    },
+    {
+      "path": "dist/client/assets/shared-board-v1.png",
+      "sourceBytes": 3220391,
+      "sourceSha256": "08d3e8849438144bfe5d4bb7ee3c727313415a0933d8b18511e178d9dea3fdad",
+      "repositorySha256": "08d3e8849438144bfe5d4bb7ee3c727313415a0933d8b18511e178d9dea3fdad"
+    },
+    {
+      "path": "dist/client/assets/three.module-DTBDk3ad.js",
+      "sourceBytes": 734520,
+      "sourceSha256": "49b0c26fdbfeddb4ebe65ae507ea461f5b5f8ee7702022ab60f12dd3dfb70b42",
+      "repositorySha256": "49b0c26fdbfeddb4ebe65ae507ea461f5b5f8ee7702022ab60f12dd3dfb70b42"
+    },
+    {
+      "path": "dist/client/assets/v3-B3majIHC.js",
+      "sourceBytes": 73776,
+      "sourceSha256": "cac0455a11e0a38d7fa5f913090e6721dc985fa3325ce0f9d48ec2ac1e153824",
+      "repositorySha256": "cac0455a11e0a38d7fa5f913090e6721dc985fa3325ce0f9d48ec2ac1e153824"
+    },
+    {
+      "path": "dist/client/assets/v3-BwGd14Q3.css",
+      "sourceBytes": 53142,
+      "sourceSha256": "430b66d2077cb971f6cc89dc88a216aec74e4dfef81a6ef6c086afe30848c8a8",
+      "repositorySha256": "430b66d2077cb971f6cc89dc88a216aec74e4dfef81a6ef6c086afe30848c8a8"
+    },
+    {
+      "path": "dist/client/assets/worktable-day-v1.png",
+      "sourceBytes": 2955059,
+      "sourceSha256": "57daa2c60f140ecd635c744a938fd09dd340904f74daa8cb22301aef7f9a2434",
+      "repositorySha256": "57daa2c60f140ecd635c744a938fd09dd340904f74daa8cb22301aef7f9a2434"
+    },
+    {
+      "path": "dist/client/assets/world-C3UyGsQe.js",
+      "sourceBytes": 34226,
+      "sourceSha256": "3709636b96577f5b05041c0181123f145c8cce08d835281e09e8218e3c4b5197",
+      "repositorySha256": "3709636b96577f5b05041c0181123f145c8cce08d835281e09e8218e3c4b5197"
+    },
+    {
+      "path": "dist/client/assets/xiaohe-guide-v1.png",
+      "sourceBytes": 1233594,
+      "sourceSha256": "fb44303575c71823c9457a9cf57cb0d8d01eed228e8d47f9c67caff730aca810",
+      "repositorySha256": "fb44303575c71823c9457a9cf57cb0d8d01eed228e8d47f9c67caff730aca810"
+    },
+    {
+      "path": "dist/client/assets/v5/maliang-brush.png",
+      "sourceBytes": 2240001,
+      "sourceSha256": "a3bdda7621c182180f4865bb6ba5579851b0ac5ca511c657767ca49c019b2aa8",
+      "repositorySha256": "a3bdda7621c182180f4865bb6ba5579851b0ac5ca511c657767ca49c019b2aa8"
+    },
+    {
+      "path": "dist/client/assets/v5/mill-study.png",
+      "sourceBytes": 2960395,
+      "sourceSha256": "8785a1df7ee66ed9a83e63eaa6425fd4c2e16ea07218ca179c0dd201a273fa43",
+      "repositorySha256": "8785a1df7ee66ed9a83e63eaa6425fd4c2e16ea07218ca179c0dd201a273fa43"
+    },
+    {
+      "path": "dist/client/assets/v5/ox-study.png",
+      "sourceBytes": 2835876,
+      "sourceSha256": "a70a54482f7d680ae08a887a471d02407183851eff75ded14b777e3c66d15bd8",
+      "repositorySha256": "a70a54482f7d680ae08a887a471d02407183851eff75ded14b777e3c66d15bd8"
+    },
+    {
+      "path": "dist/client/assets/v5/sail-study.png",
+      "sourceBytes": 2568520,
+      "sourceSha256": "9ddcfc909b71a8cec08c7fc7f8b4b999f462fbe2244131041426d9035d6a297d",
+      "repositorySha256": "9ddcfc909b71a8cec08c7fc7f8b4b999f462fbe2244131041426d9035d6a297d"
+    },
+    {
+      "path": "dist/client/assets/v5/village-stage.png",
+      "sourceBytes": 2950501,
+      "sourceSha256": "64d576d17913a8976fae8efbec0350136f0f0b8b5b0a3a49282460e40a3e456d",
+      "repositorySha256": "64d576d17913a8976fae8efbec0350136f0f0b8b5b0a3a49282460e40a3e456d"
+    },
+    {
+      "path": "dist/client/assets/v5/water-inventions.png",
+      "sourceBytes": 3151936,
+      "sourceSha256": "fb6823fb197e46200e9de4d347f1cac729d2422f45dbe4c13a3f40dbb5754d66",
+      "repositorySha256": "fb6823fb197e46200e9de4d347f1cac729d2422f45dbe4c13a3f40dbb5754d66"
+    },
+    {
+      "path": "dist/client/fonts/MaShanZheng-Regular.ttf",
+      "sourceBytes": 5857936,
+      "sourceSha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "repositorySha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb"
+    },
+    {
+      "path": "dist/client/fonts/OFL-MaShanZheng.txt",
+      "sourceBytes": 4397,
+      "sourceSha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+      "repositorySha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08"
+    },
+    {
+      "path": "dist/client/video/manifest.json",
+      "sourceBytes": 34,
+      "sourceSha256": "9ffa22b7384a98ff4d28a02bf39198f6b70359357517b859999954fee7a6e0b3",
+      "repositorySha256": "9ffa22b7384a98ff4d28a02bf39198f6b70359357517b859999954fee7a6e0b3"
+    },
+    {
+      "path": "dist/client/video/v2-manifest.json",
+      "sourceBytes": 351,
+      "sourceSha256": "221dc741081ff3a694b57c51b4ee8124074197019ceedb309e0df297be3a3f3a",
+      "repositorySha256": "221dc741081ff3a694b57c51b4ee8124074197019ceedb309e0df297be3a3f3a"
+    },
+    {
+      "path": "dist/client/video/v2-night.mp4",
+      "sourceBytes": 2412270,
+      "sourceSha256": "205e726c609e29606add4fc402cbc44b6ef28eec78c6adac8214e90371d191e1",
+      "repositorySha256": "205e726c609e29606add4fc402cbc44b6ef28eec78c6adac8214e90371d191e1"
+    },
+    {
+      "path": "dist/client/video/v2-night.vtt",
+      "sourceBytes": 107,
+      "sourceSha256": "2ee9e099af1f61bda4c58a2a187f6ad526a7e80cf98eab318bfbccd39cbfd2c5",
+      "repositorySha256": "2ee9e099af1f61bda4c58a2a187f6ad526a7e80cf98eab318bfbccd39cbfd2c5"
+    },
+    {
+      "path": "dist/client/video/v2-river.mp4",
+      "sourceBytes": 6173473,
+      "sourceSha256": "c1fa5a9b76c96df7282e7e482e72a80b52cac391dc440afceaecb5bd43160e8e",
+      "repositorySha256": "c1fa5a9b76c96df7282e7e482e72a80b52cac391dc440afceaecb5bd43160e8e"
+    },
+    {
+      "path": "dist/client/video/v2-river.vtt",
+      "sourceBytes": 119,
+      "sourceSha256": "bb94716e62fcfab95a16f561e80d0ce3937d5a93a168ff5e3802abdded0be176",
+      "repositorySha256": "bb94716e62fcfab95a16f561e80d0ce3937d5a93a168ff5e3802abdded0be176"
+    },
+    {
+      "path": "dist/server/index.js",
+      "sourceBytes": 483,
+      "sourceSha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389",
+      "repositorySha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389"
+    },
+    {
+      "path": "docs/01-完整故事执行稿.md",
+      "sourceBytes": 7324,
+      "sourceSha256": "229394380054ae73fb969a1a3111ca485565c2479d584a4b16a8da1b9390276e",
+      "repositorySha256": "229394380054ae73fb969a1a3111ca485565c2479d584a4b16a8da1b9390276e"
+    },
+    {
+      "path": "docs/02-互动与课堂指南.md",
+      "sourceBytes": 4189,
+      "sourceSha256": "5a9ee2bd7ce3f4c408506d5f3408c563f31184c548d453dc25977bc8b7f9fa17",
+      "repositorySha256": "5a9ee2bd7ce3f4c408506d5f3408c563f31184c548d453dc25977bc8b7f9fa17"
+    },
+    {
+      "path": "docs/03-导演与视频交接.md",
+      "sourceBytes": 3477,
+      "sourceSha256": "cc6adf9519c4ac94add2e9e2ed67a565a3ee2346ece5968fab5e066e603ed3f3",
+      "repositorySha256": "cc6adf9519c4ac94add2e9e2ed67a565a3ee2346ece5968fab5e066e603ed3f3"
+    },
+    {
+      "path": "docs/04-逐镜分镜表.md",
+      "sourceBytes": 5315,
+      "sourceSha256": "d001d3153a68886ec1a80abaaf1dd33a75c9f075845d44e8f7910c1d739b7173",
+      "repositorySha256": "d001d3153a68886ec1a80abaaf1dd33a75c9f075845d44e8f7910c1d739b7173"
+    },
+    {
+      "path": "docs/05-来源与研究转化.md",
+      "sourceBytes": 1799,
+      "sourceSha256": "006fb87855293a0081b2c306bc04c7e8d30f71f17329059ac6c0f2c11ac1ade1",
+      "repositorySha256": "006fb87855293a0081b2c306bc04c7e8d30f71f17329059ac6c0f2c11ac1ade1"
+    },
+    {
+      "path": "docs/07-技术接入.md",
+      "sourceBytes": 2090,
+      "sourceSha256": "4d722bb8258f659bef4c36bd2836dbd039d7f523ebadfc5b11ba864b69946168",
+      "repositorySha256": "4d722bb8258f659bef4c36bd2836dbd039d7f523ebadfc5b11ba864b69946168"
+    },
+    {
+      "path": "docs/08-素材与许可.md",
+      "sourceBytes": 5646,
+      "sourceSha256": "cdf6ea1c202c37a3cd29d067ab14d6e2040b00c00d4a0b92ac8f640c80b7773c",
+      "repositorySha256": "cdf6ea1c202c37a3cd29d067ab14d6e2040b00c00d4a0b92ac8f640c80b7773c"
+    },
+    {
+      "path": "docs/35-v3.0-三支线完整剧本.md",
+      "sourceBytes": 7011,
+      "sourceSha256": "c3eae6d8958b88b200d3e1eeded3044810fcfe933b56ad15b5acd056515f4149",
+      "repositorySha256": "c3eae6d8958b88b200d3e1eeded3044810fcfe933b56ad15b5acd056515f4149"
+    },
+    {
+      "path": "docs/36-v3.0-分镜与视频生产衔接.md",
+      "sourceBytes": 5441,
+      "sourceSha256": "42dd47797cd7cbb26fa9a73d5f446a76d5574471b65fee6817cbbb70c10d0d53",
+      "repositorySha256": "42dd47797cd7cbb26fa9a73d5f446a76d5574471b65fee6817cbbb70c10d0d53"
+    },
+    {
+      "path": "docs/43-v4.0-课堂指南与影视衔接.md",
+      "sourceBytes": 9239,
+      "sourceSha256": "8f11539bbbb37d0f861ec2344fe775632377c4fc4c7893d96e018d9343647ed7",
+      "repositorySha256": "8f11539bbbb37d0f861ec2344fe775632377c4fc4c7893d96e018d9343647ed7"
+    },
+    {
+      "path": "docs/45-v5.0-画卷与神笔重构.md",
+      "sourceBytes": 3029,
+      "sourceSha256": "f093642a0ed21b5531c6ff4742ce2e449be73290bdfe23a2e9d663af14c12047",
+      "repositorySha256": "f093642a0ed21b5531c6ff4742ce2e449be73290bdfe23a2e9d663af14c12047"
+    },
+    {
+      "path": "docs/46-v5.0-课堂指南与影视衔接.md",
+      "sourceBytes": 11298,
+      "sourceSha256": "d44dbc4965509ebc4f8e87abf3d7a144866bf1569302da3ded8a5e217280ba94",
+      "repositorySha256": "ef917457032701094b14e936829a48312413bf111c9e256c1ddb4a35639f0814"
+    },
+    {
+      "path": "docs/47-v5.0-测试验收.md",
+      "sourceBytes": 3318,
+      "sourceSha256": "70266a256af69d6cf0180b33c6ede0c8c4f2c75f81c4baf5c0ffea1c860f8e4b",
+      "repositorySha256": "70266a256af69d6cf0180b33c6ede0c8c4f2c75f81c4baf5c0ffea1c860f8e4b"
+    },
+    {
+      "path": "docs/48-v5.0-美术素材清单.md",
+      "sourceBytes": 1834,
+      "sourceSha256": "23fb2b62dc0bd57b87c13e0fb0e6fab9c68519b19a239cad27aa85d0eb3cf212",
+      "repositorySha256": "23fb2b62dc0bd57b87c13e0fb0e6fab9c68519b19a239cad27aa85d0eb3cf212"
+    },
+    {
+      "path": "docs/assets.json",
+      "sourceBytes": 7401,
+      "sourceSha256": "854791369ec1e5583231b5ed62472085a006484c8e680efb1328dcf0ea382b84",
+      "repositorySha256": "854791369ec1e5583231b5ed62472085a006484c8e680efb1328dcf0ea382b84"
+    },
+    {
+      "path": "docs/branch-cases.json",
+      "sourceBytes": 1810,
+      "sourceSha256": "82d861032ae7fa4c0b8c39935e2291785157e3ff4635427e4e0f983f5193f565",
+      "repositorySha256": "82d861032ae7fa4c0b8c39935e2291785157e3ff4635427e4e0f983f5193f565"
+    },
+    {
+      "path": "docs/shots.json",
+      "sourceBytes": 44929,
+      "sourceSha256": "5f4b15ce040478bb96d98b27ef3970736e1a9c9c7c0a850896da23c68e0a5cdf",
+      "repositorySha256": "5f4b15ce040478bb96d98b27ef3970736e1a9c9c7c0a850896da23c68e0a5cdf"
+    },
+    {
+      "path": "docs/v2-assets.json",
+      "sourceBytes": 3327,
+      "sourceSha256": "89df72df1928a39bd4d89a2c71cae8d624eec51f43af7c94785fb608b0884d5a",
+      "repositorySha256": "89df72df1928a39bd4d89a2c71cae8d624eec51f43af7c94785fb608b0884d5a"
+    },
+    {
+      "path": "docs/v2-shots.json",
+      "sourceBytes": 4863,
+      "sourceSha256": "7db976d4db849e818ce877c8a81ad1006ec254629c045c593000ce3d68608496",
+      "repositorySha256": "7db976d4db849e818ce877c8a81ad1006ec254629c045c593000ce3d68608496"
+    },
+    {
+      "path": "docs/v2-video-receipts.csv",
+      "sourceBytes": 309,
+      "sourceSha256": "b09835baa5b9eb6813da246cbbb98d842fac254135abc3e5dafbc470a9cd21a7",
+      "repositorySha256": "b09835baa5b9eb6813da246cbbb98d842fac254135abc3e5dafbc470a9cd21a7"
+    },
+    {
+      "path": "docs/v3-assets.json",
+      "sourceBytes": 5502,
+      "sourceSha256": "d98424db0749f18e3d70174505c21e0a4380e24bf1deeb2a2e5be768ba1111f5",
+      "repositorySha256": "d98424db0749f18e3d70174505c21e0a4380e24bf1deeb2a2e5be768ba1111f5"
+    },
+    {
+      "path": "docs/v3-branches.json",
+      "sourceBytes": 6933,
+      "sourceSha256": "ba90d8e9dd6958ef4f0598f61db8f4beae5d7571f44e8f91a0e88d3be8c5ae5e",
+      "repositorySha256": "ba90d8e9dd6958ef4f0598f61db8f4beae5d7571f44e8f91a0e88d3be8c5ae5e"
+    },
+    {
+      "path": "docs/v3-shots.json",
+      "sourceBytes": 13738,
+      "sourceSha256": "c620937332b8ad667dd1f01f56e77e07f427f9e0567172118ca2e944d531d1d5",
+      "repositorySha256": "c620937332b8ad667dd1f01f56e77e07f427f9e0567172118ca2e944d531d1d5"
+    },
+    {
+      "path": "docs/v3-sources.json",
+      "sourceBytes": 4056,
+      "sourceSha256": "521c513d14c616c57043e0c7bafa93eb0a4617328c3b94c4a33e7fa2990743bf",
+      "repositorySha256": "521c513d14c616c57043e0c7bafa93eb0a4617328c3b94c4a33e7fa2990743bf"
+    },
+    {
+      "path": "docs/video-manifest-example.json",
+      "sourceBytes": 1641,
+      "sourceSha256": "0c346e3a80710da60fb7ed121dc65dce5fc5cff93557d6ebe526d5b4b6f9e7e0",
+      "repositorySha256": "0c346e3a80710da60fb7ed121dc65dce5fc5cff93557d6ebe526d5b4b6f9e7e0"
+    },
+    {
+      "path": "docs/video-receipts.csv",
+      "sourceBytes": 1253,
+      "sourceSha256": "8002420abbc165f3d4027c2b2ac70d3aa2250cd4acb54e987a719bf5ac158fbc",
+      "repositorySha256": "8002420abbc165f3d4027c2b2ac70d3aa2250cd4acb54e987a719bf5ac158fbc"
+    },
+    {
+      "path": "docs/video-tasks.csv",
+      "sourceBytes": 28756,
+      "sourceSha256": "666a170396d12702d90abbc2c3dcdc72d62d28d535b9af57d3dede0211853f50",
+      "repositorySha256": "666a170396d12702d90abbc2c3dcdc72d62d28d535b9af57d3dede0211853f50"
+    },
+    {
+      "path": "film-v2/AGENTS.md",
+      "sourceBytes": 8626,
+      "sourceSha256": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "repositorySha256": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    {
+      "path": "film-v2/CLAUDE.md",
+      "sourceBytes": 8626,
+      "sourceSha256": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "repositorySha256": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    {
+      "path": "film-v2/DESIGN.md",
+      "sourceBytes": 726,
+      "sourceSha256": "44dc0970f4c27e9d6200238cd517276b88a1c8970d21eb0c3bb0a4f754c6c817",
+      "repositorySha256": "44dc0970f4c27e9d6200238cd517276b88a1c8970d21eb0c3bb0a4f754c6c817"
+    },
+    {
+      "path": "film-v2/hyperframes.json",
+      "sourceBytes": 318,
+      "sourceSha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "repositorySha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    {
+      "path": "film-v2/index.html",
+      "sourceBytes": 5260,
+      "sourceSha256": "ad6327e0d5ab7db626c2ba7f8d755b5514c0693846f7c9b2b9288815de1db82c",
+      "repositorySha256": "ad6327e0d5ab7db626c2ba7f8d755b5514c0693846f7c9b2b9288815de1db82c"
+    },
+    {
+      "path": "film-v2/meta.json",
+      "sourceBytes": 85,
+      "sourceSha256": "cb5a1bc9d8d93c59345733d603650595279bcfec092698da81acad99da722b44",
+      "repositorySha256": "cb5a1bc9d8d93c59345733d603650595279bcfec092698da81acad99da722b44"
+    },
+    {
+      "path": "film-v2/package-lock.json",
+      "sourceBytes": 9109,
+      "sourceSha256": "f761c3c73df63c7b26509930488f4f2a36a60b991432ebed48add206d5490110",
+      "repositorySha256": "f761c3c73df63c7b26509930488f4f2a36a60b991432ebed48add206d5490110"
+    },
+    {
+      "path": "film-v2/package.json",
+      "sourceBytes": 409,
+      "sourceSha256": "2c778dae550451a0815d8a75dc976735dbc67cb96a98da6db7545ccae56a8c6b",
+      "repositorySha256": "2c778dae550451a0815d8a75dc976735dbc67cb96a98da6db7545ccae56a8c6b"
+    },
+    {
+      "path": "film-v2/assets/GSAP-NOTICE.txt",
+      "sourceBytes": 257,
+      "sourceSha256": "526ab35a1d699aca8fda15b1bd5a8d91978be0c403bbe138a32fb1f3dc40075d",
+      "repositorySha256": "526ab35a1d699aca8fda15b1bd5a8d91978be0c403bbe138a32fb1f3dc40075d"
+    },
+    {
+      "path": "film-v2/assets/GSAP-package.json",
+      "sourceBytes": 2550,
+      "sourceSha256": "85cc13e31f7a3cd124b587a40f545f265f47d0dfb9a556bb122d70fc0fca3459",
+      "repositorySha256": "85cc13e31f7a3cd124b587a40f545f265f47d0dfb9a556bb122d70fc0fca3459"
+    },
+    {
+      "path": "film-v2/assets/gsap.min.js",
+      "sourceBytes": 72927,
+      "sourceSha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "repositorySha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "path": "film-v2/assets/night-brush-v2.png",
+      "sourceBytes": 2385227,
+      "sourceSha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613",
+      "repositorySha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613"
+    },
+    {
+      "path": "film-v2/assets/night-voice.wav",
+      "sourceBytes": 241284,
+      "sourceSha256": "6b00e7ae0f5342bd60b2dbe9c52e324c48c03b43eac8d5edf690114a780cc6e4",
+      "repositorySha256": "6b00e7ae0f5342bd60b2dbe9c52e324c48c03b43eac8d5edf690114a780cc6e4"
+    },
+    {
+      "path": "film-v2/assets/river-survey-v1.png",
+      "sourceBytes": 3733318,
+      "sourceSha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf",
+      "repositorySha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf"
+    },
+    {
+      "path": "film-v2/assets/river-voice.wav",
+      "sourceBytes": 317352,
+      "sourceSha256": "5409d2cdac34170825c5dd619811df1f6ed698ee2234383ff1c47ef9b5f9375f",
+      "repositorySha256": "5409d2cdac34170825c5dd619811df1f6ed698ee2234383ff1c47ef9b5f9375f"
+    },
+    {
+      "path": "licenses/Node-LICENSE.txt",
+      "sourceBytes": 160555,
+      "sourceSha256": "ed34dd8e3f0a78dbaf00d0444ce8e285b015b765379c2e17880455f70370f8e9",
+      "repositorySha256": "ed34dd8e3f0a78dbaf00d0444ce8e285b015b765379c2e17880455f70370f8e9"
+    },
+    {
+      "path": "licenses/Phosphor-MIT.txt",
+      "sourceBytes": 1071,
+      "sourceSha256": "6918b72504641180600cbbd4a86b0dfa9dfccf788775694325b71b9a029f6eb4",
+      "repositorySha256": "6918b72504641180600cbbd4a86b0dfa9dfccf788775694325b71b9a029f6eb4"
+    },
+    {
+      "path": "licenses/React-MIT.txt",
+      "sourceBytes": 1088,
+      "sourceSha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "repositorySha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/ReactDOM-MIT.txt",
+      "sourceBytes": 1088,
+      "sourceSha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "repositorySha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/Scheduler-MIT.txt",
+      "sourceBytes": 1088,
+      "sourceSha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "repositorySha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/three-MIT.txt",
+      "sourceBytes": 1081,
+      "sourceSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "repositorySha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "public/challenge-player.css",
+      "sourceBytes": 5536,
+      "sourceSha256": "53a19538e7b9f7c2da1dd932a19bdafc2cbc7452ed8fb36f8b552d58f34291fb",
+      "repositorySha256": "53a19538e7b9f7c2da1dd932a19bdafc2cbc7452ed8fb36f8b552d58f34291fb"
+    },
+    {
+      "path": "public/challenge-player.js",
+      "sourceBytes": 10088,
+      "sourceSha256": "f0ccdd0d354e32cc79a7ea9679604328344def7acfa962c1382a2fda7dcc66bb",
+      "repositorySha256": "f0ccdd0d354e32cc79a7ea9679604328344def7acfa962c1382a2fda7dcc66bb"
+    },
+    {
+      "path": "public/teacher-guide-v2.html",
+      "sourceBytes": 5216,
+      "sourceSha256": "5e0803235224e04a84c9488e4981cb869034e09886f33b0546760a4f5c4e984e",
+      "repositorySha256": "5e0803235224e04a84c9488e4981cb869034e09886f33b0546760a4f5c4e984e"
+    },
+    {
+      "path": "public/teacher-guide-v3.html",
+      "sourceBytes": 10753,
+      "sourceSha256": "2ee451ad54f7f415df89b54ad591a32f63852a6605ddb9ca43d52c77a8918244",
+      "repositorySha256": "2ee451ad54f7f415df89b54ad591a32f63852a6605ddb9ca43d52c77a8918244"
+    },
+    {
+      "path": "public/teacher-guide-v31.html",
+      "sourceBytes": 11462,
+      "sourceSha256": "e2c0579c9f203637ec59a9352e237b3d189071876424adba8847e0b9382a9bf1",
+      "repositorySha256": "e2c0579c9f203637ec59a9352e237b3d189071876424adba8847e0b9382a9bf1"
+    },
+    {
+      "path": "public/teacher-guide-v4.html",
+      "sourceBytes": 10961,
+      "sourceSha256": "b31c2a2f5f8caf2c27f669ee5bdeacc07a462cb4c4607590683ccef32bdc8f68",
+      "repositorySha256": "b31c2a2f5f8caf2c27f669ee5bdeacc07a462cb4c4607590683ccef32bdc8f68"
+    },
+    {
+      "path": "public/teacher-guide-v5.html",
+      "sourceBytes": 13191,
+      "sourceSha256": "c19492ac6db6f58005dca2a92778d3e3d05298c29cd9f315abb63da399e161e0",
+      "repositorySha256": "301dd68460c4552a8516ddc2aedd23960dd7fd64f6455a8f133070ee2909b925"
+    },
+    {
+      "path": "public/version.json",
+      "sourceBytes": 68,
+      "sourceSha256": "ba46c0b809c412bf0abd77907071b85c40671f24f2c7a5ea7d17aa47ff4616f3",
+      "repositorySha256": "ba46c0b809c412bf0abd77907071b85c40671f24f2c7a5ea7d17aa47ff4616f3"
+    },
+    {
+      "path": "public/assets/classroom-library-v1.png",
+      "sourceBytes": 2523349,
+      "sourceSha256": "73159107ea0e0665be5d286a3e8001edf53e147c55881f2f165a7853141b1d97",
+      "repositorySha256": "73159107ea0e0665be5d286a3e8001edf53e147c55881f2f165a7853141b1d97"
+    },
+    {
+      "path": "public/assets/court-sea-v1.png",
+      "sourceBytes": 2778848,
+      "sourceSha256": "f9748408f95a992c30871b8e9cd975a1d0cedb149dd8f7e8f8bbe7ac831d1874",
+      "repositorySha256": "f9748408f95a992c30871b8e9cd975a1d0cedb149dd8f7e8f8bbe7ac831d1874"
+    },
+    {
+      "path": "public/assets/cow-field-v3.png",
+      "sourceBytes": 3212239,
+      "sourceSha256": "88116fcdab2e4d1bce9a4d4f17f28f562e78b55dd177a4cdecf8abae319c1545",
+      "repositorySha256": "88116fcdab2e4d1bce9a4d4f17f28f562e78b55dd177a4cdecf8abae319c1545"
+    },
+    {
+      "path": "public/assets/ending-conditions-v1.png",
+      "sourceBytes": 3437279,
+      "sourceSha256": "0244385e63898012cf26e71e65c0f68e87afe92917612963a7ffb18ecc6aa20b",
+      "repositorySha256": "0244385e63898012cf26e71e65c0f68e87afe92917612963a7ffb18ecc6aa20b"
+    },
+    {
+      "path": "public/assets/evening-review-v1.png",
+      "sourceBytes": 2714015,
+      "sourceSha256": "cf6a01ed74dee4752976a8b98e326cd34a9b0ef58f81ff1f905b37ed9d686f87",
+      "repositorySha256": "cf6a01ed74dee4752976a8b98e326cd34a9b0ef58f81ff1f905b37ed9d686f87"
+    },
+    {
+      "path": "public/assets/grain-contract-v1.png",
+      "sourceBytes": 3310474,
+      "sourceSha256": "78b42c2de58e442760f82b40c501cacded8acee838758a5a5a96814bc85d2346",
+      "repositorySha256": "78b42c2de58e442760f82b40c501cacded8acee838758a5a5a96814bc85d2346"
+    },
+    {
+      "path": "public/assets/hero-mobile-v1.png",
+      "sourceBytes": 2825886,
+      "sourceSha256": "95de7a2c714065162f2005490e7db08c3878b699d95a6c45ed4770d059794bd1",
+      "repositorySha256": "95de7a2c714065162f2005490e7db08c3878b699d95a6c45ed4770d059794bd1"
+    },
+    {
+      "path": "public/assets/hero-scroll-v1.png",
+      "sourceBytes": 2547903,
+      "sourceSha256": "349d38e7a92919e064589267f177e01a9a7338da2e94c96e9e3dcf595771ae8f",
+      "repositorySha256": "349d38e7a92919e064589267f177e01a9a7338da2e94c96e9e3dcf595771ae8f"
+    },
+    {
+      "path": "public/assets/ink-workshop-v1.png",
+      "sourceBytes": 2867628,
+      "sourceSha256": "6c938bb1ff0906db3e030a93882c5d7d94bf121990e4e25b12e25c698dd6f4cb",
+      "repositorySha256": "6c938bb1ff0906db3e030a93882c5d7d94bf121990e4e25b12e25c698dd6f4cb"
+    },
+    {
+      "path": "public/assets/mill-courtyard-v3.png",
+      "sourceBytes": 2980862,
+      "sourceSha256": "951b71ed0c86c9cc2d1393bb4e15d44eedd1cd788344af62a297c70aa231101c",
+      "repositorySha256": "951b71ed0c86c9cc2d1393bb4e15d44eedd1cd788344af62a297c70aa231101c"
+    },
+    {
+      "path": "public/assets/night-brush-v1.png",
+      "sourceBytes": 2628683,
+      "sourceSha256": "78e686e1f6c60988bb45ea6fc5c267d1d8844dd52325e1596e6c3b4ec3931799",
+      "repositorySha256": "78e686e1f6c60988bb45ea6fc5c267d1d8844dd52325e1596e6c3b4ec3931799"
+    },
+    {
+      "path": "public/assets/night-brush-v2.png",
+      "sourceBytes": 2385227,
+      "sourceSha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613",
+      "repositorySha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613"
+    },
+    {
+      "path": "public/assets/opening-field-v1.png",
+      "sourceBytes": 3067364,
+      "sourceSha256": "0a3ef32da84dbd80fb9edb0dd240b0ee33e9e98e08a21a7bb9cb7c6c444b8bac",
+      "repositorySha256": "0a3ef32da84dbd80fb9edb0dd240b0ee33e9e98e08a21a7bb9cb7c6c444b8bac"
+    },
+    {
+      "path": "public/assets/paper-bridge-v1.png",
+      "sourceBytes": 3213350,
+      "sourceSha256": "ccf36eccc557f3fb15114a27324d7047c2762cf43eaa4e7d8736a98fad799048",
+      "repositorySha256": "ccf36eccc557f3fb15114a27324d7047c2762cf43eaa4e7d8736a98fad799048"
+    },
+    {
+      "path": "public/assets/rain-tools-v1.png",
+      "sourceBytes": 2450698,
+      "sourceSha256": "e79dec65a3d7726b62d551302771443201d67f5c9c076c02991559055ea5632f",
+      "repositorySha256": "e79dec65a3d7726b62d551302771443201d67f5c9c076c02991559055ea5632f"
+    },
+    {
+      "path": "public/assets/river-survey-v1.png",
+      "sourceBytes": 3733318,
+      "sourceSha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf",
+      "repositorySha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf"
+    },
+    {
+      "path": "public/assets/shared-board-v1.png",
+      "sourceBytes": 3220391,
+      "sourceSha256": "08d3e8849438144bfe5d4bb7ee3c727313415a0933d8b18511e178d9dea3fdad",
+      "repositorySha256": "08d3e8849438144bfe5d4bb7ee3c727313415a0933d8b18511e178d9dea3fdad"
+    },
+    {
+      "path": "public/assets/worktable-day-v1.png",
+      "sourceBytes": 2955059,
+      "sourceSha256": "57daa2c60f140ecd635c744a938fd09dd340904f74daa8cb22301aef7f9a2434",
+      "repositorySha256": "57daa2c60f140ecd635c744a938fd09dd340904f74daa8cb22301aef7f9a2434"
+    },
+    {
+      "path": "public/assets/xiaohe-guide-v1.png",
+      "sourceBytes": 1233594,
+      "sourceSha256": "fb44303575c71823c9457a9cf57cb0d8d01eed228e8d47f9c67caff730aca810",
+      "repositorySha256": "fb44303575c71823c9457a9cf57cb0d8d01eed228e8d47f9c67caff730aca810"
+    },
+    {
+      "path": "public/assets/v5/maliang-brush.png",
+      "sourceBytes": 2240001,
+      "sourceSha256": "a3bdda7621c182180f4865bb6ba5579851b0ac5ca511c657767ca49c019b2aa8",
+      "repositorySha256": "a3bdda7621c182180f4865bb6ba5579851b0ac5ca511c657767ca49c019b2aa8"
+    },
+    {
+      "path": "public/assets/v5/mill-study.png",
+      "sourceBytes": 2960395,
+      "sourceSha256": "8785a1df7ee66ed9a83e63eaa6425fd4c2e16ea07218ca179c0dd201a273fa43",
+      "repositorySha256": "8785a1df7ee66ed9a83e63eaa6425fd4c2e16ea07218ca179c0dd201a273fa43"
+    },
+    {
+      "path": "public/assets/v5/ox-study.png",
+      "sourceBytes": 2835876,
+      "sourceSha256": "a70a54482f7d680ae08a887a471d02407183851eff75ded14b777e3c66d15bd8",
+      "repositorySha256": "a70a54482f7d680ae08a887a471d02407183851eff75ded14b777e3c66d15bd8"
+    },
+    {
+      "path": "public/assets/v5/sail-study.png",
+      "sourceBytes": 2568520,
+      "sourceSha256": "9ddcfc909b71a8cec08c7fc7f8b4b999f462fbe2244131041426d9035d6a297d",
+      "repositorySha256": "9ddcfc909b71a8cec08c7fc7f8b4b999f462fbe2244131041426d9035d6a297d"
+    },
+    {
+      "path": "public/assets/v5/village-stage.png",
+      "sourceBytes": 2950501,
+      "sourceSha256": "64d576d17913a8976fae8efbec0350136f0f0b8b5b0a3a49282460e40a3e456d",
+      "repositorySha256": "64d576d17913a8976fae8efbec0350136f0f0b8b5b0a3a49282460e40a3e456d"
+    },
+    {
+      "path": "public/assets/v5/water-inventions.png",
+      "sourceBytes": 3151936,
+      "sourceSha256": "fb6823fb197e46200e9de4d347f1cac729d2422f45dbe4c13a3f40dbb5754d66",
+      "repositorySha256": "fb6823fb197e46200e9de4d347f1cac729d2422f45dbe4c13a3f40dbb5754d66"
+    },
+    {
+      "path": "public/fonts/MaShanZheng-Regular.ttf",
+      "sourceBytes": 5857936,
+      "sourceSha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+      "repositorySha256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb"
+    },
+    {
+      "path": "public/fonts/OFL-MaShanZheng.txt",
+      "sourceBytes": 4397,
+      "sourceSha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+      "repositorySha256": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08"
+    },
+    {
+      "path": "public/video/manifest.json",
+      "sourceBytes": 34,
+      "sourceSha256": "9ffa22b7384a98ff4d28a02bf39198f6b70359357517b859999954fee7a6e0b3",
+      "repositorySha256": "9ffa22b7384a98ff4d28a02bf39198f6b70359357517b859999954fee7a6e0b3"
+    },
+    {
+      "path": "public/video/v2-manifest.json",
+      "sourceBytes": 351,
+      "sourceSha256": "221dc741081ff3a694b57c51b4ee8124074197019ceedb309e0df297be3a3f3a",
+      "repositorySha256": "221dc741081ff3a694b57c51b4ee8124074197019ceedb309e0df297be3a3f3a"
+    },
+    {
+      "path": "public/video/v2-night.mp4",
+      "sourceBytes": 2412270,
+      "sourceSha256": "205e726c609e29606add4fc402cbc44b6ef28eec78c6adac8214e90371d191e1",
+      "repositorySha256": "205e726c609e29606add4fc402cbc44b6ef28eec78c6adac8214e90371d191e1"
+    },
+    {
+      "path": "public/video/v2-night.vtt",
+      "sourceBytes": 107,
+      "sourceSha256": "2ee9e099af1f61bda4c58a2a187f6ad526a7e80cf98eab318bfbccd39cbfd2c5",
+      "repositorySha256": "2ee9e099af1f61bda4c58a2a187f6ad526a7e80cf98eab318bfbccd39cbfd2c5"
+    },
+    {
+      "path": "public/video/v2-river.mp4",
+      "sourceBytes": 6173473,
+      "sourceSha256": "c1fa5a9b76c96df7282e7e482e72a80b52cac391dc440afceaecb5bd43160e8e",
+      "repositorySha256": "c1fa5a9b76c96df7282e7e482e72a80b52cac391dc440afceaecb5bd43160e8e"
+    },
+    {
+      "path": "public/video/v2-river.vtt",
+      "sourceBytes": 119,
+      "sourceSha256": "bb94716e62fcfab95a16f561e80d0ce3937d5a93a168ff5e3802abdded0be176",
+      "repositorySha256": "bb94716e62fcfab95a16f561e80d0ce3937d5a93a168ff5e3802abdded0be176"
+    },
+    {
+      "path": "renders/scene-pair.mp4",
+      "sourceBytes": 24624749,
+      "sourceSha256": "658bfbd586508bff3454b0207fc21a41e9d8d1caf63b1802ef62b23d1aa3a65f",
+      "repositorySha256": "658bfbd586508bff3454b0207fc21a41e9d8d1caf63b1802ef62b23d1aa3a65f"
+    },
+    {
+      "path": "scripts/build-challenge.mjs",
+      "sourceBytes": 495,
+      "sourceSha256": "c85065f578a141648651693effcd9b72c6045f6c27ce057eb7ff028ab16b25a0",
+      "repositorySha256": "c85065f578a141648651693effcd9b72c6045f6c27ce057eb7ff028ab16b25a0"
+    },
+    {
+      "path": "scripts/build-teacher-guide.mjs",
+      "sourceBytes": 1466,
+      "sourceSha256": "31c920fe056bb923317a25720670e58d3d6e59555d9438bea75c3c9f7d106ef5",
+      "repositorySha256": "31c920fe056bb923317a25720670e58d3d6e59555d9438bea75c3c9f7d106ef5"
+    },
+    {
+      "path": "scripts/build-v4-guide.mjs",
+      "sourceBytes": 1472,
+      "sourceSha256": "7a1443e332d27a3c8aa2e31517632f9c541d01203b266c2c55edfb811f1ef28c",
+      "repositorySha256": "7a1443e332d27a3c8aa2e31517632f9c541d01203b266c2c55edfb811f1ef28c"
+    },
+    {
+      "path": "scripts/build-v5-guide.mjs",
+      "sourceBytes": 1474,
+      "sourceSha256": "355918f2cd749b3a9d281adc73b2ef88b2b13ede80f650fb7f33c622608f9736",
+      "repositorySha256": "355918f2cd749b3a9d281adc73b2ef88b2b13ede80f650fb7f33c622608f9736"
+    },
+    {
+      "path": "scripts/capture-v5-qa.mjs",
+      "sourceBytes": 2641,
+      "sourceSha256": "d9f786460c98172419690f3510704cfcc556886edd9104ed539ecfb87a4f3e43",
+      "repositorySha256": "d9f786460c98172419690f3510704cfcc556886edd9104ed539ecfb87a4f3e43"
+    },
+    {
+      "path": "scripts/find-wide-route-v5.mjs",
+      "sourceBytes": 671,
+      "sourceSha256": "fdd53d796b13b489c87743449ac94ffd33668cf0d2ded8a4cf0ca3f9b06f53db",
+      "repositorySha256": "fdd53d796b13b489c87743449ac94ffd33668cf0d2ded8a4cf0ca3f9b06f53db"
+    },
+    {
+      "path": "scripts/prepare-sites-build.mjs",
+      "sourceBytes": 910,
+      "sourceSha256": "b6a6adaa4fab3234676116dd1c9cb6611275ab9d92dd26f5bf402393e3744bf6",
+      "repositorySha256": "b6a6adaa4fab3234676116dd1c9cb6611275ab9d92dd26f5bf402393e3744bf6"
+    },
+    {
+      "path": "scripts/render-v2-films.ps1",
+      "sourceBytes": 1268,
+      "sourceSha256": "64a352b8707e0972fe78c73cb3f92e3cf19d029e6f63f92c2ddae79789cef943",
+      "repositorySha256": "64a352b8707e0972fe78c73cb3f92e3cf19d029e6f63f92c2ddae79789cef943"
+    },
+    {
+      "path": "scripts/stamp-version.mjs",
+      "sourceBytes": 292,
+      "sourceSha256": "9837033e3e4d29b287cbfc64693e8f6632789cca5b8340801bc65cb035270a90",
+      "repositorySha256": "9837033e3e4d29b287cbfc64693e8f6632789cca5b8340801bc65cb035270a90"
+    },
+    {
+      "path": "scripts/sync-production-docs.mjs",
+      "sourceBytes": 1490,
+      "sourceSha256": "c7b3deeecb0ab443c1569e668a98ef70b65ef110214741a3847f7f51835b4bbd",
+      "repositorySha256": "c7b3deeecb0ab443c1569e668a98ef70b65ef110214741a3847f7f51835b4bbd"
+    },
+    {
+      "path": "src/App.jsx",
+      "sourceBytes": 38445,
+      "sourceSha256": "cd283fed9de519ff12b973f448dfde8395ee4bd1c3de96b262c2eddb95ad52f7",
+      "repositorySha256": "cd283fed9de519ff12b973f448dfde8395ee4bd1c3de96b262c2eddb95ad52f7"
+    },
+    {
+      "path": "src/care.css",
+      "sourceBytes": 6065,
+      "sourceSha256": "f25ee09c61a1da641046900c913088485e5cefd1889f6ecfa991a0fb70a304fe",
+      "repositorySha256": "f25ee09c61a1da641046900c913088485e5cefd1889f6ecfa991a0fb70a304fe"
+    },
+    {
+      "path": "src/care.mjs",
+      "sourceBytes": 11223,
+      "sourceSha256": "5395dbb21a977a5110e8275c002a3fd50ac62fdcad6c75c4521092e3205a034d",
+      "repositorySha256": "5395dbb21a977a5110e8275c002a3fd50ac62fdcad6c75c4521092e3205a034d"
+    },
+    {
+      "path": "src/CareStudio.jsx",
+      "sourceBytes": 7285,
+      "sourceSha256": "37267241d6575196f1b6fc71b2c3ce1f452a61f27380a043533a9a108e54d9bb",
+      "repositorySha256": "37267241d6575196f1b6fc71b2c3ce1f452a61f27380a043533a9a108e54d9bb"
+    },
+    {
+      "path": "src/challenge-html.mjs",
+      "sourceBytes": 1110,
+      "sourceSha256": "9e4b1ceb1d8eb5f7ef77c37f50faadcc43c1e921dcdbfebc10914b390426aece",
+      "repositorySha256": "9e4b1ceb1d8eb5f7ef77c37f50faadcc43c1e921dcdbfebc10914b390426aece"
+    },
+    {
+      "path": "src/challenge-player.mjs",
+      "sourceBytes": 7055,
+      "sourceSha256": "582ad731899b4820a05b526bc80ba3b273eab7c86df092f20da9f12f9a32128b",
+      "repositorySha256": "582ad731899b4820a05b526bc80ba3b273eab7c86df092f20da9f12f9a32128b"
+    },
+    {
+      "path": "src/challenge.css",
+      "sourceBytes": 5536,
+      "sourceSha256": "53a19538e7b9f7c2da1dd932a19bdafc2cbc7452ed8fb36f8b552d58f34291fb",
+      "repositorySha256": "53a19538e7b9f7c2da1dd932a19bdafc2cbc7452ed8fb36f8b552d58f34291fb"
+    },
+    {
+      "path": "src/challenge.mjs",
+      "sourceBytes": 6754,
+      "sourceSha256": "5e07cf02233e89b0b49d545b44ec8d73fe3e5523f84237533ecf69995f8e6204",
+      "repositorySha256": "5e07cf02233e89b0b49d545b44ec8d73fe3e5523f84237533ecf69995f8e6204"
+    },
+    {
+      "path": "src/ChallengeStudio.jsx",
+      "sourceBytes": 9622,
+      "sourceSha256": "f7fa7f38112960a46d8a69d58b401a3a8cecf90e31a122968bfc13597408a23c",
+      "repositorySha256": "f7fa7f38112960a46d8a69d58b401a3a8cecf90e31a122968bfc13597408a23c"
+    },
+    {
+      "path": "src/comparison.css",
+      "sourceBytes": 6266,
+      "sourceSha256": "ea47474125ed8c841695fd4945a7f5514845c03eef9df97a7bb913d559668a4c",
+      "repositorySha256": "ea47474125ed8c841695fd4945a7f5514845c03eef9df97a7bb913d559668a4c"
+    },
+    {
+      "path": "src/comparison.mjs",
+      "sourceBytes": 10941,
+      "sourceSha256": "154d0cda2114878abe626a5142a86ed8df28334f849e8e0e855da9e41b3803f9",
+      "repositorySha256": "154d0cda2114878abe626a5142a86ed8df28334f849e8e0e855da9e41b3803f9"
+    },
+    {
+      "path": "src/ComparisonStudio.jsx",
+      "sourceBytes": 10988,
+      "sourceSha256": "5632a2fc97af8d09eae51c910ab2fd11f7351a7e7cba8b6c37aa6ee6f266c6fb",
+      "repositorySha256": "5632a2fc97af8d09eae51c910ab2fd11f7351a7e7cba8b6c37aa6ee6f266c6fb"
+    },
+    {
+      "path": "src/contract-reading.css",
+      "sourceBytes": 5161,
+      "sourceSha256": "92528ddc8aaaedda455434a615d54371cfb60c16a978c65536a9d0ecae3c2348",
+      "repositorySha256": "92528ddc8aaaedda455434a615d54371cfb60c16a978c65536a9d0ecae3c2348"
+    },
+    {
+      "path": "src/contract-reading.mjs",
+      "sourceBytes": 4495,
+      "sourceSha256": "9255396c5b871ca3109d1d72a298ec4e3de0b924ae1c0549eb4a5d711408d5a9",
+      "repositorySha256": "9255396c5b871ca3109d1d72a298ec4e3de0b924ae1c0549eb4a5d711408d5a9"
+    },
+    {
+      "path": "src/ContractReading.jsx",
+      "sourceBytes": 6264,
+      "sourceSha256": "2f6ad79047b4286fedcaecfadf1a8f143c5cb2f47a8fdd6d9d52926f7e54c631",
+      "repositorySha256": "2f6ad79047b4286fedcaecfadf1a8f143c5cb2f47a8fdd6d9d52926f7e54c631"
+    },
+    {
+      "path": "src/council.css",
+      "sourceBytes": 6178,
+      "sourceSha256": "2c1c4a0d0d2b2f8ef897e8500dd42399de7421f740b650d7a5c81e9b3511fc0b",
+      "repositorySha256": "2c1c4a0d0d2b2f8ef897e8500dd42399de7421f740b650d7a5c81e9b3511fc0b"
+    },
+    {
+      "path": "src/Council.jsx",
+      "sourceBytes": 8440,
+      "sourceSha256": "90c6bae03460f8fa9089037e3b2cfebe524f9915d80653c0ed1e81506e11beee",
+      "repositorySha256": "90c6bae03460f8fa9089037e3b2cfebe524f9915d80653c0ed1e81506e11beee"
+    },
+    {
+      "path": "src/council.mjs",
+      "sourceBytes": 6110,
+      "sourceSha256": "c70cbaa30c142a2b5095965148b4a37e3d7fb462fee87652649bac61d9ab303c",
+      "repositorySha256": "c70cbaa30c142a2b5095965148b4a37e3d7fb462fee87652649bac61d9ab303c"
+    },
+    {
+      "path": "src/dialogue.css",
+      "sourceBytes": 7442,
+      "sourceSha256": "e1f7337c4ccb7f3285fe1bc7ad9ac1e18250959be65f265cd8ea67aba93d1969",
+      "repositorySha256": "e1f7337c4ccb7f3285fe1bc7ad9ac1e18250959be65f265cd8ea67aba93d1969"
+    },
+    {
+      "path": "src/dialogue.mjs",
+      "sourceBytes": 6568,
+      "sourceSha256": "e0d302bd4cc05ae50d62a628c4772119e4895b3260fe49d4172ea3b4c0ca82a0",
+      "repositorySha256": "e0d302bd4cc05ae50d62a628c4772119e4895b3260fe49d4172ea3b4c0ca82a0"
+    },
+    {
+      "path": "src/DialogueEditor.jsx",
+      "sourceBytes": 8722,
+      "sourceSha256": "517db9c45f755f4fbc8c83d3d94102f3d6705303686da9152762f2c19e893c69",
+      "repositorySha256": "517db9c45f755f4fbc8c83d3d94102f3d6705303686da9152762f2c19e893c69"
+    },
+    {
+      "path": "src/DialogueView.jsx",
+      "sourceBytes": 2836,
+      "sourceSha256": "8aed49f1d9b266656f318aeecb2af802fc37291fef116cbf75b375a5063c5c39",
+      "repositorySha256": "8aed49f1d9b266656f318aeecb2af802fc37291fef116cbf75b375a5063c5c39"
+    },
+    {
+      "path": "src/ending-lab.mjs",
+      "sourceBytes": 6828,
+      "sourceSha256": "31ad6a0b642498ced69fcbc44f8b402c40bf3bdad2250cf3bb94c2401834834b",
+      "repositorySha256": "31ad6a0b642498ced69fcbc44f8b402c40bf3bdad2250cf3bb94c2401834834b"
+    },
+    {
+      "path": "src/EndingLab.css",
+      "sourceBytes": 4401,
+      "sourceSha256": "dc9af98cfba145afeedd6caef53b8a87b0828752db6939e53bb2e84de6586156",
+      "repositorySha256": "dc9af98cfba145afeedd6caef53b8a87b0828752db6939e53bb2e84de6586156"
+    },
+    {
+      "path": "src/EndingLab.jsx",
+      "sourceBytes": 5916,
+      "sourceSha256": "4d943fcb8ccac04d012e6722cc4bbb5b6f49ab906abc328047a7f231237681bc",
+      "repositorySha256": "4d943fcb8ccac04d012e6722cc4bbb5b6f49ab906abc328047a7f231237681bc"
+    },
+    {
+      "path": "src/FrameArt.jsx",
+      "sourceBytes": 3569,
+      "sourceSha256": "c6cb49219b217d8a91658951d85cce042d083e15304eb0164c2a6f7ce292c17a",
+      "repositorySha256": "c6cb49219b217d8a91658951d85cce042d083e15304eb0164c2a6f7ce292c17a"
+    },
+    {
+      "path": "src/gifts.css",
+      "sourceBytes": 7606,
+      "sourceSha256": "3b438cb74f352387c33c2fb36fe772e39562134d5a12486b33da656e54b561ef",
+      "repositorySha256": "3b438cb74f352387c33c2fb36fe772e39562134d5a12486b33da656e54b561ef"
+    },
+    {
+      "path": "src/gifts.mjs",
+      "sourceBytes": 7176,
+      "sourceSha256": "233dc2ff674088f5995ad89f0b0942c693556f8c800ae88ec5d597fee8b18651",
+      "repositorySha256": "233dc2ff674088f5995ad89f0b0942c693556f8c800ae88ec5d597fee8b18651"
+    },
+    {
+      "path": "src/GiftStudio.jsx",
+      "sourceBytes": 15043,
+      "sourceSha256": "78ce098b7f2f02d7f256e327b6497e1887c34447d9098c1e2ba0f44e396b6599",
+      "repositorySha256": "78ce098b7f2f02d7f256e327b6497e1887c34447d9098c1e2ba0f44e396b6599"
+    },
+    {
+      "path": "src/handoff-card.mjs",
+      "sourceBytes": 8420,
+      "sourceSha256": "cdff7aad8115e1b05d9d5fa523c86465109e7956f658bcbda5e995f50457f4d1",
+      "repositorySha256": "cdff7aad8115e1b05d9d5fa523c86465109e7956f658bcbda5e995f50457f4d1"
+    },
+    {
+      "path": "src/HandoffRecords.jsx",
+      "sourceBytes": 1481,
+      "sourceSha256": "0c44a801e62fbbb4279bbeb57469848b5a8cc09ddc4881c28accf68bac04424f",
+      "repositorySha256": "0c44a801e62fbbb4279bbeb57469848b5a8cc09ddc4881c28accf68bac04424f"
+    },
+    {
+      "path": "src/HandoffStudio.css",
+      "sourceBytes": 5429,
+      "sourceSha256": "8df93ffb35c7d613e2baf5f989e61eb7be9381aeb1fd72c99e21580c37b99b9b",
+      "repositorySha256": "8df93ffb35c7d613e2baf5f989e61eb7be9381aeb1fd72c99e21580c37b99b9b"
+    },
+    {
+      "path": "src/HandoffStudio.jsx",
+      "sourceBytes": 8326,
+      "sourceSha256": "48120ceb7f545c8069527cc2e770c226ce7003fec38de8e8481efc0d94ea831b",
+      "repositorySha256": "48120ceb7f545c8069527cc2e770c226ce7003fec38de8e8481efc0d94ea831b"
+    },
+    {
+      "path": "src/journey.mjs",
+      "sourceBytes": 3835,
+      "sourceSha256": "3c4c575abee5e24855ccc46e8e43f2dcb8a750dd697a8e88f47714dd5535b2b0",
+      "repositorySha256": "3c4c575abee5e24855ccc46e8e43f2dcb8a750dd697a8e88f47714dd5535b2b0"
+    },
+    {
+      "path": "src/JourneyMap.css",
+      "sourceBytes": 4130,
+      "sourceSha256": "5e1e4ce12bac934014d96729232bcbb16ea1c12568ac494748351d4829b333e3",
+      "repositorySha256": "5e1e4ce12bac934014d96729232bcbb16ea1c12568ac494748351d4829b333e3"
+    },
+    {
+      "path": "src/JourneyMap.jsx",
+      "sourceBytes": 2885,
+      "sourceSha256": "2e503a5624453d71193a785a8476f518926112edc46f646d1377088b72e8e046",
+      "repositorySha256": "2e503a5624453d71193a785a8476f518926112edc46f646d1377088b72e8e046"
+    },
+    {
+      "path": "src/learning.css",
+      "sourceBytes": 11190,
+      "sourceSha256": "c02a0fc48d41ba5dde53a6e6b6489b38746077fdd15987ff524d30fd163e7034",
+      "repositorySha256": "c02a0fc48d41ba5dde53a6e6b6489b38746077fdd15987ff524d30fd163e7034"
+    },
+    {
+      "path": "src/learning.mjs",
+      "sourceBytes": 10549,
+      "sourceSha256": "0e7daa3619d23988e9cb6f4eb03939a2b9ec0ac847bf38d0d4986550f1eb1ca4",
+      "repositorySha256": "0e7daa3619d23988e9cb6f4eb03939a2b9ec0ac847bf38d0d4986550f1eb1ca4"
+    },
+    {
+      "path": "src/LearningExtras.jsx",
+      "sourceBytes": 12462,
+      "sourceSha256": "3bbdbeabae51cc6431bbaf461bdc2a73b816cf7b27f8029d663812a8278d36a9",
+      "repositorySha256": "3bbdbeabae51cc6431bbaf461bdc2a73b816cf7b27f8029d663812a8278d36a9"
+    },
+    {
+      "path": "src/legacy-entry.jsx",
+      "sourceBytes": 101,
+      "sourceSha256": "ac2c46c8440c3eefc4bf45a1472156103433378d673b0feca1e9c774d1ddd316",
+      "repositorySha256": "ac2c46c8440c3eefc4bf45a1472156103433378d673b0feca1e9c774d1ddd316"
+    },
+    {
+      "path": "src/library.css",
+      "sourceBytes": 7277,
+      "sourceSha256": "f115f63dc4b9b90523e8d50b8ae7b8da312bd27e250be43e1f398b894276477d",
+      "repositorySha256": "f115f63dc4b9b90523e8d50b8ae7b8da312bd27e250be43e1f398b894276477d"
+    },
+    {
+      "path": "src/library.mjs",
+      "sourceBytes": 9431,
+      "sourceSha256": "5b9a1d84193fdab85476cc5c058e4a32eca205e08d94e013a8cf8edbf51be849",
+      "repositorySha256": "5b9a1d84193fdab85476cc5c058e4a32eca205e08d94e013a8cf8edbf51be849"
+    },
+    {
+      "path": "src/LibraryLab.jsx",
+      "sourceBytes": 12162,
+      "sourceSha256": "98e0a18dfa225f15421591ebead2b9aceb16d7c249d2e70fe4a6e121e2e84573",
+      "repositorySha256": "98e0a18dfa225f15421591ebead2b9aceb16d7c249d2e70fe4a6e121e2e84573"
+    },
+    {
+      "path": "src/main.jsx",
+      "sourceBytes": 572,
+      "sourceSha256": "5947829a4db192af02379cd5b3bdcec93291fed0925eb74a38e6171305d81f20",
+      "repositorySha256": "5947829a4db192af02379cd5b3bdcec93291fed0925eb74a38e6171305d81f20"
+    },
+    {
+      "path": "src/model.mjs",
+      "sourceBytes": 10390,
+      "sourceSha256": "e458881a8c036fdd534644bd60d9f040ba3fd268700857d4e48ecece352dad79",
+      "repositorySha256": "e458881a8c036fdd534644bd60d9f040ba3fd268700857d4e48ecece352dad79"
+    },
+    {
+      "path": "src/navigation-state.mjs",
+      "sourceBytes": 857,
+      "sourceSha256": "94dbcc826ff50a688fd093abe960129354247dfae4fbe5fe6d238d0d629d616e",
+      "repositorySha256": "94dbcc826ff50a688fd093abe960129354247dfae4fbe5fe6d238d0d629d616e"
+    },
+    {
+      "path": "src/pages.jsx",
+      "sourceBytes": 8156,
+      "sourceSha256": "f3b9e55f9bc830a7a7e4e78dfe7c6186123d302fd8beca25ae7208abc552695a",
+      "repositorySha256": "f3b9e55f9bc830a7a7e4e78dfe7c6186123d302fd8beca25ae7208abc552695a"
+    },
+    {
+      "path": "src/paper-bridge.css",
+      "sourceBytes": 6086,
+      "sourceSha256": "2db4c9370e8376ac4132d202885d81c230c731022a63e50518288a86d87076de",
+      "repositorySha256": "2db4c9370e8376ac4132d202885d81c230c731022a63e50518288a86d87076de"
+    },
+    {
+      "path": "src/paper-bridge.mjs",
+      "sourceBytes": 8407,
+      "sourceSha256": "298a236ec121fe1eb57e7c78a8bf0e2e44aa6e4aa3038bbcc9a6e72c06660bc9",
+      "repositorySha256": "298a236ec121fe1eb57e7c78a8bf0e2e44aa6e4aa3038bbcc9a6e72c06660bc9"
+    },
+    {
+      "path": "src/PaperBridge.jsx",
+      "sourceBytes": 9333,
+      "sourceSha256": "968541f1475f87b41e74d2397d4e3ef24146bc05467a3b2b6f912237d43052bb",
+      "repositorySha256": "968541f1475f87b41e74d2397d4e3ef24146bc05467a3b2b6f912237d43052bb"
+    },
+    {
+      "path": "src/production.mjs",
+      "sourceBytes": 3373,
+      "sourceSha256": "6b0d295e8e4695019525a4ca14382a7b3691f952e1a8d7b7da588f08fb14891d",
+      "repositorySha256": "6b0d295e8e4695019525a4ca14382a7b3691f952e1a8d7b7da588f08fb14891d"
+    },
+    {
+      "path": "src/rain.css",
+      "sourceBytes": 4377,
+      "sourceSha256": "8ac559e257f5d2d8af746b01056e827c381643030f02215a356ed0dbd04661f5",
+      "repositorySha256": "8ac559e257f5d2d8af746b01056e827c381643030f02215a356ed0dbd04661f5"
+    },
+    {
+      "path": "src/rain.mjs",
+      "sourceBytes": 5765,
+      "sourceSha256": "ea555bd8626b5598964881c74e8ad52cf8d13c5da3667331bd062a5ad18e8387",
+      "repositorySha256": "ea555bd8626b5598964881c74e8ad52cf8d13c5da3667331bd062a5ad18e8387"
+    },
+    {
+      "path": "src/RainStudio.jsx",
+      "sourceBytes": 7979,
+      "sourceSha256": "c9f5b972c1876e38c4977834bd3d24949cc0c5c50391fb1218865ec109ec5669",
+      "repositorySha256": "c9f5b972c1876e38c4977834bd3d24949cc0c5c50391fb1218865ec109ec5669"
+    },
+    {
+      "path": "src/reading-help.mjs",
+      "sourceBytes": 5773,
+      "sourceSha256": "1e555407bb34d9a17d5b94048dedc4a0a11225cbe036f99e0587b867ecfc8aa2",
+      "repositorySha256": "1e555407bb34d9a17d5b94048dedc4a0a11225cbe036f99e0587b867ecfc8aa2"
+    },
+    {
+      "path": "src/ReadingHelp.css",
+      "sourceBytes": 4284,
+      "sourceSha256": "9661c33a608b0b4730632bdefcd27aa07f68ed4d195f06a9d0c31c1ecdd00f61",
+      "repositorySha256": "9661c33a608b0b4730632bdefcd27aa07f68ed4d195f06a9d0c31c1ecdd00f61"
+    },
+    {
+      "path": "src/ReadingHelp.jsx",
+      "sourceBytes": 3363,
+      "sourceSha256": "b037157ddebba6fb93fb70e1ffd75b649c22a50cc18111486b574ce030aef79a",
+      "repositorySha256": "b037157ddebba6fb93fb70e1ffd75b649c22a50cc18111486b574ce030aef79a"
+    },
+    {
+      "path": "src/river-data.mjs",
+      "sourceBytes": 947,
+      "sourceSha256": "9db36b90021b839a79b8fef299dbc27e5790f4dbd5fd8a2ff8135bc98f06a6cf",
+      "repositorySha256": "9db36b90021b839a79b8fef299dbc27e5790f4dbd5fd8a2ff8135bc98f06a6cf"
+    },
+    {
+      "path": "src/river.css",
+      "sourceBytes": 7036,
+      "sourceSha256": "f52610639086fffb6541100c010d2e624f443af882f652b2b218f3a726532313",
+      "repositorySha256": "f52610639086fffb6541100c010d2e624f443af882f652b2b218f3a726532313"
+    },
+    {
+      "path": "src/river.mjs",
+      "sourceBytes": 8522,
+      "sourceSha256": "db5c3027be38ace5d2f7e2df6656685ec0320e88676e841a44429ee5ff500402",
+      "repositorySha256": "db5c3027be38ace5d2f7e2df6656685ec0320e88676e841a44429ee5ff500402"
+    },
+    {
+      "path": "src/RiverObserver.jsx",
+      "sourceBytes": 11949,
+      "sourceSha256": "7ed3fd5cf46ab405b194e137d8d3a018f0c2e2cab0e4832d081f599f8a4ba739",
+      "repositorySha256": "7ed3fd5cf46ab405b194e137d8d3a018f0c2e2cab0e4832d081f599f8a4ba739"
+    },
+    {
+      "path": "src/source-gallery.mjs",
+      "sourceBytes": 2296,
+      "sourceSha256": "a1e0ae4f52faaae7333eed56b5b82b9fe89c1fb815ff735845c72ab3435972ba",
+      "repositorySha256": "a1e0ae4f52faaae7333eed56b5b82b9fe89c1fb815ff735845c72ab3435972ba"
+    },
+    {
+      "path": "src/SourceGallery.css",
+      "sourceBytes": 5965,
+      "sourceSha256": "e15205c1e9b04f8a478def8980a45ca8644710c964f7e57a46ea34b83419b56d",
+      "repositorySha256": "e15205c1e9b04f8a478def8980a45ca8644710c964f7e57a46ea34b83419b56d"
+    },
+    {
+      "path": "src/SourceGallery.jsx",
+      "sourceBytes": 7704,
+      "sourceSha256": "47be8ac48009807e0e4a9dc8bbb29fda4b87d6026537e24f41a2f73fdc85b2b2",
+      "repositorySha256": "47be8ac48009807e0e4a9dc8bbb29fda4b87d6026537e24f41a2f73fdc85b2b2"
+    },
+    {
+      "path": "src/speech.mjs",
+      "sourceBytes": 8907,
+      "sourceSha256": "9c8ea8f5c2ab1db14078d1f9d0c88e58d08e7e6da7eaf89c545581e071a44fd6",
+      "repositorySha256": "9c8ea8f5c2ab1db14078d1f9d0c88e58d08e7e6da7eaf89c545581e071a44fd6"
+    },
+    {
+      "path": "src/SpeechDesk.css",
+      "sourceBytes": 5121,
+      "sourceSha256": "c96c61979dc23cef49f94e4993d5f9494c82ae89af774dfeb824efed623735a0",
+      "repositorySha256": "c96c61979dc23cef49f94e4993d5f9494c82ae89af774dfeb824efed623735a0"
+    },
+    {
+      "path": "src/SpeechDesk.jsx",
+      "sourceBytes": 7304,
+      "sourceSha256": "1a96b43efa7f5de6a45d18165dc53281c96e70a3d1cdcd520be59ee18995d178",
+      "repositorySha256": "1a96b43efa7f5de6a45d18165dc53281c96e70a3d1cdcd520be59ee18995d178"
+    },
+    {
+      "path": "src/SpeechPaper.jsx",
+      "sourceBytes": 1086,
+      "sourceSha256": "6e59be424a5e94adc30d2884215f21995e8e91da30efff5f962f341e7de2f457",
+      "repositorySha256": "6e59be424a5e94adc30d2884215f21995e8e91da30efff5f962f341e7de2f457"
+    },
+    {
+      "path": "src/styles.css",
+      "sourceBytes": 25031,
+      "sourceSha256": "3a5a5c972fb2264eaae7894b11f16ea11e159b9c4ca3ef3f2f5094743608ea67",
+      "repositorySha256": "3a5a5c972fb2264eaae7894b11f16ea11e159b9c4ca3ef3f2f5094743608ea67"
+    },
+    {
+      "path": "src/ui.jsx",
+      "sourceBytes": 7465,
+      "sourceSha256": "9775d801ae94aa0def6a1774f3339cbd2fd5f8836146e173ebdc83b2e9a3109a",
+      "repositorySha256": "9775d801ae94aa0def6a1774f3339cbd2fd5f8836146e173ebdc83b2e9a3109a"
+    },
+    {
+      "path": "src/water-editor.css",
+      "sourceBytes": 5118,
+      "sourceSha256": "a34ba85892da21a6f6ceb28a943c131906933b4a978ca07b7ee75dabd3782743",
+      "repositorySha256": "a34ba85892da21a6f6ceb28a943c131906933b4a978ca07b7ee75dabd3782743"
+    },
+    {
+      "path": "src/water-editor.mjs",
+      "sourceBytes": 4829,
+      "sourceSha256": "e36591b4f78737f06090e4b4826135bcac73d28a44087b07b77f69fe81543e42",
+      "repositorySha256": "e36591b4f78737f06090e4b4826135bcac73d28a44087b07b77f69fe81543e42"
+    },
+    {
+      "path": "src/water-prediction.css",
+      "sourceBytes": 2690,
+      "sourceSha256": "1d29fc06c606798f5998332f90ea091d36112f50284ac589f06f04c6709a4dbc",
+      "repositorySha256": "1d29fc06c606798f5998332f90ea091d36112f50284ac589f06f04c6709a4dbc"
+    },
+    {
+      "path": "src/water-prediction.mjs",
+      "sourceBytes": 1299,
+      "sourceSha256": "c70c9cbdd22980fffc9bbb89724bd9e0217cc7f9d62c6d597716d12632a4d9e2",
+      "repositorySha256": "c70c9cbdd22980fffc9bbb89724bd9e0217cc7f9d62c6d597716d12632a4d9e2"
+    },
+    {
+      "path": "src/water-review.css",
+      "sourceBytes": 5538,
+      "sourceSha256": "3a080c2708e9df8d0ab0e91f4d62497898a3f576e6567212b7d2b8437dada3d8",
+      "repositorySha256": "3a080c2708e9df8d0ab0e91f4d62497898a3f576e6567212b7d2b8437dada3d8"
+    },
+    {
+      "path": "src/water-review.mjs",
+      "sourceBytes": 1571,
+      "sourceSha256": "c8ee2739c6318ffa0dbfe2454d150a9b7e2c868945d2ce8bf5489c4e0e57487b",
+      "repositorySha256": "c8ee2739c6318ffa0dbfe2454d150a9b7e2c868945d2ce8bf5489c4e0e57487b"
+    },
+    {
+      "path": "src/water.mjs",
+      "sourceBytes": 1981,
+      "sourceSha256": "607080894e18a015344b7febfc18d28797d87e5af60c8f1d1ae3a810c9c6ed9f",
+      "repositorySha256": "607080894e18a015344b7febfc18d28797d87e5af60c8f1d1ae3a810c9c6ed9f"
+    },
+    {
+      "path": "src/WaterEditor.jsx",
+      "sourceBytes": 6643,
+      "sourceSha256": "f4e0c19e69549d9d706d406afff4e3128872dda95dae998d9b485a77b3e0ead5",
+      "repositorySha256": "f4e0c19e69549d9d706d406afff4e3128872dda95dae998d9b485a77b3e0ead5"
+    },
+    {
+      "path": "src/WaterPrediction.jsx",
+      "sourceBytes": 2847,
+      "sourceSha256": "76e19dc2819866ceba69d7e781c0e311fb4261c37dd1a2dc3f3a548d733791cc",
+      "repositorySha256": "76e19dc2819866ceba69d7e781c0e311fb4261c37dd1a2dc3f3a548d733791cc"
+    },
+    {
+      "path": "src/WaterReview.jsx",
+      "sourceBytes": 3618,
+      "sourceSha256": "69a3c857508c439aed687c5d4930c56d0ab33351c48630c8f8c8b0a3923068f0",
+      "repositorySha256": "69a3c857508c439aed687c5d4930c56d0ab33351c48630c8f8c8b0a3923068f0"
+    },
+    {
+      "path": "src/WaterWorkshop.jsx",
+      "sourceBytes": 3922,
+      "sourceSha256": "6442a716aa86c34fc17a34705b9a143413c1a34612f2697dd9d2455c083197f3",
+      "repositorySha256": "6442a716aa86c34fc17a34705b9a143413c1a34612f2697dd9d2455c083197f3"
+    },
+    {
+      "path": "src/spatial/RiverView.jsx",
+      "sourceBytes": 1655,
+      "sourceSha256": "0b6ebbe77c4f8ee7df7a510a2c9c654a3566e4c5ede14a77699c16bb125f09aa",
+      "repositorySha256": "0b6ebbe77c4f8ee7df7a510a2c9c654a3566e4c5ede14a77699c16bb125f09aa"
+    },
+    {
+      "path": "src/spatial/spatial.css",
+      "sourceBytes": 17700,
+      "sourceSha256": "3f5aa306f89ee02dd3a75eb09c82c586963352a9117c35d72a3e51e982ce927f",
+      "repositorySha256": "3f5aa306f89ee02dd3a75eb09c82c586963352a9117c35d72a3e51e982ce927f"
+    },
+    {
+      "path": "src/spatial/Spatial.jsx",
+      "sourceBytes": 4829,
+      "sourceSha256": "db56bd21a33467be57cc21d186754ed68680924d4927b5f533b05ab1dca949b0",
+      "repositorySha256": "db56bd21a33467be57cc21d186754ed68680924d4927b5f533b05ab1dca949b0"
+    },
+    {
+      "path": "src/spatial/Village.jsx",
+      "sourceBytes": 2308,
+      "sourceSha256": "12689b1b1ed539dadbfd025ae7426482080ea69dc9dfc7dfb329705cc56cf4c3",
+      "repositorySha256": "12689b1b1ed539dadbfd025ae7426482080ea69dc9dfc7dfb329705cc56cf4c3"
+    },
+    {
+      "path": "src/spatial/world.mjs",
+      "sourceBytes": 26767,
+      "sourceSha256": "24f4ff214c72ee0d3d444c369b3ea4c2e61b47715fe42c98a84ccbad2869a027",
+      "repositorySha256": "24f4ff214c72ee0d3d444c369b3ea4c2e61b47715fe42c98a84ccbad2869a027"
+    },
+    {
+      "path": "src/v2/AppV2.jsx",
+      "sourceBytes": 38768,
+      "sourceSha256": "15e462ae7aecbafeb7a57c38bcf66b2020801dec5d9c9d6c3590cab6e9a41f4b",
+      "repositorySha256": "15e462ae7aecbafeb7a57c38bcf66b2020801dec5d9c9d6c3590cab6e9a41f4b"
+    },
+    {
+      "path": "src/v2/engine.mjs",
+      "sourceBytes": 30583,
+      "sourceSha256": "a1a087f718e94297481260823e8ad9f5f7c7ac731e8e9b2733434000e4fa4722",
+      "repositorySha256": "a1a087f718e94297481260823e8ad9f5f7c7ac731e8e9b2733434000e4fa4722"
+    },
+    {
+      "path": "src/v2/Handoff.jsx",
+      "sourceBytes": 15800,
+      "sourceSha256": "631fd13219fa0ce2f8bd14422a566be7eb98906485c20c104d3bacb9a6ba881c",
+      "repositorySha256": "631fd13219fa0ce2f8bd14422a566be7eb98906485c20c104d3bacb9a6ba881c"
+    },
+    {
+      "path": "src/v2/Journal.jsx",
+      "sourceBytes": 7737,
+      "sourceSha256": "a6ae71f463bb807e9ddd8936efcf73fb06c99b580858613b09854f91f13a178f",
+      "repositorySha256": "a6ae71f463bb807e9ddd8936efcf73fb06c99b580858613b09854f91f13a178f"
+    },
+    {
+      "path": "src/v2/PaintBoard.jsx",
+      "sourceBytes": 16351,
+      "sourceSha256": "d6c03f230164b86e7c5cb7766d20b52c49a5374814a2e7f53e6baf98ac8cc392",
+      "repositorySha256": "d6c03f230164b86e7c5cb7766d20b52c49a5374814a2e7f53e6baf98ac8cc392"
+    },
+    {
+      "path": "src/v2/v2.css",
+      "sourceBytes": 41676,
+      "sourceSha256": "2d7de182115763f1411f5e60242b47290abfc9e4bb509f55969103aedbdd8d39",
+      "repositorySha256": "2d7de182115763f1411f5e60242b47290abfc9e4bb509f55969103aedbdd8d39"
+    },
+    {
+      "path": "src/v3/AppV3.jsx",
+      "sourceBytes": 27452,
+      "sourceSha256": "95dba129f336751fab0dd8f97cf82a20624ff8cdd2352eb70d854fe4c8e5f350",
+      "repositorySha256": "95dba129f336751fab0dd8f97cf82a20624ff8cdd2352eb70d854fe4c8e5f350"
+    },
+    {
+      "path": "src/v3/Games.jsx",
+      "sourceBytes": 25783,
+      "sourceSha256": "9d1febdbdfdd24eee5ed103c82955edfd803d08851d73a647e6da68807871421",
+      "repositorySha256": "9d1febdbdfdd24eee5ed103c82955edfd803d08851d73a647e6da68807871421"
+    },
+    {
+      "path": "src/v3/model.mjs",
+      "sourceBytes": 20073,
+      "sourceSha256": "c1924a5f955bc8a3b9f7097fa1b32c2c51fdcdeb5265318a24b7fd7b758d1cff",
+      "repositorySha256": "c1924a5f955bc8a3b9f7097fa1b32c2c51fdcdeb5265318a24b7fd7b758d1cff"
+    },
+    {
+      "path": "src/v3/SketchPad.jsx",
+      "sourceBytes": 7887,
+      "sourceSha256": "2394d09ee59442a88773dc73d8ae0972ecde2c6018c4692c5b26049a85418f90",
+      "repositorySha256": "2394d09ee59442a88773dc73d8ae0972ecde2c6018c4692c5b26049a85418f90"
+    },
+    {
+      "path": "src/v3/v3.css",
+      "sourceBytes": 26123,
+      "sourceSha256": "2f61f6df78bb84939d0d562adcae633e36bfcde96ec37d7c3683a2cc2e9f3e7e",
+      "repositorySha256": "2f61f6df78bb84939d0d562adcae633e36bfcde96ec37d7c3683a2cc2e9f3e7e"
+    },
+    {
+      "path": "src/v4/AppV4.jsx",
+      "sourceBytes": 30567,
+      "sourceSha256": "875ad8b0d554fff9a49881024de3a8c1c8f83dac8cafdb92222d4cda2b449d1e",
+      "repositorySha256": "875ad8b0d554fff9a49881024de3a8c1c8f83dac8cafdb92222d4cda2b449d1e"
+    },
+    {
+      "path": "src/v4/Boards.jsx",
+      "sourceBytes": 23811,
+      "sourceSha256": "710f82aa022f216a387ba25531cf800681ced3edbc713cafb864de68c1ab40c4",
+      "repositorySha256": "710f82aa022f216a387ba25531cf800681ced3edbc713cafb864de68c1ab40c4"
+    },
+    {
+      "path": "src/v4/model.mjs",
+      "sourceBytes": 23398,
+      "sourceSha256": "da421f8158b330e763099c5d24e43ff542f0eaccf5afe94d94e0a763faac18fc",
+      "repositorySha256": "da421f8158b330e763099c5d24e43ff542f0eaccf5afe94d94e0a763faac18fc"
+    },
+    {
+      "path": "src/v4/v4.css",
+      "sourceBytes": 24720,
+      "sourceSha256": "434ceac9e72428fc8f0aa4fd6ffd869a3349dc448116a8af697885a009cb8e9a",
+      "repositorySha256": "434ceac9e72428fc8f0aa4fd6ffd869a3349dc448116a8af697885a009cb8e9a"
+    },
+    {
+      "path": "src/v5/AppV5.jsx",
+      "sourceBytes": 19822,
+      "sourceSha256": "74d5f488fc84f3b5186a27aa077892245ea75ee8e43f2d518ff3fb0b36cce2f2",
+      "repositorySha256": "74d5f488fc84f3b5186a27aa077892245ea75ee8e43f2d518ff3fb0b36cce2f2"
+    },
+    {
+      "path": "src/v5/Games.jsx",
+      "sourceBytes": 18214,
+      "sourceSha256": "f49927b23784b68cfeb039e084b9090742b4e67fcaf6d5d42965b22d3228a118",
+      "repositorySha256": "f49927b23784b68cfeb039e084b9090742b4e67fcaf6d5d42965b22d3228a118"
+    },
+    {
+      "path": "src/v5/model.mjs",
+      "sourceBytes": 18385,
+      "sourceSha256": "eaef64060e7a536c6803a311eb0101e128c87fc4ecc52c875e6003d7f740b014",
+      "repositorySha256": "eaef64060e7a536c6803a311eb0101e128c87fc4ecc52c875e6003d7f740b014"
+    },
+    {
+      "path": "src/v5/PaperStage.jsx",
+      "sourceBytes": 4733,
+      "sourceSha256": "85cdfc4e5fcca5f58e5a264be65510e02f27d0eae2d8dc5de36e257e42d1fadb",
+      "repositorySha256": "85cdfc4e5fcca5f58e5a264be65510e02f27d0eae2d8dc5de36e257e42d1fadb"
+    },
+    {
+      "path": "src/v5/Sketch.jsx",
+      "sourceBytes": 4426,
+      "sourceSha256": "0156c59dfb04d908bb3f35472acd7c26fa936b5bcf49d6de5186894c92122ed2",
+      "repositorySha256": "0156c59dfb04d908bb3f35472acd7c26fa936b5bcf49d6de5186894c92122ed2"
+    },
+    {
+      "path": "src/v5/v5.css",
+      "sourceBytes": 32862,
+      "sourceSha256": "6b2f348fc2758d71399b867c9ccdd0fd45ab2894db8990084448903f9320df6b",
+      "repositorySha256": "6b2f348fc2758d71399b867c9ccdd0fd45ab2894db8990084448903f9320df6b"
+    },
+    {
+      "path": "tests/audit-evidence-before.mjs",
+      "sourceBytes": 1971,
+      "sourceSha256": "173e71503148e355a81c0832aba890b155905179a48b346b582a8a753c36e21f",
+      "repositorySha256": "173e71503148e355a81c0832aba890b155905179a48b346b582a8a753c36e21f"
+    },
+    {
+      "path": "tests/audit-handoff-before.mjs",
+      "sourceBytes": 2418,
+      "sourceSha256": "2149c566a3d41246818fe6cc8f3cfea4d99d192a32cdfcd59ca83887f5a82219",
+      "repositorySha256": "2149c566a3d41246818fe6cc8f3cfea4d99d192a32cdfcd59ca83887f5a82219"
+    },
+    {
+      "path": "tests/audit-journey-before.mjs",
+      "sourceBytes": 2047,
+      "sourceSha256": "fcba5bd2406cfdf31353033bc642eab3bf614ff12711a0b6ddf51ceca27dd671",
+      "repositorySha256": "fcba5bd2406cfdf31353033bc642eab3bf614ff12711a0b6ddf51ceca27dd671"
+    },
+    {
+      "path": "tests/audit-prediction-before.mjs",
+      "sourceBytes": 1845,
+      "sourceSha256": "aaac9b27f897638832055d816741eadde79be43e1e4cb1e21b784174313ec1a1",
+      "repositorySha256": "aaac9b27f897638832055d816741eadde79be43e1e4cb1e21b784174313ec1a1"
+    },
+    {
+      "path": "tests/audit-story-pointing.mjs",
+      "sourceBytes": 1458,
+      "sourceSha256": "6852f43c1b84231b88fbe581ff57a5ba1195b8f4f1bcd3826aa31e4e23522bc7",
+      "repositorySha256": "6852f43c1b84231b88fbe581ff57a5ba1195b8f4f1bcd3826aa31e4e23522bc7"
+    },
+    {
+      "path": "tests/audit-water-review.mjs",
+      "sourceBytes": 1661,
+      "sourceSha256": "a274eda397e31ab29d07210997d133f5bf48c397e13c059ad256af1a5e8f55c0",
+      "repositorySha256": "a274eda397e31ab29d07210997d133f5bf48c397e13c059ad256af1a5e8f55c0"
+    },
+    {
+      "path": "tests/audit-workshop-before.mjs",
+      "sourceBytes": 2243,
+      "sourceSha256": "3f0bc4affe1cc128e9d7a215f74d91d3c1a98447b627abbf214f504d5ec75dff",
+      "repositorySha256": "3f0bc4affe1cc128e9d7a215f74d91d3c1a98447b627abbf214f504d5ec75dff"
+    },
+    {
+      "path": "tests/capture.mjs",
+      "sourceBytes": 1201,
+      "sourceSha256": "a9d17ed59f3fe62f85ac58059405f3f0a1a1d9c24a2189e5aa7cd453fbc7f7fe",
+      "repositorySha256": "a9d17ed59f3fe62f85ac58059405f3f0a1a1d9c24a2189e5aa7cd453fbc7f7fe"
+    },
+    {
+      "path": "tests/care-browser.mjs",
+      "sourceBytes": 7066,
+      "sourceSha256": "d07eadfeba87dcbeec27e4517f5a1ed3dee7664156e3dac6a68c6c098fcf78e8",
+      "repositorySha256": "d07eadfeba87dcbeec27e4517f5a1ed3dee7664156e3dac6a68c6c098fcf78e8"
+    },
+    {
+      "path": "tests/care-visual.mjs",
+      "sourceBytes": 2282,
+      "sourceSha256": "53513862e63c6a86d5595b427ffb2f454730fd656f909ab4dda8944e43934f51",
+      "repositorySha256": "53513862e63c6a86d5595b427ffb2f454730fd656f909ab4dda8944e43934f51"
+    },
+    {
+      "path": "tests/care.test.mjs",
+      "sourceBytes": 6660,
+      "sourceSha256": "396b93f3ebd6ec1ed54a6a2ef5012c8dba1395db190d29ec0fd6e3831d520675",
+      "repositorySha256": "396b93f3ebd6ec1ed54a6a2ef5012c8dba1395db190d29ec0fd6e3831d520675"
+    },
+    {
+      "path": "tests/challenge-browser.mjs",
+      "sourceBytes": 8798,
+      "sourceSha256": "0ef2a1caa11d9105052d5cc6330a3f2315eb04701505a382703d6ff111e0abaf",
+      "repositorySha256": "0ef2a1caa11d9105052d5cc6330a3f2315eb04701505a382703d6ff111e0abaf"
+    },
+    {
+      "path": "tests/challenge-visual.mjs",
+      "sourceBytes": 3508,
+      "sourceSha256": "9cb8a5ed4d42100b48813efa26e407b74d21511f1241402749c5550ea5243390",
+      "repositorySha256": "9cb8a5ed4d42100b48813efa26e407b74d21511f1241402749c5550ea5243390"
+    },
+    {
+      "path": "tests/challenge.test.mjs",
+      "sourceBytes": 6081,
+      "sourceSha256": "00a5db6571af42449ffb527a0d81d29fe2eba3f4dc2dd80989f0eba35e083cef",
+      "repositorySha256": "00a5db6571af42449ffb527a0d81d29fe2eba3f4dc2dd80989f0eba35e083cef"
+    },
+    {
+      "path": "tests/classroom-browser.mjs",
+      "sourceBytes": 10733,
+      "sourceSha256": "eaf52149c6cd89d65dd960c77e63f008afe9b1b189425de441b994cbf43194be",
+      "repositorySha256": "eaf52149c6cd89d65dd960c77e63f008afe9b1b189425de441b994cbf43194be"
+    },
+    {
+      "path": "tests/comparison-browser.mjs",
+      "sourceBytes": 9981,
+      "sourceSha256": "dfa857f098f9d209410a6b42122c70856398abe034501964581b48b55e1c5bb7",
+      "repositorySha256": "dfa857f098f9d209410a6b42122c70856398abe034501964581b48b55e1c5bb7"
+    },
+    {
+      "path": "tests/comparison-visual.mjs",
+      "sourceBytes": 3503,
+      "sourceSha256": "0f66c461e667855c773e96b48da6fe4bb051da2fa9a845e7c0f762e061b75ce0",
+      "repositorySha256": "0f66c461e667855c773e96b48da6fe4bb051da2fa9a845e7c0f762e061b75ce0"
+    },
+    {
+      "path": "tests/comparison.test.mjs",
+      "sourceBytes": 5532,
+      "sourceSha256": "baff0c7a99d04709c32ae04b6e0cbdec8833317dee2f61aff7e18a5788585834",
+      "repositorySha256": "baff0c7a99d04709c32ae04b6e0cbdec8833317dee2f61aff7e18a5788585834"
+    },
+    {
+      "path": "tests/contract-reading-browser.mjs",
+      "sourceBytes": 10256,
+      "sourceSha256": "8d8681266784186201a35607416657ffb659ceb569e9fee2a62d194b16b02fd3",
+      "repositorySha256": "8d8681266784186201a35607416657ffb659ceb569e9fee2a62d194b16b02fd3"
+    },
+    {
+      "path": "tests/contract-reading-visual.mjs",
+      "sourceBytes": 2397,
+      "sourceSha256": "df4aadb16f56bab597848684ca234c22ffe10f6cb0c980202a172000c830b7c2",
+      "repositorySha256": "df4aadb16f56bab597848684ca234c22ffe10f6cb0c980202a172000c830b7c2"
+    },
+    {
+      "path": "tests/contract-reading.test.mjs",
+      "sourceBytes": 4799,
+      "sourceSha256": "802dac89cedefdf82ec61cdfac407c6f18a24eda7bf4b94459b1baa3c0e2adaf",
+      "repositorySha256": "802dac89cedefdf82ec61cdfac407c6f18a24eda7bf4b94459b1baa3c0e2adaf"
+    },
+    {
+      "path": "tests/council-browser.mjs",
+      "sourceBytes": 5999,
+      "sourceSha256": "240cd74a614eb898ff0f77d7434f3454663447dbd242a6506cec36e9013e76fd",
+      "repositorySha256": "240cd74a614eb898ff0f77d7434f3454663447dbd242a6506cec36e9013e76fd"
+    },
+    {
+      "path": "tests/council-visual.mjs",
+      "sourceBytes": 3033,
+      "sourceSha256": "3a5d7f2d12fe02f9beaa7d94cd63b2aae73595d88a4fc3d9fdf5a4632d77b987",
+      "repositorySha256": "3a5d7f2d12fe02f9beaa7d94cd63b2aae73595d88a4fc3d9fdf5a4632d77b987"
+    },
+    {
+      "path": "tests/council.test.mjs",
+      "sourceBytes": 5111,
+      "sourceSha256": "9197cde0e9a8ebe6df82fb3a493ab3ebf5065355c75415d27377f214e371937e",
+      "repositorySha256": "9197cde0e9a8ebe6df82fb3a493ab3ebf5065355c75415d27377f214e371937e"
+    },
+    {
+      "path": "tests/diagnose-classroom-v14.mjs",
+      "sourceBytes": 11105,
+      "sourceSha256": "adf5eb4bfffb17e83acc5ff3e76fe50aa18e5cd710936185bf2a4a748ffdeb35",
+      "repositorySha256": "adf5eb4bfffb17e83acc5ff3e76fe50aa18e5cd710936185bf2a4a748ffdeb35"
+    },
+    {
+      "path": "tests/dialogue-browser.mjs",
+      "sourceBytes": 9999,
+      "sourceSha256": "af15bd105921d1358db760d9938e27c4da031f0acb3d479ce94d7c861aa117e5",
+      "repositorySha256": "af15bd105921d1358db760d9938e27c4da031f0acb3d479ce94d7c861aa117e5"
+    },
+    {
+      "path": "tests/dialogue.test.mjs",
+      "sourceBytes": 6073,
+      "sourceSha256": "baa9771cbc1ebedd98e14e816a9d8b2e79c8c7c30988cb5b6dbfef30be70a533",
+      "repositorySha256": "baa9771cbc1ebedd98e14e816a9d8b2e79c8c7c30988cb5b6dbfef30be70a533"
+    },
+    {
+      "path": "tests/ending-lab-browser.mjs",
+      "sourceBytes": 9251,
+      "sourceSha256": "101d5fe8ca2a71dff9656e36970d702d090a447c48efceb4224af6c54c9d62c8",
+      "repositorySha256": "101d5fe8ca2a71dff9656e36970d702d090a447c48efceb4224af6c54c9d62c8"
+    },
+    {
+      "path": "tests/ending-lab.test.mjs",
+      "sourceBytes": 4858,
+      "sourceSha256": "57c03150bb867a8a944b39a3bcfa9fdcc0194553d9b7d6eeea251eca7dbbd769",
+      "repositorySha256": "57c03150bb867a8a944b39a3bcfa9fdcc0194553d9b7d6eeea251eca7dbbd769"
+    },
+    {
+      "path": "tests/extended-browser.mjs",
+      "sourceBytes": 6458,
+      "sourceSha256": "1d6790072529519c07b2a444ede6551f0edc1c621519d5ae2b4fa88aee20d915",
+      "repositorySha256": "1d6790072529519c07b2a444ede6551f0edc1c621519d5ae2b4fa88aee20d915"
+    },
+    {
+      "path": "tests/final-visual.mjs",
+      "sourceBytes": 3301,
+      "sourceSha256": "8ffead5709b1b260e50f3785a9dbbb9fb0ae89c514c7e2f86731b88a6fe2d7e1",
+      "repositorySha256": "8ffead5709b1b260e50f3785a9dbbb9fb0ae89c514c7e2f86731b88a6fe2d7e1"
+    },
+    {
+      "path": "tests/gifts-browser.mjs",
+      "sourceBytes": 5723,
+      "sourceSha256": "02e75be2b3bb269fb6cadcea32a7d1ea3dcc418ccd3303e740c1914ffa4c7086",
+      "repositorySha256": "02e75be2b3bb269fb6cadcea32a7d1ea3dcc418ccd3303e740c1914ffa4c7086"
+    },
+    {
+      "path": "tests/gifts-visual.mjs",
+      "sourceBytes": 4177,
+      "sourceSha256": "628be433d19a2413e0e402c4d1d3c71491376cee5dd924101369ace4c913ee3f",
+      "repositorySha256": "628be433d19a2413e0e402c4d1d3c71491376cee5dd924101369ace4c913ee3f"
+    },
+    {
+      "path": "tests/gifts.test.mjs",
+      "sourceBytes": 5417,
+      "sourceSha256": "b0d757847088c7bf6296971fa03047f8793c838911404b71147042189b49c611",
+      "repositorySha256": "b0d757847088c7bf6296971fa03047f8793c838911404b71147042189b49c611"
+    },
+    {
+      "path": "tests/guide-context-browser.mjs",
+      "sourceBytes": 3309,
+      "sourceSha256": "b3e3dedb4355f009f4c6c93047a21533ad9898c930ca90a07d0c8e57bc987367",
+      "repositorySha256": "b3e3dedb4355f009f4c6c93047a21533ad9898c930ca90a07d0c8e57bc987367"
+    },
+    {
+      "path": "tests/handoff-card-browser.mjs",
+      "sourceBytes": 10510,
+      "sourceSha256": "b1cc2131834627b61de927b5e15581db747dadb0b41fd92439d281bba30ce11a",
+      "repositorySha256": "b1cc2131834627b61de927b5e15581db747dadb0b41fd92439d281bba30ce11a"
+    },
+    {
+      "path": "tests/handoff-card.test.mjs",
+      "sourceBytes": 5049,
+      "sourceSha256": "5fe42b538ca303241989b7ba60e970e52f4d3f621b3cee84d258a95e28fb632a",
+      "repositorySha256": "5fe42b538ca303241989b7ba60e970e52f4d3f621b3cee84d258a95e28fb632a"
+    },
+    {
+      "path": "tests/journey-boundaries.mjs",
+      "sourceBytes": 2392,
+      "sourceSha256": "202423ed68131af137325baeb5a2aa2a8063e11207880a30b4b50702ecc0ef3a",
+      "repositorySha256": "202423ed68131af137325baeb5a2aa2a8063e11207880a30b4b50702ecc0ef3a"
+    },
+    {
+      "path": "tests/journey-browser.mjs",
+      "sourceBytes": 8054,
+      "sourceSha256": "475a24ee530977b13248e396ea018a6912b6c4e973c3cf5861fbf43c526778bf",
+      "repositorySha256": "475a24ee530977b13248e396ea018a6912b6c4e973c3cf5861fbf43c526778bf"
+    },
+    {
+      "path": "tests/journey.test.mjs",
+      "sourceBytes": 4696,
+      "sourceSha256": "26efa10d5abfb8ea7936eaea43861519531559e1d0130d1d7dd8224a09fb7aff",
+      "repositorySha256": "26efa10d5abfb8ea7936eaea43861519531559e1d0130d1d7dd8224a09fb7aff"
+    },
+    {
+      "path": "tests/learning-browser.mjs",
+      "sourceBytes": 10635,
+      "sourceSha256": "a925da5f1b57321392b8afe93e3afa22fa1fd5468de53feda33ce142fc66e715",
+      "repositorySha256": "a925da5f1b57321392b8afe93e3afa22fa1fd5468de53feda33ce142fc66e715"
+    },
+    {
+      "path": "tests/learning-visual.mjs",
+      "sourceBytes": 5229,
+      "sourceSha256": "af19c30eda778eb969499bb64c2ea70bacb6cb7de3968ef63da4c9c0f3139ac6",
+      "repositorySha256": "af19c30eda778eb969499bb64c2ea70bacb6cb7de3968ef63da4c9c0f3139ac6"
+    },
+    {
+      "path": "tests/learning.test.mjs",
+      "sourceBytes": 4043,
+      "sourceSha256": "3ffada2e5f063c8dcee54beb31cb81ef5d68262a88db5e81f5d507af969a4cdf",
+      "repositorySha256": "3ffada2e5f063c8dcee54beb31cb81ef5d68262a88db5e81f5d507af969a4cdf"
+    },
+    {
+      "path": "tests/library-browser.mjs",
+      "sourceBytes": 7010,
+      "sourceSha256": "b9f98088aa06d671cae1da25d92330caca6a94bc3eea5f785a0a702f9af3658a",
+      "repositorySha256": "b9f98088aa06d671cae1da25d92330caca6a94bc3eea5f785a0a702f9af3658a"
+    },
+    {
+      "path": "tests/library-visual.mjs",
+      "sourceBytes": 3389,
+      "sourceSha256": "9d0041a7083f648de162fec8eb6291ab4f957c9bd087e50bd33ebc448253a7eb",
+      "repositorySha256": "9d0041a7083f648de162fec8eb6291ab4f957c9bd087e50bd33ebc448253a7eb"
+    },
+    {
+      "path": "tests/library.test.mjs",
+      "sourceBytes": 5662,
+      "sourceSha256": "1e66996da46b34ba71dddb739b30978a11ffe9b994869ff7d1f1f1a45bd52491",
+      "repositorySha256": "1e66996da46b34ba71dddb739b30978a11ffe9b994869ff7d1f1f1a45bd52491"
+    },
+    {
+      "path": "tests/model.test.mjs",
+      "sourceBytes": 4787,
+      "sourceSha256": "dfdfde1e69a61122f84c3424a36f34d8a313f05b1de9bc61d40f457ccb98d2d2",
+      "repositorySha256": "dfdfde1e69a61122f84c3424a36f34d8a313f05b1de9bc61d40f457ccb98d2d2"
+    },
+    {
+      "path": "tests/paper-bridge-browser.mjs",
+      "sourceBytes": 6609,
+      "sourceSha256": "9f48e11d6f80fcf0e2cf2dc0b86195f063c40fbdc6b504ae168e481e4150f9b7",
+      "repositorySha256": "9f48e11d6f80fcf0e2cf2dc0b86195f063c40fbdc6b504ae168e481e4150f9b7"
+    },
+    {
+      "path": "tests/paper-bridge-visual.mjs",
+      "sourceBytes": 3271,
+      "sourceSha256": "97984e4e7c80356fcea5f3782bd2cea14b4125f464a63f403e5127d71b92ee7b",
+      "repositorySha256": "97984e4e7c80356fcea5f3782bd2cea14b4125f464a63f403e5127d71b92ee7b"
+    },
+    {
+      "path": "tests/paper-bridge.test.mjs",
+      "sourceBytes": 6115,
+      "sourceSha256": "851ff68429275e9e9c8683697d4cf4b78e3e7d4c7fb2728ee521f68b8c28a8c2",
+      "repositorySha256": "851ff68429275e9e9c8683697d4cf4b78e3e7d4c7fb2728ee521f68b8c28a8c2"
+    },
+    {
+      "path": "tests/rain-browser.mjs",
+      "sourceBytes": 8442,
+      "sourceSha256": "1961191862e534de3bfd89925b0eb69b731e7146bce0e1b347209a19835282e3",
+      "repositorySha256": "1961191862e534de3bfd89925b0eb69b731e7146bce0e1b347209a19835282e3"
+    },
+    {
+      "path": "tests/rain-visual.mjs",
+      "sourceBytes": 3055,
+      "sourceSha256": "3532318f057eb830d8950fbe76c9eede9d5ce8169d560627ba37bdee35c88eec",
+      "repositorySha256": "3532318f057eb830d8950fbe76c9eede9d5ce8169d560627ba37bdee35c88eec"
+    },
+    {
+      "path": "tests/rain.test.mjs",
+      "sourceBytes": 4523,
+      "sourceSha256": "772a9de609d0d48e238b36a0168e5eba7d0f9f7a3fb0eec13225de9cc1e55196",
+      "repositorySha256": "772a9de609d0d48e238b36a0168e5eba7d0f9f7a3fb0eec13225de9cc1e55196"
+    },
+    {
+      "path": "tests/reading-help-browser.mjs",
+      "sourceBytes": 8932,
+      "sourceSha256": "9ce3967849b13f43df9357274f50a791560fd98b26eba37caa668b44f4f0b51f",
+      "repositorySha256": "9ce3967849b13f43df9357274f50a791560fd98b26eba37caa668b44f4f0b51f"
+    },
+    {
+      "path": "tests/reading-help-visual.mjs",
+      "sourceBytes": 2957,
+      "sourceSha256": "d73940c579ba3b422df74b850b17dc00e97d5cdca4219b03f74d9d89f19d9a99",
+      "repositorySha256": "d73940c579ba3b422df74b850b17dc00e97d5cdca4219b03f74d9d89f19d9a99"
+    },
+    {
+      "path": "tests/reading-help.test.mjs",
+      "sourceBytes": 3965,
+      "sourceSha256": "761a23186e5b07af4c9c61b109d91361a9577c82d40daa28fdde9830fcf616ff",
+      "repositorySha256": "761a23186e5b07af4c9c61b109d91361a9577c82d40daa28fdde9830fcf616ff"
+    },
+    {
+      "path": "tests/river-browser.mjs",
+      "sourceBytes": 7215,
+      "sourceSha256": "b3e4446d4e1e3287bf17f14f27e7009d55a9efa046acc540fdd284e0d758950d",
+      "repositorySha256": "b3e4446d4e1e3287bf17f14f27e7009d55a9efa046acc540fdd284e0d758950d"
+    },
+    {
+      "path": "tests/river-visual.mjs",
+      "sourceBytes": 3127,
+      "sourceSha256": "769912f15197b36c95c14c92e47d2cf5709981ffd5dfe2566653f96c67530c2d",
+      "repositorySha256": "769912f15197b36c95c14c92e47d2cf5709981ffd5dfe2566653f96c67530c2d"
+    },
+    {
+      "path": "tests/river.test.mjs",
+      "sourceBytes": 5575,
+      "sourceSha256": "ad811c3038035962764a7d96922d8be7404708b817c7013f597d2d7bf21eac5a",
+      "repositorySha256": "ad811c3038035962764a7d96922d8be7404708b817c7013f597d2d7bf21eac5a"
+    },
+    {
+      "path": "tests/server.test.mjs",
+      "sourceBytes": 3045,
+      "sourceSha256": "b2fee4f787759bda30b2547a12fba2e24807184a3d4d1f871b7bebc747763c67",
+      "repositorySha256": "b2fee4f787759bda30b2547a12fba2e24807184a3d4d1f871b7bebc747763c67"
+    },
+    {
+      "path": "tests/sites-worker.test.mjs",
+      "sourceBytes": 2219,
+      "sourceSha256": "96af7b48906c6460c793356d7b6952f7d5026dbf5a502bec0d9297ff04201c26",
+      "repositorySha256": "96af7b48906c6460c793356d7b6952f7d5026dbf5a502bec0d9297ff04201c26"
+    },
+    {
+      "path": "tests/source-gallery-browser.mjs",
+      "sourceBytes": 9010,
+      "sourceSha256": "f850bc866174901af848bb27eb70ca86399beb26977568593abecbbb563bd616",
+      "repositorySha256": "f850bc866174901af848bb27eb70ca86399beb26977568593abecbbb563bd616"
+    },
+    {
+      "path": "tests/source-gallery-visual.mjs",
+      "sourceBytes": 1075,
+      "sourceSha256": "cf23ed10983d7bee7b93b15a84a105f3756ba99ddcbe4981524b98a2687effd3",
+      "repositorySha256": "cf23ed10983d7bee7b93b15a84a105f3756ba99ddcbe4981524b98a2687effd3"
+    },
+    {
+      "path": "tests/source-gallery.test.mjs",
+      "sourceBytes": 4400,
+      "sourceSha256": "35c142c656629069170e588939112dae2afdb0fa4f35e3e1b80658e16d18dd05",
+      "repositorySha256": "35c142c656629069170e588939112dae2afdb0fa4f35e3e1b80658e16d18dd05"
+    },
+    {
+      "path": "tests/spatial-browser.mjs",
+      "sourceBytes": 10672,
+      "sourceSha256": "7a31b3bdfc0c7d6ff38dfa54b794bd2116561d1ec6ba76a7188025f82dce500f",
+      "repositorySha256": "7a31b3bdfc0c7d6ff38dfa54b794bd2116561d1ec6ba76a7188025f82dce500f"
+    },
+    {
+      "path": "tests/spatial-final-visual.mjs",
+      "sourceBytes": 2426,
+      "sourceSha256": "789e96e984aad0aabef816422cb4a3be50a4f69d5551fb3d839297fea6cc4a23",
+      "repositorySha256": "789e96e984aad0aabef816422cb4a3be50a4f69d5551fb3d839297fea6cc4a23"
+    },
+    {
+      "path": "tests/speech-browser.mjs",
+      "sourceBytes": 11473,
+      "sourceSha256": "a642013fa45d0f2e2615004c748a2dc8c5472b4a83eb50b1bdc53802291eca82",
+      "repositorySha256": "a642013fa45d0f2e2615004c748a2dc8c5472b4a83eb50b1bdc53802291eca82"
+    },
+    {
+      "path": "tests/speech.test.mjs",
+      "sourceBytes": 6077,
+      "sourceSha256": "4e282abac59123965c5c0a25dcd9a26839d06aa993ab2952b51fabfcac6e044b",
+      "repositorySha256": "4e282abac59123965c5c0a25dcd9a26839d06aa993ab2952b51fabfcac6e044b"
+    },
+    {
+      "path": "tests/v2-browser.mjs",
+      "sourceBytes": 9516,
+      "sourceSha256": "d20215d133974d98709b4b6d58ccc2dce3c6693c8020f4e131b08384859771ed",
+      "repositorySha256": "d20215d133974d98709b4b6d58ccc2dce3c6693c8020f4e131b08384859771ed"
+    },
+    {
+      "path": "tests/v2-engine.test.mjs",
+      "sourceBytes": 7687,
+      "sourceSha256": "8ad46556a77fd0bdd9736d9782959442475e5286312f2feae451c7083e2ad92e",
+      "repositorySha256": "8ad46556a77fd0bdd9736d9782959442475e5286312f2feae451c7083e2ad92e"
+    },
+    {
+      "path": "tests/v2-fixtures.mjs",
+      "sourceBytes": 1022,
+      "sourceSha256": "1687c7212a85d0bf6c2722711b33f9ac36af9a38171f23f5aa10d5b1dce7bc25",
+      "repositorySha256": "1687c7212a85d0bf6c2722711b33f9ac36af9a38171f23f5aa10d5b1dce7bc25"
+    },
+    {
+      "path": "tests/v2-media.test.mjs",
+      "sourceBytes": 6820,
+      "sourceSha256": "f818f26e77cd76e410346ab261b5be30c4bdb57945cfcb3b84b0c77223e3c536",
+      "repositorySha256": "f818f26e77cd76e410346ab261b5be30c4bdb57945cfcb3b84b0c77223e3c536"
+    },
+    {
+      "path": "tests/v21-browser.mjs",
+      "sourceBytes": 6173,
+      "sourceSha256": "7cf27aa3f3506dd62f8f3719d96a669a3e9ec910604f65c7053c02b029ba5019",
+      "repositorySha256": "7cf27aa3f3506dd62f8f3719d96a669a3e9ec910604f65c7053c02b029ba5019"
+    },
+    {
+      "path": "tests/v21-design-audit.mjs",
+      "sourceBytes": 1388,
+      "sourceSha256": "510c7427d9299a4166d1f8df1646b11573e0b0eeaa303d645f86fccdd158ff47",
+      "repositorySha256": "510c7427d9299a4166d1f8df1646b11573e0b0eeaa303d645f86fccdd158ff47"
+    },
+    {
+      "path": "tests/v21-flow.test.mjs",
+      "sourceBytes": 2402,
+      "sourceSha256": "4f3ef3f5b94f3cc5f17716394778c173fd319b429c66666e8628acbb9120b7cf",
+      "repositorySha256": "4f3ef3f5b94f3cc5f17716394778c173fd319b429c66666e8628acbb9120b7cf"
+    },
+    {
+      "path": "tests/v22-before-capture.mjs",
+      "sourceBytes": 110,
+      "sourceSha256": "cd37eba4d9a3812cc21a99c073f7a98636bdc5ff689c766aea0b0f5a1a46f6a5",
+      "repositorySha256": "cd37eba4d9a3812cc21a99c073f7a98636bdc5ff689c766aea0b0f5a1a46f6a5"
+    },
+    {
+      "path": "tests/v22-browser.mjs",
+      "sourceBytes": 6500,
+      "sourceSha256": "526d18fe4e891afc9046dbe020b1b12de161853b0cbc50fea8447a15bcedf53c",
+      "repositorySha256": "526d18fe4e891afc9046dbe020b1b12de161853b0cbc50fea8447a15bcedf53c"
+    },
+    {
+      "path": "tests/v22-design-audit.mjs",
+      "sourceBytes": 1958,
+      "sourceSha256": "2bdddeb6fe9256c06a8c2b0d3f4a16f49d79ae07ebe8d4508fe1947c2508817f",
+      "repositorySha256": "2bdddeb6fe9256c06a8c2b0d3f4a16f49d79ae07ebe8d4508fe1947c2508817f"
+    },
+    {
+      "path": "tests/v22-handoff.test.mjs",
+      "sourceBytes": 4219,
+      "sourceSha256": "70a168aa92604e95753be8014934c383d8454b7c9e63b5841cb0d456d0a2cc16",
+      "repositorySha256": "70a168aa92604e95753be8014934c383d8454b7c9e63b5841cb0d456d0a2cc16"
+    },
+    {
+      "path": "tests/v3-browser.mjs",
+      "sourceBytes": 9776,
+      "sourceSha256": "d856c5c471d45574696e54b5a3d81bb192fbf30d04e92bcdb571c33cf9a8521e",
+      "repositorySha256": "d856c5c471d45574696e54b5a3d81bb192fbf30d04e92bcdb571c33cf9a8521e"
+    },
+    {
+      "path": "tests/v3-detail-browser.mjs",
+      "sourceBytes": 5070,
+      "sourceSha256": "f433e81891ddd9a6ffe2bca57e7412e26d69288d4d88bdf40fadd26cabf945ce",
+      "repositorySha256": "f433e81891ddd9a6ffe2bca57e7412e26d69288d4d88bdf40fadd26cabf945ce"
+    },
+    {
+      "path": "tests/v3-model.test.mjs",
+      "sourceBytes": 7172,
+      "sourceSha256": "a779910d22431ed992fc6601ba5cc6bc11aff04c52a39e22f2aa91eade654c76",
+      "repositorySha256": "a779910d22431ed992fc6601ba5cc6bc11aff04c52a39e22f2aa91eade654c76"
+    },
+    {
+      "path": "tests/v3-print-check.mjs",
+      "sourceBytes": 1690,
+      "sourceSha256": "d8259d83fb666d491d8a6e89117ec8d4c0e822e308f3e171a8e7967bc1ef7adb",
+      "repositorySha256": "d8259d83fb666d491d8a6e89117ec8d4c0e822e308f3e171a8e7967bc1ef7adb"
+    },
+    {
+      "path": "tests/v4-browser.mjs",
+      "sourceBytes": 11042,
+      "sourceSha256": "8b1abb9aab5f0eabb4fffcc4ec4bfd3eeb3b5597a96c04218ae64da4a29c463f",
+      "repositorySha256": "8b1abb9aab5f0eabb4fffcc4ec4bfd3eeb3b5597a96c04218ae64da4a29c463f"
+    },
+    {
+      "path": "tests/v4-capture.mjs",
+      "sourceBytes": 1060,
+      "sourceSha256": "03a0c738c036e971aa203ac000f21a86b98d0a7a956a97f3c0ed19c612ae4b10",
+      "repositorySha256": "03a0c738c036e971aa203ac000f21a86b98d0a7a956a97f3c0ed19c612ae4b10"
+    },
+    {
+      "path": "tests/v4-detail-browser.mjs",
+      "sourceBytes": 7321,
+      "sourceSha256": "33992fa6c0f97bb865aaad07fc9cf9223f0ba9042a824f8f24df22e46a019888",
+      "repositorySha256": "33992fa6c0f97bb865aaad07fc9cf9223f0ba9042a824f8f24df22e46a019888"
+    },
+    {
+      "path": "tests/v4-final-visual.mjs",
+      "sourceBytes": 1152,
+      "sourceSha256": "243989acb658eed30902fc18a0184659917e31634765e6c877933f69934cc5a2",
+      "repositorySha256": "243989acb658eed30902fc18a0184659917e31634765e6c877933f69934cc5a2"
+    },
+    {
+      "path": "tests/v4-model.test.mjs",
+      "sourceBytes": 7766,
+      "sourceSha256": "5cb61082ba68d068220a2a6d758ab92191e051616672d49ca689ea6b9bd00a94",
+      "repositorySha256": "5cb61082ba68d068220a2a6d758ab92191e051616672d49ca689ea6b9bd00a94"
+    },
+    {
+      "path": "tests/v5-browser.mjs",
+      "sourceBytes": 11577,
+      "sourceSha256": "8f1b7d641467ac71b851bb205f3a059ab0c08999801a6ea57b1c091895817993",
+      "repositorySha256": "8f1b7d641467ac71b851bb205f3a059ab0c08999801a6ea57b1c091895817993"
+    },
+    {
+      "path": "tests/v5-detail-browser.mjs",
+      "sourceBytes": 7108,
+      "sourceSha256": "a1416e9fca7554288899dd11cfcc63f095686c31ac9ba6a6c04771ab5863617c",
+      "repositorySha256": "a1416e9fca7554288899dd11cfcc63f095686c31ac9ba6a6c04771ab5863617c"
+    },
+    {
+      "path": "tests/v5-model.test.mjs",
+      "sourceBytes": 7132,
+      "sourceSha256": "09f142c77e16f833eed4486a6b5b4c3a16f0633fcd91dda4516fe2dbd73623fd",
+      "repositorySha256": "09f142c77e16f833eed4486a6b5b4c3a16f0633fcd91dda4516fe2dbd73623fd"
+    },
+    {
+      "path": "tests/water-editor-browser.mjs",
+      "sourceBytes": 7957,
+      "sourceSha256": "f89e4cb508070626915169c2ee3dc64385d0cd51ae4a1b407decaff70d83a87b",
+      "repositorySha256": "f89e4cb508070626915169c2ee3dc64385d0cd51ae4a1b407decaff70d83a87b"
+    },
+    {
+      "path": "tests/water-editor.test.mjs",
+      "sourceBytes": 4103,
+      "sourceSha256": "d5c43b488d49b5f04a8548a93c3d8403b43a65ecc52b7fb91520fc867c85cd8c",
+      "repositorySha256": "d5c43b488d49b5f04a8548a93c3d8403b43a65ecc52b7fb91520fc867c85cd8c"
+    },
+    {
+      "path": "tests/water-prediction-browser.mjs",
+      "sourceBytes": 4825,
+      "sourceSha256": "17a125c385cc8785463f0e0a195ec7d84a318579505fada719eec1656d2f1e3e",
+      "repositorySha256": "17a125c385cc8785463f0e0a195ec7d84a318579505fada719eec1656d2f1e3e"
+    },
+    {
+      "path": "tests/water-prediction.test.mjs",
+      "sourceBytes": 3007,
+      "sourceSha256": "9070a96117af7af66f5dfac0dcd6e7bb5480bcce89d16438b10a665f611e341b",
+      "repositorySha256": "9070a96117af7af66f5dfac0dcd6e7bb5480bcce89d16438b10a665f611e341b"
+    },
+    {
+      "path": "tests/water-review-browser.mjs",
+      "sourceBytes": 8636,
+      "sourceSha256": "ebc6cb2132f0c3cea3a41874350cc808c5adc20f640f8d5868705cff2c85a441",
+      "repositorySha256": "ebc6cb2132f0c3cea3a41874350cc808c5adc20f640f8d5868705cff2c85a441"
+    },
+    {
+      "path": "tests/water-review.test.mjs",
+      "sourceBytes": 2784,
+      "sourceSha256": "a5321d648838cd5c862a9a3e3fb209f3f55c5143092c09781c88990047e6d3d6",
+      "repositorySha256": "a5321d648838cd5c862a9a3e3fb209f3f55c5143092c09781c88990047e6d3d6"
+    },
+    {
+      "path": "worker/index.js",
+      "sourceBytes": 483,
+      "sourceSha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389",
+      "repositorySha256": "2dd0615a445143933d88d4271f54f5d63ee951421fcd08c5a7617bb09c564389"
+    }
+  ]
+}

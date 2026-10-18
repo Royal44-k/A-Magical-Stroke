@@ -1,0 +1,34 @@
+export const LEAKS=[6,7,8,12];
+export const SEED=[[80,200],[88,160],[120,128],[160,118],[202,130],[228,161],[236,200]];
+export function emptyStudio(){return {roof:{square:null,strip:null,vertical:false,trials:[]},bucket:{start:6,left:6,right:6,steps:0,repaired:false,fairStart:false,compared:false,history:[]},board:{turn:0,strokes:[],title:'',note:'',saved:false}};}
+const integer=(v,min,max)=>Number.isInteger(v)&&v>=min&&v<=max;
+export function patchCells(kind,anchor,vertical=false){if(!['square','strip'].includes(kind)||!integer(anchor,0,19))return [];const row=Math.floor(anchor/5),col=anchor%5,w=kind==='square'?2:vertical?1:3,h=kind==='square'?2:vertical?3:1;if(row+h>4||col+w>5)return [];return Array.from({length:h},(_,r)=>Array.from({length:w},(_,c)=>(row+r)*5+col+c)).flat();}
+export function roofResult(r){const covered=[...new Set([...patchCells('square',r.square),...patchCells('strip',r.strip,r.vertical)])],missing=LEAKS.filter(i=>!covered.includes(i));return {covered,missing,ok:missing.length===0};}
+export const roofSignature=r=>[r.square,r.strip,r.vertical].join('/');
+export function roofReady(r){return !!r.trials.length&&r.trials.at(-1).signature===roofSignature(r)&&roofResult(r).ok;}
+export function placePatch(r,kind,anchor){if(!patchCells(kind,anchor,r.vertical).length)return r;return {...r,[kind]:anchor};}
+export function testRoof(r){const result=roofResult(r);return {...r,trials:[...r.trials,{square:r.square,strip:r.strip,vertical:r.vertical,signature:roofSignature(r),missing:result.missing}].slice(-6)};}
+export function bucketAction(b,action,value){if(action==='pour'){const start=[4,6,8].includes(value)?value:b.start;return {...b,start,left:start,right:start,steps:0,fairStart:b.repaired,compared:false};}if(action==='repair')return b.repaired?b:{...b,repaired:true,fairStart:b.steps===0,compared:false};
+ if(action!=='walk'||b.steps>=3)return b;const n={...b,steps:b.steps+1,left:Math.max(0,b.left-1),right:Math.max(0,b.right-(b.repaired?0:1)),compared:b.repaired&&b.fairStart};return {...n,history:[...b.history,{start:n.start,left:n.left,right:n.right,steps:n.steps,repaired:n.repaired,fairStart:n.fairStart,compared:n.compared}].slice(-6)};}
+const validStroke=x=>Array.isArray(x)&&x.length>=2&&x.length<=600&&x.every(p=>Array.isArray(p)&&p.length===2&&p.every(n=>Number.isFinite(n)&&n>=0&&n<=320));
+export function addStroke(b,points){if(b.strokes.length>=60||!validStroke(points))return b;return {...b,strokes:[...b.strokes,structuredClone(points)],saved:false};}
+export function rotateBoard(b){return {...b,turn:(b.turn+1)%4,strokes:b.strokes.map(st=>st.map(([x,y])=>[320-y,x])),saved:false};}
+export function seedPoints(turn){let pts=SEED;for(let i=0;i<turn;i++)pts=pts.map(([x,y])=>[320-y,x]);return pts;}
+const array=(v,fn,max)=>Array.isArray(v)&&v.length<=max&&v.every(fn);
+const bool=v=>typeof v==='boolean';
+const validRoof=r=>r&&['square','strip'].every(k=>r[k]===null||patchCells(k,r[k],r.vertical).length>0)&&bool(r.vertical);
+const validBucket=b=>b&&[4,6,8].includes(b.start)&&integer(b.left,0,b.start)&&integer(b.right,0,b.start)&&integer(b.steps,0,3)&&['repaired','fairStart','compared'].every(k=>bool(b[k]));
+const validBoard=b=>b&&integer(b.turn,0,3)&&array(b.strokes,validStroke,60)&&typeof b.title==='string'&&b.title.length<=40&&typeof b.note==='string'&&b.note.length<=160&&bool(b.saved);
+export function validGiftArt(art){return art===null||art===undefined||(art&&({roof:validRoof,bucket:validBucket,board:validBoard})[art.kind]?.(art.data)===true);}
+export function validStudio(s){return !!s&&validRoof(s.roof)&&array(s.roof.trials,t=>validRoof(t)&&typeof t.signature==='string'&&array(t.missing,i=>LEAKS.includes(i),4),6)&&validBucket(s.bucket)&&array(s.bucket.history,validBucket,6)&&validBoard(s.board);}
+const fingerprint=value=>{let h=2166136261;for(const c of JSON.stringify(value))h=Math.imul(h^c.charCodeAt(0),16777619);return (h>>>0).toString(36);};
+export function giftSources(s){const out=[],studio=s.giftStudio;if(!studio)return out;const add=(kind,title,record,data)=>out.push({id:'gift-'+kind+'-'+fingerprint(data),kind:'trial',title,record,asset:null,grid:null,giftArt:{kind,data:structuredClone(data)}});
+ const r=studio.roof.trials.at(-1);if(r){const missing=roofResult(r).missing.length;add('roof','我的纸上屋顶',missing?'这一摆法还有'+missing+'处缝没有遮住。我把试过的样子留下来。':'两张纸片遮住了四处缝。我把摆法留给鲁伯看。',r);}
+ const b=studio.bucket.history.at(-1);if(b)add('bucket','木桶里的水去哪了',b.compared?'两边都从'+b.start+'格水开始，走了同样的'+b.steps+'段路。没补的剩'+b.left+'格，补好的剩'+b.right+'格。':'我在纸上试走了'+b.steps+'段路。左边剩'+b.left+'格，右边剩'+b.right+'格。这回还没从补前、补后同样的水位开始比较。',b);
+ const d=studio.board;if(d.saved&&(d.strokes.length||d.title.trim()))add('board',d.title.trim()||'我们接着画','小禾留下一条弧线，我接着添了'+d.strokes.length+'笔。'+(d.note?'留给下一位的话：'+d.note:''),d);return out;}
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function giftSvg(art){if(!art||!validGiftArt(art))return '';const d=art.data;let body='';
+ if(art.kind==='board'){body='<rect width="320" height="320" fill="#fffdf5"/><polyline points="'+seedPoints(d.turn).map(p=>p.join(',')).join(' ')+'" fill="none" stroke="#bf783a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'+d.strokes.map(st=>'<polyline points="'+st.map(p=>p.join(',')).join(' ')+'" fill="none" stroke="#267580" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>').join('');}
+ if(art.kind==='roof'){const sq=patchCells('square',d.square),bar=patchCells('strip',d.strip,d.vertical);body='<rect width="320" height="320" fill="#f4ebd9"/>'+Array.from({length:20},(_,i)=>{const x=20+(i%5)*56,y=42+Math.floor(i/5)*56;return '<rect x="'+x+'" y="'+y+'" width="53" height="53" rx="3" fill="'+(sq.includes(i)&&bar.includes(i)?'#867350':sq.includes(i)?'#cf9c61':bar.includes(i)?'#709e91':'#e6c7a1')+'" stroke="#8f704e"/>'+(LEAKS.includes(i)?'<circle cx="'+(x+26)+'" cy="'+(y+26)+'" r="7" fill="'+(sq.includes(i)||bar.includes(i)?'#fff8de':'#285f73')+'"/>':'');}).join('');}
+ if(art.kind==='bucket'){body='<rect width="320" height="320" fill="#eef4ee"/>'+[d.left,d.right].map((level,i)=>{const x=40+i*150;return '<rect x="'+x+'" y="45" width="90" height="208" rx="4" fill="#fffcf3" stroke="#547779" stroke-width="3"/><rect x="'+(x+3)+'" y="'+(250-level*25)+'" width="84" height="'+(level*25)+'" fill="#75b9bd"/>'+Array.from({length:8},(_,j)=>'<path d="M'+x+' '+(250-j*25)+' h90" stroke="#526e70" stroke-opacity=".3"/>').join('')+'<text x="'+(x+45)+'" y="281" text-anchor="middle" fill="#173046" font-size="18">'+(i?(d.repaired?'补过以后':'还没补'):'补前')+' · '+level+'格</text>';}).join('');}
+ return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="'+esc({roof:'实际拼片记录',bucket:'实际水位记录',board:'实际接笔画作'}[art.kind])+'">'+body+'</svg>';}

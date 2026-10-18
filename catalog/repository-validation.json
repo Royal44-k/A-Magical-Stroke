@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "date": "2026-10-18T05:40:05.098Z",
+  "scope": "Latest v5.0 upload",
+  "build": "npm ci and npm run build passed",
+  "unitTests": {
+    "passed": 125,
+    "failed": 0,
+    "includes": "v5 and shared rule regressions; Sites worker"
+  },
+  "checks": [
+    "四章入口与最新版首页可运行",
+    "四章自由画纸与绘画参照图完整",
+    "两段影片Range播放与字幕可读取",
+    "最新版本元数据与修正后的教师指南一致",
+    "四个受保护交付文件与原项目一致",
+    "121个本地导航链接可达（发布回执与清单另在生成后校验）"
+  ],
+  "errors": []
+}

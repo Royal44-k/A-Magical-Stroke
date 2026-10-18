@@ -1,0 +1,24 @@
+{
+  "asset": "maliang-brush",
+  "version": "5.0",
+  "tool": "built-in image_gen",
+  "source": "C:/Users/lenovo/.codex/generated_images/01a14cf1-5836-7290-b506-babd35dae8db/exec-811389c3-ff85-4a24-b81a-c9bc404372fb.png",
+  "savedPath": "D:/Codex-chat-II/maliang-ai-learning/public/assets/v5/maliang-brush.png",
+  "references": [
+    "public/assets/cow-field-v3.png",
+    "artifacts/v5.0/reference/detail-11.jpg"
+  ],
+  "prompt": "Use case: illustration-story.\nAsset type: a final production transparent PNG full-body character sprite for the primary-school interactive illustrated adventure 神笔马良：奇幻一笔.\nInput images: Of the two images shown immediately above, the farming scene is character identity reference only: use the boy at far left. The dark theatrical deer scene is style reference only: refined Chinese mineral-color painting, delicate antique-gold contours and dimensional layered paper theatrical presence; do not reproduce its deer, person, scenery, lettering, or black background.\nPrimary request: portray Ma Liang alone as the same 10–12 year old Chinese boy, full body with natural preteen proportions, lively but calm and focused, a gentle welcoming smile. Preserve black tousled short hair gathered into a small historical topknot, simple worn indigo-blue cross-collar tunic, ivory inner collar and turned sleeves, warm brown tied cloth belt, dark grey cropped trousers, cloth ankle wraps and simple cloth shoes. His right arm extends gracefully toward image right holding one long Chinese calligraphy brush in a natural precise grip; body lightly leaning into the action, left hand open near chest, feet grounded in a poised balanced step. Brush tip has a small restrained warm golden glint, not a giant magical effect. This is an approachable clever child artist, not a baby mascot.\nStyle/medium: exquisite Chinese illustrated storybook figure, fine mineral azurite and malachite pigments with cinnabar accents and subtle pale-gold outline, tactile layered cut-paper depth, carefully shaped soft shadows within costume layers, painterly face and hands, silk-paper grain. More refined theatrical dimensional paper sculpture than flat anime. Keep blue plain clothing recognizable and suitable for a humble village boy; no armor or rich costume.\nComposition: full character including brush tip, hair, hands and both shoes entirely visible, portrait approximately 1024×1536, comfortable transparent margin around all edges, natural anatomy with five fingers, subtle three-quarter view looking toward the brush on the right.\nBackground: genuinely transparent alpha channel throughout. Isolated character only, no solid-color background, no white rectangle, no checkerboard pixels, no scenery, no ground patch, no pedestal, no decorative frame, no detached particles. No text, no letters, no watermark. Preserve authentic transparency for direct web compositing.",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    254
+  ],
+  "transparentPixels": 1010215,
+  "inspection": "Full figure and brush visible. Blue patched historical clothes, brown sash and recognizable black topknot retained. Natural layered-paper character rendering. PNG has genuine alpha; no pixel editing or background removal performed.",
+  "notes": "Local reference path invocation failed before generation due fs sandbox helper. Used two in-memory reference images displayed in conversation; one successful generation. Render using object-fit:contain; preserve alpha."
+}

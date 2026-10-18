@@ -1,0 +1,15 @@
+import{editSpeech,chooseSpeechSource,checkSpeech,beginSpeechCouncil}from'../src/speech.mjs';
+import {chromium} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs';import {fresh,visit,KEY} from '../src/model.mjs';import {reviseBridgePlan,startBridgeRun,actBridge} from '../src/paper-bridge.mjs';
+const b=await chromium.launch({channel:'msedge',headless:true}),p=await b.newPage(),checks=[],failures=[],errors=[];p.on('pageerror',e=>errors.push(e.message));const click=n=>p.getByRole('button',{name:n,exact:true}).click();let release;
+async function seed(s){await p.goto('http://127.0.0.1:4185/');await p.evaluate(({KEY,s})=>localStorage.setItem(KEY,JSON.stringify(s)),{KEY,s});await p.reload();await click('接着画下去');}
+async function check(name,fn){try{await fn();checks.push(name);}catch(e){failures.push({name,error:e.message});}}
+try{
+await p.route('**/api/capabilities',r=>r.fulfill({json:{guide:true}}));let requested;const requestSeen=new Promise(r=>requested=r),gate=new Promise(r=>release=r);await p.route('**/api/guide',async r=>{requested();await gate;await r.fulfill({json:{text:'旧路线的草案提示，不能进入纸桥。'}});});
+let s=visit(fresh(),'court');s.strategy='speak';s=beginSpeechCouncil(checkSpeech(editSpeech(chooseSpeechSource(editSpeech(s,{topic:'access'}),'clause'),{plan:'ask'})));await seed(s);await click('小禾，帮我看看');await Promise.race([requestSeen,new Promise((_,reject)=>setTimeout(()=>reject(new Error('Guide request was not made within 7 seconds')),7000))]);await click('先带大家到广场');
+await check('切换纸桥立即给当前提示，清除旧路线等待状态',async()=>{await p.waitForFunction(()=>document.querySelector('.guide-bubble p')?.textContent.includes('纸人'),{},{timeout:2000});assert.match(await p.locator('.guide-bubble').innerText(),/纸人/);assert.equal(await p.locator('.guide-bubble small').count(),0);});
+const response=p.waitForResponse('**/api/guide');release();await response;await p.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));await p.waitForFunction(()=>document.querySelector('.guide-bubble p')?.textContent.includes('纸人'),{},{timeout:2000}).catch(()=>{});
+await check('迟到的上一条AI提示不会覆盖纸桥指导',async()=>{assert.match(await p.locator('.guide-bubble').innerText(),/纸人/);assert.doesNotMatch(await p.locator('.guide-bubble').innerText(),/旧路线/);});
+s=visit(fresh(),'court');s.strategy='bridge';s.bridgePlan=reviseBridgePlan(s.bridgePlan,{landing:'square',width:2,supports:['near','far']});s.bridgePlan=startBridgeRun(s.bridgePlan);for(const a of ['near','far','walk','walk','cart','cart'])s.bridgePlan=actBridge(s.bridgePlan,a);await seed(s);
+await check('恢复已完成记录或来回切换，不重复播放完成夸奖',async()=>{assert.equal(await p.locator('.guide-figure.celebrating').count(),0);await click('把话当众说清楚');await click('先带大家到广场');assert.equal(await p.locator('.guide-figure.celebrating').count(),0);});
+assert.deepEqual(errors,[]);fs.writeFileSync('artifacts/v1.5/guide-context-results.json',JSON.stringify({checks,failures,errors},null,2));console.log({checks,failures});assert.deepEqual(failures,[]);
+}finally{release?.();await b.close();}

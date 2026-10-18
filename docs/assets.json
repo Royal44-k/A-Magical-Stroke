@@ -1,0 +1,234 @@
+{
+  "project": "神笔马良：奇幻一笔",
+  "activeCount": 16,
+  "assets": [
+    {
+      "id": "hero-scroll-v1.png",
+      "path": "public/assets/hero-scroll-v1.png",
+      "width": 1486,
+      "height": 1058,
+      "bytes": 2547903,
+      "sha256": "349d38e7a92919e064589267f177e01a9a7338da2e94c96e9e3dcf595771ae8f",
+      "usage": [],
+      "prompt": "art-direction/hero-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "hero-mobile-v1.png",
+      "path": "public/assets/hero-mobile-v1.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 2825886,
+      "sha256": "95de7a2c714065162f2005490e7db08c3878b699d95a6c45ed4770d059794bd1",
+      "usage": [],
+      "prompt": "art-direction/mobile-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "xiaohe-guide-v1.png",
+      "path": "public/assets/xiaohe-guide-v1.png",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 1233594,
+      "sha256": "fb44303575c71823c9457a9cf57cb0d8d01eed228e8d47f9c67caff730aca810",
+      "usage": [],
+      "prompt": "art-direction/companion-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": true
+    },
+    {
+      "id": "opening-field-v1.png",
+      "path": "public/assets/opening-field-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3067364,
+      "sha256": "0a3ef32da84dbd80fb9edb0dd240b0ee33e9e98e08a21a7bb9cb7c6c444b8bac",
+      "usage": [
+        "M-V01"
+      ],
+      "prompt": "art-direction/opening-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "night-brush-v2.png",
+      "path": "public/assets/night-brush-v2.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2385227,
+      "sha256": "58322c50672f86fb3c57485470a85baf24469535e08aaa0d5fb4f03601f54613",
+      "usage": [
+        "M-V02"
+      ],
+      "prompt": "art-direction/night-prompt-v2.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "worktable-day-v1.png",
+      "path": "public/assets/worktable-day-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2955059,
+      "sha256": "57daa2c60f140ecd635c744a938fd09dd340904f74daa8cb22301aef7f9a2434",
+      "usage": [
+        "M-V03"
+      ],
+      "prompt": "art-direction/worktable-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "river-survey-v1.png",
+      "path": "public/assets/river-survey-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3733318,
+      "sha256": "b38d2eb6c1229c5d7203ba7f2be9bfe07738b482aa66692aedb1a84cbdb830cf",
+      "usage": [
+        "M-V04"
+      ],
+      "prompt": "art-direction/river-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "ink-workshop-v1.png",
+      "path": "public/assets/ink-workshop-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2867628,
+      "sha256": "6c938bb1ff0906db3e030a93882c5d7d94bf121990e4e25b12e25c698dd6f4cb",
+      "usage": [
+        "M-V05"
+      ],
+      "prompt": "art-direction/workshop-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "shared-board-v1.png",
+      "path": "public/assets/shared-board-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3220391,
+      "sha256": "08d3e8849438144bfe5d4bb7ee3c727313415a0933d8b18511e178d9dea3fdad",
+      "usage": [
+        "M-V06",
+        "M-VE1"
+      ],
+      "prompt": "art-direction/shared-board-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "grain-contract-v1.png",
+      "path": "public/assets/grain-contract-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3310474,
+      "sha256": "78b42c2de58e442760f82b40c501cacded8acee838758a5a5a96814bc85d2346",
+      "usage": [
+        "M-V07"
+      ],
+      "prompt": "art-direction/contract-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "court-sea-v1.png",
+      "path": "public/assets/court-sea-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2778848,
+      "sha256": "f9748408f95a992c30871b8e9cd975a1d0cedb149dd8f7e8f8bbe7ac831d1874",
+      "usage": [
+        "M-V08",
+        "M-V09P"
+      ],
+      "prompt": "art-direction/court-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "paper-bridge-v1.png",
+      "path": "public/assets/paper-bridge-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3213350,
+      "sha256": "ccf36eccc557f3fb15114a27324d7047c2762cf43eaa4e7d8736a98fad799048",
+      "usage": [
+        "M-V09B"
+      ],
+      "prompt": "art-direction/bridge-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "evening-review-v1.png",
+      "path": "public/assets/evening-review-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2714015,
+      "sha256": "cf6a01ed74dee4752976a8b98e326cd34a9b0ef58f81ff1f905b37ed9d686f87",
+      "usage": [
+        "M-V10",
+        "M-V11",
+        "M-VE2",
+        "M-VE4"
+      ],
+      "prompt": "art-direction/evening-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "ending-conditions-v1.png",
+      "path": "public/assets/ending-conditions-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3437279,
+      "sha256": "0244385e63898012cf26e71e65c0f68e87afe92917612963a7ffb18ecc6aa20b",
+      "usage": [
+        "M-VE3"
+      ],
+      "prompt": "art-direction/ending-conditions-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "classroom-library-v1.png",
+      "path": "public/assets/classroom-library-v1.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2523349,
+      "sha256": "73159107ea0e0665be5d286a3e8001edf53e147c55881f2f165a7853141b1d97",
+      "usage": [
+        "结尾后的图书角邀请",
+        "画外一课情境图",
+        "M-V12班级图书角底图"
+      ],
+      "prompt": "art-direction/classroom-library-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    },
+    {
+      "id": "rain-tools-v1.png",
+      "path": "public/assets/rain-tools-v1.png",
+      "width": 2172,
+      "height": 724,
+      "bytes": 2450698,
+      "sha256": "e79dec65a3d7726b62d551302771443201d67f5c9c076c02991559055ea5632f",
+      "usage": [
+        "雨夜接雨路线台物品近景",
+        "雨夜记录三格底图",
+        "M-V02道具与可选近景参考"
+      ],
+      "prompt": "art-direction/rain-tools-prompt.txt",
+      "source": "本项目使用内置图像生成工具制作",
+      "transparent": false
+    }
+  ],
+  "archived": "night-brush-v1.png为旧灯具版本，不进入当前清单；使用v2。"
+}

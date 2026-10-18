@@ -1,0 +1,20 @@
+{
+  "asset": "village-stage.png",
+  "useCase": "illustration-story",
+  "builtInImageGen": true,
+  "date": "2026-10-18",
+  "references": [
+    "artifacts/v5.0/reference/detail-11.jpg",
+    "artifacts/v5.0/reference/detail-16.jpg",
+    "public/assets/hero-scroll-v1.png"
+  ],
+  "referenceMode": "Three in-memory preview images; file-path reference loading failed due sandbox helper error",
+  "prompt": "Use case: illustration-story.\nAsset type: panoramic background for a primary-school interactive story world, no UI.\nCreate one exquisite wide 16:9 landscape illustration, approximately 1536x864 or larger, of a Chinese storybook village as a layered paper-cut relief stage. Composition: a single continuous winding landscape scroll occupies the middle-lower half, not four separate panels. At left, a clear stream curls around a beautifully crafted wooden waterwheel; at center-left, neat small terraced fields and paths; at center-right, a warmly lit traditional mill courtyard with an outside stone mill; far right, the river opens toward a moonlit estuary with one little sailboat. Behind them, softly overlapping mineral-green mountains. Preserve a large uncluttered deep dark-ink space across the upper-central sky so live website title lettering can later be placed there.\nVisual direction: dark theatrical Chinese picture-book art, deep ink teal background close to #0e1b1a, muted malachite and turquoise mineral pigments, tiny cinnabar roof accents, restrained hair-thin pale-gold edge drawing, tiny warm window lamps. Architectural and terrain layers are physically dimensional, exquisite embossed painted paper, visible layered paper thickness with believable soft depth shadows. An elegant refined artistic world, cinematic depth, clear beautiful silhouettes, handcrafted paper texture. Sparse tiny warm firefly points. The outermost edges and upper sky should fall gently into the same flat dark ink teal, not bright daylight.\nUse these visual references only for their art direction and story ingredients, never reproduce their original characters, writing or layouts: reference 1/detail-11 and reference 2/detail-16 establish dark stage, mineral pigments and restrained gold outlines; reference 3/hero-scroll-v1 establishes the river-village-waterwheel setting, NOT its daylight palette or cartoon humans.\nConstraints: no letters, no calligraphy, no typography, no symbols, no logo, no watermark, no people, no human faces, no deer, no religious imagery, no interface panels, no card frames, no labels, no decorative borders. Not photorealism, not a modern city. No hard four-part division. The finished panorama should be immediately usable as a full-bleed website background with title-safe dark space.",
+  "source": "C:/Users/lenovo/.codex/generated_images/01a14cf1-da83-7643-947b-eb925d71ff2b/exec-999cc78e-1d23-4cb6-82a3-e0cb1089ec85.png",
+  "output": "public/assets/v5/village-stage.png",
+  "visualReview": "Passed: continuous village panorama, four story locations legible, dark title-safe sky, mineral green and gold relief styling, no text, people, religion or panels",
+  "width": 1672,
+  "height": 941,
+  "bytes": 2950501,
+  "sha256": "64D576D17913A8976FAE8EFBEC0350136F0F0B8B5B0A3A49282460E40A3E456D"
+}
